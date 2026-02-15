@@ -1,0 +1,115 @@
+CONFERENCE | YEAR   | DECISION TYPE                                 | CATEGORY | SIZE      
+------------------------------------------------------------------------------------------
+ICLR       | 2017   | accept_oral                                   | Accept   | 21.21 MB  
+ICLR       | 2017   | accept_poster                                 | Accept   | 210.48 MB 
+ICLR       | 2017   | invite_to_workshop_track                      | Reject   | 30.74 MB  
+ICLR       | 2017   | reject                                        | Reject   | 15.9 MB   
+ICLR       | 2018   | accept_oral                                   | Accept   | 45.74 MB  
+ICLR       | 2018   | accept_poster                                 | Accept   | 394.1 MB  
+ICLR       | 2018   | invite_to_workshop_track                      | Reject   | 63.15 MB  
+ICLR       | 2018   | reject                                        | Reject   | 71.58 MB  
+ICLR       | 2018   | withdrawn                                     | Reject   | 47.96 MB  
+ICLR       | 2019   | accept_oral                                   | Accept   | 41.72 MB  
+ICLR       | 2019   | accept_poster                                 | Accept   | 585.22 MB 
+ICLR       | 2019   | reject                                        | Reject   | 724.61 MB 
+ICLR       | 2019   | withdrawn                                     | Reject   | 135.28 MB 
+ICLR       | 2020   | accept_poster                                 | Accept   | 551.48 MB 
+ICLR       | 2020   | accept_spotlight                              | Accept   | 112.98 MB 
+ICLR       | 2020   | accept_talk                                   | Accept   | 50.68 MB  
+ICLR       | 2020   | desk_reject                                   | Reject   | 7.07 MB   
+ICLR       | 2020   | reject                                        | Reject   | 1.35 GB   
+ICLR       | 2020   | withdrawn                                     | Reject   | 323.28 MB 
+ICLR       | 2021   | accept_oral                                   | Accept   | 99.56 MB  
+ICLR       | 2021   | accept_poster                                 | Accept   | 868.95 MB 
+ICLR       | 2021   | accept_spotlight                              | Accept   | 187.24 MB 
+ICLR       | 2021   | concerns_raised_can_publish_with_adjustment   | Reject   | 1.43 MB   
+ICLR       | 2021   | desk_reject                                   | Reject   | 5.36 MB   
+ICLR       | 2021   | no_judgement_proceed_with_normal_process      | Reject   | 219.78 KB 
+ICLR       | 2021   | reject                                        | Reject   | 1.45 GB   
+ICLR       | 2021   | significant_concerns_do_not_publish           | Reject   | 1.11 MB   
+ICLR       | 2021   | withdrawn                                     | Reject   | 450.65 MB 
+ICLR       | 2022   | accept_oral                                   | Accept   | 96.07 MB  
+ICLR       | 2022   | accept_poster                                 | Accept   | 1.23 GB   
+ICLR       | 2022   | accept_spotlight                              | Accept   | 183.92 MB 
+ICLR       | 2022   | desk_reject                                   | Reject   | 10.86 MB  
+ICLR       | 2022   | reject                                        | Reject   | 1.37 GB   
+ICLR       | 2022   | withdrawn                                     | Reject   | 708.11 MB 
+ICLR       | 2023   | accept_notable_top_25                         | Accept   | 511.28 MB 
+ICLR       | 2023   | accept_notable_top_5                          | Accept   | 108.42 MB 
+ICLR       | 2023   | accept_poster                                 | Accept   | 1.31 GB   
+ICLR       | 2023   | desk_reject                                   | Reject   | 17.34 MB  
+ICLR       | 2023   | reject                                        | Reject   | 2.01 GB   
+ICLR       | 2023   | withdrawn                                     | Reject   | 1.1 GB    
+ICLR       | 2024   | accept_oral                                   | Accept   | 185.93 MB 
+ICLR       | 2024   | accept_poster                                 | Accept   | 2.72 GB   
+ICLR       | 2024   | accept_spotlight                              | Accept   | 504.36 MB 
+ICLR       | 2024   | reject                                        | Reject   | 3.3 GB    
+ICLR       | 2025   | accept_oral                                   | Accept   | 451.38 MB 
+ICLR       | 2025   | accept_poster                                 | Accept   | 5.11 GB   
+ICLR       | 2025   | accept_spotlight                              | Accept   | 717.6 MB  
+ICLR       | 2025   | reject                                        | Reject   | 1010.33 MB
+ICLR       | 2026   | accept_oral                                   | Accept   | 114.38 MB 
+ICLR       | 2026   | accept_poster                                 | Accept   | 2.51 GB   
+ICLR       | 2026   | conditional_accept_oral                       | Accept   | 37.97 KB  
+ICLR       | 2026   | conditional_accept_poster                     | Accept   | 12.53 MB  
+ICLR       | 2026   | desk_reject                                   | Reject   | 5.67 MB   
+ICLR       | 2026   | pending_unknown                               | Reject   | 155.86 MB 
+ICLR       | 2026   | reject                                        | Reject   | 1.67 GB   
+ICLR       | 2026   | withdrawn                                     | Reject   | 1.23 GB   
+ICML       | 2023   | icml_2023_oralposter                          | Accept   | 204.7 MB  
+ICML       | 2023   | icml_2023_poster                              | Accept   | 1.66 GB   
+ICML       | 2024   | icml_2024_oral                                | Accept   | 139.94 MB 
+ICML       | 2024   | icml_2024_poster                              | Accept   | 2.77 GB   
+ICML       | 2024   | icml_2024_spotlight                           | Accept   | 215.97 MB 
+ICML       | 2024   | withdrawn                                     | Reject   | 82.77 KB  
+ICML       | 2025   | desk_reject                                   | Reject   | 11.48 MB  
+ICML       | 2025   | icml_2025_oral                                | Accept   | 166.25 MB 
+ICML       | 2025   | icml_2025_poster                              | Accept   | 4.07 GB   
+ICML       | 2025   | icml_2025_retracted_by_authors                | Reject   | 2.96 MB   
+ICML       | 2025   | icml_2025_spotlightposter                     | Accept   | 294.16 MB 
+ICML       | 2025   | submitted_to_icml_2025                        | Reject   | 22.73 MB  
+NeurIPS    | 2021   | accept_oral                                   | Accept   | 17.91 MB  
+NeurIPS    | 2021   | accept_poster                                 | Accept   | 723.72 MB 
+NeurIPS    | 2021   | accept_spotlight                              | Accept   | 84.69 MB  
+NeurIPS    | 2021   | reject                                        | Reject   | 33.97 MB  
+NeurIPS    | 2022   | accept                                        | Accept   | 875.86 MB 
+NeurIPS    | 2022   | reject                                        | Reject   | 73.77 MB  
+NeurIPS    | 2024   | accept_oral                                   | Accept   | 96.75 MB  
+NeurIPS    | 2024   | accept_poster                                 | Accept   | 4.94 GB   
+NeurIPS    | 2024   | accept_spotlight                              | Accept   | 469.63 MB 
+NeurIPS    | 2024   | desk_reject                                   | Reject   | 12.04 MB  
+NeurIPS    | 2024   | reject                                        | Reject   | 209.33 MB 
+NeurIPS    | 2024   | withdrawn                                     | Reject   | 983.59 KB 
+NeurIPS    | 2025   | accept_oral                                   | Accept   | 76.09 MB  
+NeurIPS    | 2025   | accept_poster                                 | Accept   | 6.15 GB   
+NeurIPS    | 2025   | accept_spotlight                              | Accept   | 956.04 MB 
+NeurIPS    | 2025   | desk_reject                                   | Reject   | 23.86 MB  
+NeurIPS    | 2025   | reject                                        | Reject   | 263.15 MB 
+NeurIPS    | 2025   | withdrawn                                     | Reject   | 1.54 MB   
+TMLR       | 2022   | accepted_by_tmlr                              | Accept   | 407.86 MB 
+TMLR       | 2022   | rejected_by_tmlr                              | Reject   | 211.38 MB 
+TMLR       | 2022   | withdrawn_by_authors                          | Reject   | 12.35 MB  
+TMLR       | 2023   | accepted_by_tmlr                              | Accept   | 746.13 MB 
+TMLR       | 2023   | rejected_by_tmlr                              | Reject   | 301.24 MB 
+TMLR       | 2023   | withdrawn_by_authors                          | Reject   | 28.68 MB  
+TMLR       | 2024   | accepted_by_tmlr                              | Accept   | 1.32 GB   
+TMLR       | 2024   | rejected_by_tmlr                              | Reject   | 561.69 MB 
+TMLR       | 2024   | withdrawn_by_authors                          | Reject   | 70.86 MB  
+TMLR       | 2025   | accepted_by_tmlr                              | Accept   | 1.99 GB   
+TMLR       | 2025   | decision_pending_for_tmlr                     | Reject   | 282.03 MB 
+TMLR       | 2025   | rejected_by_tmlr                              | Reject   | 693.72 MB 
+TMLR       | 2025   | under_review_for_tmlr                         | Reject   | 690.22 MB 
+TMLR       | 2025   | withdrawn_by_authors                          | Reject   | 98.11 MB  
+TMLR       | 2026   | accepted_by_tmlr                              | Accept   | 242.29 MB 
+TMLR       | 2026   | rejected_by_tmlr                              | Reject   | 70.16 MB  
+TMLR       | 2026   | under_review_for_tmlr                         | Reject   | 227.4 MB  
+TMLR       | 2026   | withdrawn_by_authors                          | Reject   | 2.07 MB   
+
+========================================
+       📊 DATASET SIZE SUMMARY       
+========================================
+ ✅ ACCEPTED PAPERS:    47.27 GB
+ ❌ REJECTED PAPERS:     21.0 GB
+----------------------------------------
+ 📦 TOTAL DATASET:      68.26 GB
+========================================

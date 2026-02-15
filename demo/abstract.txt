@@ -1,0 +1,7 @@
+The Model Context Protocol (MCP) aims to create a standard for how Large Language Models use tools.
+However, most current research focuses on selecting tools from an existing pool.
+A more fundamental, yet largely overlooked, problem is how to populate this pool by converting the vast number of existing software projects into MCP-compatible services.
+To bridge this gap, we introduce Code2MCP, an agent-based framework that automatically transforms a GitHub repository into a functional MCP service with minimal human intervention.
+Code2MCP employs a multi-agent workflow for code analysis, environment setup, tool function design, and service generation, enhanced by a self-correcting loop to ensure reliability.
+We demonstrate that Code2MCP successfully transforms open-source computing libraries in scientific fields such as bioinformatics, mathematics, and fluid dynamics that are not available in existing MCP servers.
+By providing a novel automated pathway to unlock GitHub, the world's largest code repository, for the MCP ecosystem, Code2MCP serves as a catalyst to significantly accelerate the protocol's adoption and practical application.

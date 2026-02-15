@@ -1,0 +1,2 @@
+Figure 1: While most research focuses on the consumption of tools (right side), one bottleneck is their supply (left side).
+Code2MCPsolvesthe supply problem by converting the code repository into a standardized MCP-compliant tool.

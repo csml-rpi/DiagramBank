@@ -1,0 +1,42 @@
+name: DiagramBank
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pip=25.0.1
+  - python=3.12.9
+  - pip:
+      - faiss-cpu==1.10.0
+      - langchain-anthropic==0.2.4
+      - langchain-aws==0.2.13
+      - langchain-community==0.3.22
+      - langchain-core==0.3.83
+      - langchain-ollama==0.3.10
+      - langchain-openai==0.3.35
+      - langchain-google-genai==2.1.12
+      - langchain==0.3.27
+      - numpy==2.2.2
+      - matplotlib==3.10.3
+      - openai==1.109.1
+      - pydantic==2.10.6
+      - pydantic-core==2.27.2
+      - pydantic-settings==2.7.1
+      - pyyaml==6.0.2
+      - regex==2024.11.6
+      - typing-extensions==4.12.2
+      - typing-inspect==0.9.0
+      - boto3==1.36.26
+      - ipykernel==6.31.0
+      - transformers==4.55.0
+      - requests==2.32.4
+      - duckdb==1.4.1
+      - datasets==4.4.1
+      - PyMuPDF==1.26.7
+      - dill==0.4.0
+      - openreview-py==1.54.5
+      - open_clip_torch==3.2.0
+      - pillow==12.1.0
+      - torch==2.9.1
+      - google-genai==1.60.0
+      - seaborn==0.13.2
+      - tree==2.3.1

@@ -1,0 +1,59 @@
+## Diagram Specification
+
+The diagram should be a horizontal flow visualization showing the transformation from code repositories to MCP services, emphasizing the supply vs. consumption distinction mentioned in the caption.
+
+**Layout and Structure:**
+Use a similar horizontal pipeline layout as Reference 1, with clear sections separated by arrows. Divide the diagram into two main sections with distinct background colors: a light blue section on the left (supply side) and a light green section on the right (consumption side), similar to the color scheme in Reference 2.
+
+**Left Section - Supply Side (Problem):**
+- Background: Light blue shading similar to Reference 2's left panels
+- Title at top: "Tool Supply Problem" in bold black text
+- Show a GitHub logo with "GitHub Repositories" label
+- Below it, display multiple repository icons (folder symbols) with labels like "bioinformatics", "mathematics", "fluid dynamics"
+- Add a large question mark or warning symbol to indicate the bottleneck
+- Text annotation: "Vast code repositories not MCP-compatible"
+
+**Center Section - Code2MCP Solution:**
+- Use a distinctive box with rounded corners and a different background color (light yellow/cream)
+- Title: "Code2MCP Framework" in bold
+- Include a robot/agent icon similar to the developer icon in Reference 1
+- Show the transformation process with gears or processing symbols
+- Text: "Automated transformation" with "Multi-agent workflow" as subtitle
+- Use a thick arrow pointing right, similar to Reference 1's pipeline arrows
+
+**Right Section - Consumption Side (Existing Research Focus):**
+- Background: Light green shading similar to Reference 2's right panels
+- Title: "Tool Consumption (Existing Research Focus)"
+- Show an LLM icon (brain or AI symbol) connected to multiple tool icons
+- Display "MCP Services" with checkmarks indicating available tools
+- Include icons representing different tool categories
+- Text: "LLMs selecting from available tools"
+
+**Visual Elements:**
+- Use the same arrow style as Reference 1 for the main flow
+- Include small icons throughout: GitHub logo, folder icons for repositories, gear symbols for processing, brain icon for LLM
+- Add dotted lines around the existing research focus area to show it's well-established, similar to the dashed borders in Reference 2
+- Use consistent color coding: blue for supply/input, yellow for processing, green for output/consumption
+
+**Text Labels:**
+- Main title at the very top: "Code Repository to MCP Service Pipeline"
+- Section headers as described above
+- Small descriptive text under each major component
+- Arrow labels: "transforms" for the main transformation arrow
+
+The overall style should emphasize the bottleneck on the supply side and how Code2MCP bridges the gap, using visual cues like the color transition and the central processing element to show the solution's role in connecting the two sides.
+
+## Reference Diagrams
+
+
+--- Reference 1 ---
+
+[IMAGE OBJECT: PNG (826, 168)]
+
+--- Reference 2 ---
+
+[IMAGE OBJECT: PNG (1008, 550)]
+
+--- Reference 3 ---
+
+[IMAGE OBJECT: PNG (425, 369)]
