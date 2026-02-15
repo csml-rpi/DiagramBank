@@ -14,7 +14,7 @@ FIG_RAG_DIR = os.environ.get("FIG_RAG_DIR") # scratch folder to store all data f
 ICML_DIR = os.path.join(FIG_RAG_DIR, "OpenReview", "ICML") # scratch folder for data from ICML
 DB_PATH = os.path.join(ICML_DIR, "research.db") # database for ICML (Papers, Figures)
 
-JAR_PATH = os.environ.get("PDFFIGURES2_JAR", "/mnt/home/tzhang/pdffigures2/pdffigures2.jar")
+JAR_PATH = os.environ.get("PDFFIGURES2_JAR")
 JAVA_THREADS = "8"
 
 # =========================================================

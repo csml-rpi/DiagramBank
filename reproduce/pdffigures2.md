@@ -2,12 +2,6 @@
 
 This project uses **pdffigures2** to extract figure images + metadata from PDFs.
 
-After building the jar, set:
-```bash
-export PDFFIGURES2_JAR=/path/to/pdffigures2/target/scala-2.12/pdffigures2-assembly-*.jar
-```
-All venue pipelines read `PDFFIGURES2_JAR` at runtime.
-
 ## Local install (no admin access)
 
 ### 1) Java 8

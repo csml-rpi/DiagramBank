@@ -16,7 +16,7 @@ if not os.path.exists(TMLR_DIR):
     os.makedirs(TMLR_DIR)
 DB_PATH = os.path.join(TMLR_DIR, "research.db") # database for TMLR (Papers, Figures)
 
-JAR_PATH = os.environ.get("PDFFIGURES2_JAR", "/mnt/home/tzhang/pdffigures2/pdffigures2.jar")
+JAR_PATH = os.environ.get("PDFFIGURES2_JAR")
 JAVA_THREADS = "8"
 
 # =========================================================
