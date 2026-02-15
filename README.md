@@ -97,4 +97,7 @@ tree -L 4 $FIG_RAG_DIR
 To retrieve the similar diagrams for your figures, go to [query-diagram.ipynb](demo/query-diagrams.ipynb). Set `title`, `abstract`, and `caption` for your paper, and then keep running the third cell to get the similar diagrams.
 
 ## Huggingface
-The dataset and model card is hosted at [https://huggingface.co/datasets/zhangt20/DiagramBank](https://huggingface.co/datasets/zhangt20/DiagramBank).
+The dataset and model card is "hosted at [https://huggingface.co/datasets/zhangt20/DiagramBank](https://huggingface.co/datasets/zhangt20/DiagramBank).
+
+## Reproduce this work
+If you want to reproduce this work, see [reproduce/README.md](reproduce/README.md). Might take a few days up to a week.
