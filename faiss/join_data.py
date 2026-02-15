@@ -5,7 +5,7 @@ THRESHOLD = 0.85
 # --- JOIN RELATIONS ---
 SQL = f"""
 create or replace table Data as
-select p.platform, p.venue, p.year, p.title, p.abstract, p.keywords, p.areas, p.tldr, p.scores, p.decision, p.authors, p.author_ids, p.cdate, p.url, p.platform_id, p.bibtex, f.figure_path, f.figure_number, f.figure_caption, f.figure_context, f.confidence
+select p.platform, p.venue, p.year, p.title, p.abstract, p.keywords, p.areas, p.tldr, p.scores, p.decision, p.authors, p.author_ids, p.cdate, p.url, p.platform_id, p.bibtex, f.figure_path, f.figure_number, f.figure_caption, f.figure_context, f.figure_type, f.confidence
 from Papers p, Figures f
 where p.platform_id = f.platform_id and f.confidence > {THRESHOLD} and f.figure_type = 'diagram' and
 -- keep only diagrams from accepted papers
