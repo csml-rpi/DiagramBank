@@ -1,4 +1,5 @@
 huggingface/upload.py
+faiss/upload.py
 *.out
 
 # Byte-compiled / optimized / DLL files

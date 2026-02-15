@@ -22,25 +22,19 @@ def is_accepted(filename):
     Applies the specific logic to determine if a file represents an accepted paper.
     Logic: (decision like '%accept%' OR '%spotlight%' OR '%poster%' OR '%oral%')
     """
-    # Filename format from upload: {Conf}_{Year}_{Decision}.tar.gz
-    # We convert to lowercase to match the SQL 'lower()' logic
     name_lower = filename.lower()
-    
-    # We check if ANY of the keywords exist in the filename
     keywords = ["accept", "spotlight", "poster", "oral"]
     return any(k in name_lower for k in keywords)
 
-def get_file_list(api, subset):
-    """Returns a list of filenames to download based on the subset."""
+def get_file_list(api, subset, download_core=True):
+    """Returns a list of filenames to download based on the subset and core flag."""
     print(f"🔍 Fetching file list from {REPO_ID}...")
     all_files = api.list_repo_files(repo_id=REPO_ID, repo_type="dataset")
     
-    # Identify the different types of files
-    # 1. Infrastructure files (Always download these: DBs, FAISS)
+    # 1. Infrastructure files (DBs, FAISS)
     core_files = [f for f in all_files if "research_db" in f or "faiss" in f]
     
     # 2. Decision Tarballs (The images)
-    # Filter for .tar.gz but exclude the core files we already found
     image_tars = [f for f in all_files if f.endswith(".tar.gz") and f not in core_files]
     
     selected_images = []
@@ -55,8 +49,13 @@ def get_file_list(api, subset):
     print(f"   Found {len(core_files)} core files (DBs/Indices).")
     print(f"   Found {len(selected_images)} image archives for subset '{subset}'.")
     
-    # return core_files + 
-    return selected_images
+    # Return combination based on flag
+    if download_core:
+        print("   ✅ Including core files (FAISS/DBs) in download list.")
+        return core_files + selected_images
+    else:
+        print("   Example: Skipping core files.")
+        return selected_images
 
 def download_and_extract(filename):
     """Downloads a single file and extracts it to FIG_RAG_DIR."""
@@ -67,7 +66,7 @@ def download_and_extract(filename):
             repo_id=REPO_ID,
             filename=filename,
             repo_type="dataset",
-            local_dir=DEST_DIR, # Downloads directly to target
+            local_dir=DEST_DIR, 
             local_dir_use_symlinks=False
         )
         
@@ -85,18 +84,31 @@ def download_and_extract(filename):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Download DiagramBank Data.")
+    
     parser.add_argument(
         "--subset", 
         choices=["accept", "reject", "all"], 
         default="accept", 
-        help="Which set of papers to download (accept, reject, all)? (Default: accept)"
+        help="Which set of papers to download? (Default: accept)"
     )
+    
+    # Flag to control core files (Default: True)
+    # Using 'store_false' means the variable 'download_core' will be True 
+    # unless the user explicitly provides --no-core
+    parser.add_argument(
+        "--no-core", 
+        dest="download_core", 
+        action="store_false", 
+        default=True,
+        help="Skip downloading FAISS indices and research.db files."
+    )
+
     args = parser.parse_args()
 
     api = HfApi()
     
     # Get the list of files to process
-    files_to_download = get_file_list(api, args.subset)
+    files_to_download = get_file_list(api, args.subset, args.download_core)
     
     if not files_to_download:
         print("No files found matching criteria.")
@@ -104,9 +116,7 @@ if __name__ == "__main__":
 
     print(f"🚀 Starting download of {len(files_to_download)} files to {DEST_DIR}...")
     
-    # Process them one by one
     for filename in files_to_download:
-        # The API returns paths like 'data/ICLR_...tar.gz', we need to handle that
         download_and_extract(filename)
 
     print("\n🎉 Download and extraction complete!")

@@ -23,10 +23,10 @@ Figures(platform, platform_id, figure_number, figure_path, figure_caption, figur
 platform: OpenReview
 platform_id: unique paper id given by a platform
 figure_number: figure number in the paper
-figure_path: path to the raw image file
+figure_path: relative path to the raw image file
 figure_caption: figure caption
 figure_context: all paragraphs that referenced figure_number
-figure_type: workflow, concept, image
+figure_type: diagram
 confidence: classification confidence
 ```
 
@@ -49,10 +49,10 @@ url: direct link to the source platform
 platform_id: unique paper id given by a platform
 bibtex: paper bibtex
 figure_number: figure number in the paper
-figure_path: path to the raw image file
+figure_path: relative path to the raw image file
 figure_caption: figure caption
 figure_context: all paragraphs that referenced figure_number
-figure_type: workflow, concept, image
+figure_type: diagram
 confidence: classification confidence
 ```
 
