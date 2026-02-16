@@ -188,7 +188,7 @@ This is only used for embedding the *query text* at runtime, so the cost is very
 
 ### Retrieve similar diagrams for your figure
 
-To retrieve the similar diagrams for your figures, go to [query-diagram.ipynb](demo/query-diagrams.ipynb). Set `title`, `abstract`, and `caption` for your paper, and then keep running the third cell to get the similar diagrams.
+To retrieve the similar diagrams for your figures, go to [demo/query-diagram.ipynb](demo/query-diagrams.ipynb). Set `title`, `abstract`, and `caption` for your paper, and then keep running the third cell to get the similar diagrams.
 
 ---
 

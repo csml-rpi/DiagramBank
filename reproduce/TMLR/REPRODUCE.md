@@ -9,8 +9,6 @@ Some stages take **hours** (`extract_figures.py`, `extract_context.py`), and the
   conda activate DiagramBank
   ```
 - `FIG_RAG_DIR` is set
-- DuckDB database lives at:
-  - `${FIG_RAG_DIR}/OpenReview/TMLR/research.db`
 
 ## Stage 1 — Scrape OpenReview → JSONL
 
