@@ -56,7 +56,6 @@ class LLMService:
                 max_output_tokens=8192,
                 api_key=os.environ.get("GEMINI_API_KEY")
             )
-        # ---------------------------
         elif self.model_provider.lower() == "ollama":
             try:
                 response = requests.get("http://localhost:11434/api/version", timeout=2)

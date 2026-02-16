@@ -14,7 +14,7 @@ config = Config()
 model_name = config.generation_model
 resolution = "1K"
 
-NAME = "DiagramBank"
+NAME = "Code2MCP"
 OUTPUT_DIR = "images"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
