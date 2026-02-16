@@ -1,6 +1,6 @@
 # pdffigures2 setup
 
-This project uses **pdffigures2** to extract figure images + metadata from PDFs.
+This project uses [**pdffigures2**](https://github.com/allenai/pdffigures2) to extract figure images + metadata from PDFs.
 
 ## Local install (no admin access)
 
@@ -48,9 +48,10 @@ cd pdffigures2
 
 sbt assembly
 
-# Find the jar
-ls -la target/scala-2.12/*.jar
-
 # Set env var for the pipelines
-export PDFFIGURES2_JAR="$PWD/target/scala-2.12/pdffigures2-assembly-*.jar"
+export PDFFIGURES2_JAR="$PWD/pdffigures2.jar"
+```
+
+```bash
+vi ~/.bashrc # and then paste the paths
 ```
