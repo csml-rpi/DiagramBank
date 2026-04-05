@@ -89,19 +89,19 @@ export FIG_RAG_DIR=<a scratch folder with at least 60 GB of space>
 
 ```bash
 # 1. Default: Download Accepted papers + Core files (DBs/FAISS)
-python faiss/download_diagrambank.py
+python huggingface/download_diagrambank.py
 
 # 2. Download Everything: All papers (Accept + Reject) + Core files
-# python faiss/download_diagrambank.py --subset all
+# python huggingface/download_diagrambank.py --subset all
 
 # 3. Download Rejected papers only + Core files
-# python faiss/download_diagrambank.py --subset reject
+# python huggingface/download_diagrambank.py --subset reject
 
 # 4. Skip Core Files: Download only images (no DBs or FAISS)
-# python faiss/download_diagrambank.py --no-core
+# python huggingface/download_diagrambank.py --no-core
 
 # 5. Combine Flags: Download all images but skip core files
-# python faiss/download_diagrambank.py --subset all --no-core
+# python huggingface/download_diagrambank.py --subset all --no-core
 ```
 
 The script will automatically download and extract the diagram folder, FAISS index, duckdb database to `$FIG_RAG_DIR`. The process can take 15–30 minutes depending on network speed.
@@ -111,8 +111,8 @@ The script will automatically download and extract the diagram folder, FAISS ind
 ## Check installation
 
 ```bash
-du $FIG_RAG_DIR --summarize --human-readable 
-52G 
+du -sh $FIG_RAG_DIR
+51G 
 ```
 
 ```bash
