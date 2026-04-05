@@ -39,4 +39,4 @@ dependencies:
       - torch==2.9.1
       - google-genai==1.60.0
       - seaborn==0.13.2
-      - tree==2.3.1
+      - tree==0.2.4
