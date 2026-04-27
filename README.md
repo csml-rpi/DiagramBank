@@ -224,15 +224,11 @@ If you want to reproduce this work, see [reproduce/README.md](reproduce/README.m
 If you use DiagramBank in your research, please cite our paper (and consider citing the original papers for any retrieved exemplars you use directly).
 
 ```bibtex
-@misc{zhang2026diagrambank,
-  title        = {DiagramBank: A Large-scale Dataset of Diagram Design Exemplars with Paper Metadata for Retrieval-Augmented Generation},
-  author       = {Zhang, Tingwen and Yue, Ling and Xu, Zhen and Pan, Shaowu},
-  year         = {2026},
-  month        = feb,
-  howpublished = {Research Square},
-  note         = {Preprint (Version 1)},
-  doi          = {10.21203/rs.3.rs-8917857/v1},
-  url          = {https://doi.org/10.21203/rs.3.rs-8917857/v1}
+@article{zhang2026diagrambank,
+  title={DiagramBank: A Large-scale Dataset of Diagram Design Exemplars with Paper Metadata for Retrieval-Augmented Generation},
+  author={Zhang, Tingwen and Yue, Ling and Xu, Zhen and Pan, Shaowu},
+  journal={arXiv preprint arXiv:2604.20857},
+  year={2026}
 }
 ```
 
