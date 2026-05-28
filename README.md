@@ -1,6 +1,6 @@
 # DiagramBank
 
-**DiagramBank: A Dataset of Diagram Design Exemplars with Paper Metadata for Retrieval-Augmented Generation (RAG).**
+**DiagramBank: A Quality-Audited Dataset of Scientific Schematic Diagrams with Multi-Level Document Context.**
 
 DiagramBank is a large-scale, retrieval-ready collection of scientific schematic diagrams mined from top-tier AI/ML publications, paired with rich paper metadata and figure-local context. It is designed to support diagram retrieval, exemplar-driven scientific figure authoring, and broader multimodal research beyond generation.
 
@@ -224,9 +224,9 @@ If you want to reproduce this work, see [reproduce/README.md](reproduce/README.m
 If you use DiagramBank in your research, please cite our paper (and consider citing the original papers for any retrieved exemplars you use directly).
 
 ```bibtex
-@article{zhang2026diagrambank,
-  title={DiagramBank: A Large-scale Dataset of Diagram Design Exemplars with Paper Metadata for Retrieval-Augmented Generation},
-  author={Zhang, Tingwen and Yue, Ling and Xu, Zhen and Pan, Shaowu},
+@article{yue2026diagrambank,
+  title={DiagramBank: A Quality-Audited Dataset of Scientific Schematic Diagrams with Multi-Level Document Context},
+  author={Yue, Ling and Zhang, Tingwen and Jiaying Wang and Xu, Zhen and Pan, Shaowu},
   journal={arXiv preprint arXiv:2604.20857},
   year={2026}
 }
