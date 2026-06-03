@@ -1,3 +1,21 @@
+# DiagramBank reproduction metadata downloaded from Hugging Face
+reproduce/ICLR/iclr-figures.jsonl
+reproduce/ICLR/iclr-papers.jsonl
+reproduce/ICLR/iclr-replies.json
+reproduce/ICLR/iclr-urls.json
+reproduce/ICML/icml-papers.jsonl
+reproduce/ICML/icml-replies.json
+reproduce/ICML/icml-urls.json
+
+# DiagramBank release artifacts downloaded from Hugging Face
+data.jsonl
+SHA256SUMS
+data/
+OpenReview/
+faiss/data.jsonl
+faiss/research.db
+faiss/*_index/
+
 huggingface/upload.py
 faiss/upload.py
 *.out

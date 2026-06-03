@@ -1,3 +1,5 @@
-**/*.jsonl filter=lfs diff=lfs merge=lfs -text
-**/*.json filter=lfs diff=lfs merge=lfs -text
-**/*.ipynb filter=lfs diff=lfs merge=lfs -text
+# Large DiagramBank artifacts are hosted on Hugging Face.
+# Keep repository JSON/JSONL/notebook files as regular Git blobs.
+**/*.jsonl -filter -diff -merge text
+**/*.json -filter -diff -merge text
+**/*.ipynb -filter -diff -merge text
