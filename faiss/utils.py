@@ -1,34 +1,38 @@
-import os
 import json
+import os
 from pathlib import Path
-from typing import List, Dict
+from typing import Dict, List
 
-# file directories
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
 FIG_RAG_DIR = os.environ.get("FIG_RAG_DIR")
-ICLR_DIR = os.path.join(FIG_RAG_DIR, "OpenReview", "ICLR") # scratch folder for data from ICLR
-ICML_DIR = os.path.join(FIG_RAG_DIR, "OpenReview", "ICML") # scratch folder for data from ICML
-NeurIPS_DIR = os.path.join(FIG_RAG_DIR, "OpenReview", "NeurIPS") # scratch folder for data from NeurIPS
-TMLR_DIR = os.path.join(FIG_RAG_DIR, "OpenReview", "TMLR") # scratch folder for data from TMLR
+DATA_ROOT = Path(FIG_RAG_DIR).expanduser() if FIG_RAG_DIR else REPO_ROOT
 
-FAISS_DIR = os.path.join(FIG_RAG_DIR, "faiss")
-if not os.path.exists(FAISS_DIR):
-    os.makedirs(FAISS_DIR)
+# Optional external data root used by the downloader/demo image paths.
+OPENREVIEW_DIR = DATA_ROOT / "OpenReview"
 
-# database
-ICLR_DB = os.path.join(ICLR_DIR, "research.db")
-ICML_DB = os.path.join(ICML_DIR, "research.db")
-NeurIPS_DB = os.path.join(NeurIPS_DIR, "research.db")
-TMLR_DB = os.path.join(TMLR_DIR, "research.db")
-DATA_DB = os.path.join(FAISS_DIR, "research.db")
-DATA_JSONL = "data.jsonl"
+ICLR_DIR = OPENREVIEW_DIR / "ICLR"
+ICML_DIR = OPENREVIEW_DIR / "ICML"
+NeurIPS_DIR = OPENREVIEW_DIR / "NeurIPS"
+TMLR_DIR = OPENREVIEW_DIR / "TMLR"
 
-THRESHOLD = 0.85 # classification confidence threshold
+ICLR_DB = ICLR_DIR / "research.db"
+ICML_DB = ICML_DIR / "research.db"
+NeurIPS_DB = NeurIPS_DIR / "research.db"
+TMLR_DB = TMLR_DIR / "research.db"
+
+FAISS_DIR = DATA_ROOT / "faiss"
+DATA_DB = FAISS_DIR / "research.db"
+DATA_JSONL = DATA_ROOT / "data.jsonl"
+PRIMARY_RELEASE_SIZE = 57100
+INDEX_NAMES = ("title_index", "abstract_index", "caption_index")
+
 
 def load_jsonl_data(file_path: Path) -> List[Dict]:
-    """Load data from JSONL file"""
+    """Load a JSONL file into memory."""
     print(f"Loading jsonl data from {file_path}")
     data = []
-    with open(file_path, 'r', encoding='utf-8') as f:
+    with open(file_path, "r", encoding="utf-8") as f:
         for line in f:
             if line.strip():
                 data.append(json.loads(line))

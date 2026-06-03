@@ -1,94 +1,121 @@
-import duckdb
-from utils import ICLR_DB, ICML_DB, NeurIPS_DB, TMLR_DB, DATA_DB, DATA_JSONL
+"""
+Validate the downloaded DiagramBank FAISS release.
 
-THRESHOLD = 0.85
-# --- JOIN RELATIONS ---
-SQL = f"""
-create or replace table Data as
-select p.platform, p.venue, p.year, p.title, p.abstract, p.keywords, p.areas, p.tldr, p.scores, p.decision, p.authors, p.author_ids, p.cdate, p.url, p.platform_id, p.bibtex, f.figure_path, f.figure_number, f.figure_caption, f.figure_context, f.figure_type, f.confidence
-from Papers p, Figures f
-where p.platform_id = f.platform_id and f.confidence > {THRESHOLD} and f.figure_type = 'diagram' and
--- keep only diagrams from accepted papers
-(lower(p.decision) like '%accept%' or lower(p.decision) like '%spotlight%' or lower(p.decision) like '%poster%' or lower(p.decision) like '%oral%');
+Run `huggingface/download_diagrambank.py` first and set `FIG_RAG_DIR` to the
+same data root. The script expects:
+
+  - $FIG_RAG_DIR/data.jsonl
+  - $FIG_RAG_DIR/faiss/research.db
+  - $FIG_RAG_DIR/faiss/title_index/
+  - $FIG_RAG_DIR/faiss/abstract_index/
+  - $FIG_RAG_DIR/faiss/caption_index/
+
+It verifies that the metadata and FAISS index files match the 57,100-record
+cascade-filtered primary release.
 """
 
-def join_table(db_path):
-    con = duckdb.connect(db_path)
-    results = con.execute(SQL).fetchall()
-    print(results)
-    print(f"Constructed table Data at {db_path}")
-    con.close()
+import json
+import struct
+from collections import Counter
+from pathlib import Path
 
-def append_table(db_path):
-    """
-    Attaches the source database, creates the Data table in the target DB (if missing),
-    and appends the new records.
-    """
-    con = duckdb.connect(DATA_DB)
-    
-    # 1. Attach the source database (e.g., ICLR.db) as 'source_db'
-    con.execute(f"ATTACH '{db_path}' AS source_db")
-    
-    # 2. Create the destination table schema if it doesn't exist.
-    # We use 'WHERE 1=0' to copy the column structure without copying data yet.
-    con.execute("CREATE TABLE IF NOT EXISTS Data AS SELECT * FROM source_db.Data WHERE 1=0")
-    
-    # 3. Create Indices
-    # Unique index ensures we don't insert the same figure twice (idempotency)
-    con.execute("CREATE UNIQUE INDEX IF NOT EXISTS idx_unique_fig ON Data(platform_id, figure_number)")
-    con.execute("CREATE INDEX IF NOT EXISTS idx_venue ON Data(venue)")
-    
-    # 4. Insert data from the attached source_db into the main Data table
-    # INSERT OR IGNORE skips rows that violate the unique index
-    con.execute("INSERT OR IGNORE INTO Data SELECT * FROM source_db.Data")
-    
-    print(f"Appended data from {db_path} to {DATA_DB}")
-    con.close()
+from utils import DATA_JSONL, FAISS_DIR, INDEX_NAMES, PRIMARY_RELEASE_SIZE
+
+
+def summarize_jsonl(path: Path):
+    venues = Counter()
+    cascade_paths = Counter()
+    rows = 0
+
+    with path.open("r", encoding="utf-8") as f:
+        for line in f:
+            if not line.strip():
+                continue
+            record = json.loads(line)
+            rows += 1
+            venues[record.get("venue", "")] += 1
+            cascade_paths[record.get("cascade_path", "")] += 1
+
+    return rows, venues, cascade_paths
+
+
+def read_faiss_header(index_path: Path):
+    with index_path.open("rb") as f:
+        header = f.read(16)
+    if len(header) < 16:
+        raise ValueError(f"Invalid FAISS index header: {index_path}")
+
+    magic = header[:4]
+    dimension = struct.unpack("<I", header[4:8])[0]
+    total_vectors = struct.unpack("<Q", header[8:16])[0]
+    return magic, dimension, total_vectors
+
+
+def validate_indices():
+    for index_name in INDEX_NAMES:
+        index_path = FAISS_DIR / index_name / "index.faiss"
+        pkl_path = FAISS_DIR / index_name / "index.pkl"
+
+        if not index_path.exists():
+            raise FileNotFoundError(
+                f"Missing FAISS index: {index_path}. "
+                "Run huggingface/download_diagrambank.py and set FIG_RAG_DIR."
+            )
+        if not pkl_path.exists():
+            raise FileNotFoundError(
+                f"Missing FAISS docstore: {pkl_path}. "
+                "Run huggingface/download_diagrambank.py and set FIG_RAG_DIR."
+            )
+
+        magic, dimension, total_vectors = read_faiss_header(index_path)
+        if total_vectors != PRIMARY_RELEASE_SIZE:
+            raise ValueError(
+                f"{index_name} has {total_vectors:,} vectors; "
+                f"expected {PRIMARY_RELEASE_SIZE:,}"
+            )
+
+        print(
+            f"  {index_name:<14} vectors={total_vectors:,} "
+            f"dimension={dimension} magic={magic.decode(errors='replace')}"
+        )
+
 
 def main():
-    DB_PATHS = [ICLR_DB, ICML_DB, NeurIPS_DB, TMLR_DB]
-    
-    # 1. Process each database
-    for db_path in DB_PATHS:
-        # Create the temp 'Data' table inside the source DB
-        join_table(db_path)
-        # Move that data into the main DATA_DB
-        append_table(db_path)
-    
-    # 2. Summary Statistics
-    print("\n--- Summary Statistics ---")
-    con = duckdb.connect(DATA_DB)
-    
-    # Query to count diagrams per venue
-    stats_query = """
-    SELECT venue, COUNT(*) as diagram_count 
-    FROM Data 
-    GROUP BY venue 
-    ORDER BY diagram_count DESC
-    """
-    
-    results = con.execute(stats_query).fetchall()
-    
-    print(f"{'Venue':<10} | {'Diagrams'}")
-    print("-" * 25)
-    for venue, count in results:
-        print(f"{venue:<10} | {count}")
+    if not DATA_JSONL.exists():
+        raise FileNotFoundError(
+            f"Missing release metadata: {DATA_JSONL}. "
+            "Run huggingface/download_diagrambank.py and set FIG_RAG_DIR."
+        )
 
-    sql = f"""
-    copy Data to '{DATA_JSONL}' (format jsonl)
-    """
-    print(f"save joined data to {DATA_JSONL}")
-    result = con.execute(sql).fetchone()
-    print(result)
-    con.close()
+    rows, venues, cascade_paths = summarize_jsonl(DATA_JSONL)
+    if rows != PRIMARY_RELEASE_SIZE:
+        raise ValueError(
+            f"Expected {PRIMARY_RELEASE_SIZE:,} release records, found {rows:,}"
+        )
+
+    print(f"Validated release metadata: {DATA_JSONL}")
+    print(f"Records: {rows:,}")
+
+    print("\nVenue counts:")
+    for venue, count in sorted(venues.items()):
+        print(f"  {venue:<8} {count:>6,}")
+
+    print("\nCascade path counts:")
+    for path, count in sorted(cascade_paths.items()):
+        print(f"  {path:<34} {count:>6,}")
+
+    print("\nFAISS indices:")
+    validate_indices()
+
+    db_path = FAISS_DIR / "research.db"
+    if db_path.exists():
+        print(f"\nDuckDB metadata database: {db_path}")
+    else:
+        raise FileNotFoundError(
+            f"Missing DuckDB metadata database: {db_path}. "
+            "Run huggingface/download_diagrambank.py and set FIG_RAG_DIR."
+        )
+
 
 if __name__ == "__main__":
     main()
-    """
-    --- Summary Statistics ---
-Venue      | Diagrams
--------------------------
-ICLR       | 13241
-NeurIPS    | 12177
-ICML       | 7207
-TMLR       | 3677"""
