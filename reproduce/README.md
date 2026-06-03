@@ -37,3 +37,17 @@ Each venue has:
 - `REPRODUCE.md` — venue-specific runbook
 
 Start with the venue-specific `REPRODUCE.md`.
+
+## Raw metadata snapshots
+
+Large raw OpenReview metadata snapshots are hosted on Hugging Face instead of GitHub.
+Download them before running from an existing snapshot:
+
+```bash
+python ../huggingface/download_diagrambank.py --metadata-only
+```
+
+This extracts files such as `reproduce/ICLR/iclr-papers.jsonl` and
+`reproduce/ICML/icml-replies.json` under `$FIG_RAG_DIR`. Copy or symlink the
+needed venue files into the corresponding `reproduce/<venue>/` folder if you
+want to resume from the hosted snapshot instead of scraping from scratch.

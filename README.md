@@ -2,7 +2,7 @@
 
 **DiagramBank: A Quality-Audited Dataset of Scientific Schematic Diagrams with Multi-Level Document Context.**
 
-DiagramBank is a large-scale, retrieval-ready collection of scientific schematic diagrams mined from top-tier AI/ML publications, paired with rich paper metadata and figure-local context. It is designed to support diagram retrieval, exemplar-driven scientific figure authoring, and broader multimodal research beyond generation.
+DiagramBank is a large-scale, retrieval-ready collection of scientific schematic diagrams mined from top-tier AI/ML publications, paired with rich paper metadata and figure-local context. The primary release contains **57,100 cascade-filtered diagrams** and is designed to support diagram retrieval, exemplar-driven scientific figure authoring, and broader multimodal research beyond generation.
 
 ---
 
@@ -28,9 +28,18 @@ Each diagram record is enriched with both **figure-level** and **paper-level** i
 - Figure context: paragraphs that cite the figure in the paper body (how authors explain the figure)
 - Paper title + abstract (paper intent / domain)
 - Additional OpenReview metadata such as decision status, reviewer scores, keywords/subject areas, URLs, BibTeX, etc.
-- A CLIP-based label and confidence score (to support controllable filtering)
+- CLIP label/confidence fields and cascade verification fields (to support controllable filtering)
 
-The repository also provides core retrieval artifacts (e.g., FAISS indices + DuckDB) so you can get started quickly.
+The Hugging Face release provides the core retrieval artifacts (e.g., `data.jsonl`, FAISS indices, and DuckDB) so you can get started quickly without storing large files in this GitHub repo.
+
+### Release snapshot
+
+- Primary release: **57,100** cascade-filtered schematic diagrams
+- Venue counts: ICLR 20,516; ICML 11,267; NeurIPS 19,655; TMLR 5,662
+- Cascade paths: `t1_unanimous` 46,524; `t1_majority` 3,645; `t1_minority_gpt_tiebreak` 1,865; `t2_vlm_consensus_gpt_confirmed` 5,066
+- Quality estimate: 93.67% precision with 95% CI [90.11%, 97.22%]
+
+See [relations.md](relations.md) for the full `data.jsonl` schema, including `clip_type`, `clip_confidence`, `label_cascade`, and `cascade_path`.
 
 ---
 
@@ -80,15 +89,15 @@ conda env create --file environment.yml
 The default download is large. Make sure you have enough disk space.
 
 ```bash
-# Run it (downloads ~60GB of diagrams from accepted papers)
+# Run it (downloads accepted-paper image archives plus core files)
 # Set the target folder using the FIG_RAG_DIR environment variable
-export FIG_RAG_DIR=<a scratch folder with at least 60 GB of space>
+export FIG_RAG_DIR=<a scratch folder with enough disk space>
 ```
 
 ### 2) Download options
 
 ```bash
-# 1. Default: Download Accepted papers + Core files (DBs/FAISS)
+# 1. Default: Download accepted-paper images + core files (data.jsonl/FAISS/DBs)
 python huggingface/download_diagrambank.py
 
 # 2. Download Everything: All papers (Accept + Reject) + Core files
@@ -102,9 +111,15 @@ python huggingface/download_diagrambank.py
 
 # 5. Combine Flags: Download all images but skip core files
 # python huggingface/download_diagrambank.py --subset all --no-core
+
+# 6. Download only raw reproduction metadata archives for ICLR/ICML
+# python huggingface/download_diagrambank.py --metadata-only
+
+# 7. Include raw reproduction metadata archives with the selected image subset
+# python huggingface/download_diagrambank.py --metadata
 ```
 
-The script will automatically download and extract the diagram folder, FAISS index, duckdb database to `$FIG_RAG_DIR`. The process can take 15–30 minutes depending on network speed.
+The script will download `data.jsonl` and automatically extract the diagram folder, FAISS index, and DuckDB database to `$FIG_RAG_DIR`. Add `--metadata` to also download raw ICLR/ICML reproduction metadata archives. The process can take 15–30 minutes depending on network speed.
 
 ---
 
@@ -118,6 +133,7 @@ du -sh $FIG_RAG_DIR
 ```bash
 tree -L 4 $FIG_RAG_DIR
 
+├── data.jsonl
 ├── faiss
 │   ├── abstract_index
 │   │   ├── index.faiss
@@ -201,13 +217,15 @@ To retrieve the similar diagrams for your figures, go to [demo/query-diagram.ipy
 ## Hugging Face
 
 The dataset and model card is hosted at:
-[https://huggingface.co/datasets/zhangt20/DiagramBank](https://huggingface.co/datasets/zhangt20/DiagramBank)
+[https://huggingface.co/datasets/ghzlmc/DiagramBank](https://huggingface.co/datasets/ghzlmc/DiagramBank)
 
 ---
 
 ## Reproduce this work
 
 If you want to reproduce this work, see [reproduce/README.md](reproduce/README.md). Might take a few days up to a week.
+
+The scripts under `reproduce/` cover raw OpenReview collection, PDF figure extraction, context extraction, and first-stage CLIP classification. The primary release is the cascade-filtered 57,100-record dataset hosted on Hugging Face as `data.jsonl`; [faiss/join_data.py](faiss/join_data.py) validates the downloaded release artifacts.
 
 ---
 
@@ -231,5 +249,4 @@ If you use DiagramBank in your research, please cite our paper (and consider cit
   year={2026}
 }
 ```
-
 
