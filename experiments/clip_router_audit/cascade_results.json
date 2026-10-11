@@ -1,0 +1,71 @@
+{
+  "sample_size": 500,
+  "true_diagrams": 90,
+  "note": "Post-reclassification results. All numbers independently verified.",
+  "rules": {
+    "old_clip_threshold_0.85": {
+      "description": "CLIP predicts diagram AND confidence >= 0.85",
+      "tp": 34, "fp": 2, "fn": 56, "tn": 408,
+      "precision": 0.9444, "recall": 0.3778, "f1": 0.5397,
+      "included": 36
+    },
+    "clip_diagram_any_conf": {
+      "description": "CLIP predicts diagram (any confidence)",
+      "tp": 80, "fp": 45, "fn": 10, "tn": 365,
+      "precision": 0.6400, "recall": 0.8889, "f1": 0.7442,
+      "included": 125,
+      "fn_details": [
+        {"venue": "ICLR", "platform_id": "1qP3lsatCR", "figure_number": "3", "clip_type": "plot", "clip_conf": 0.538},
+        {"venue": "ICLR", "platform_id": "lEXrEcrbmV", "figure_number": "1", "clip_type": "plot", "clip_conf": 0.532},
+        {"venue": "ICML", "platform_id": "2v91xhNdsz", "figure_number": "4", "clip_type": "plot", "clip_conf": 0.618},
+        {"venue": "ICML", "platform_id": "9UExQpH078", "figure_number": "1", "clip_type": "plot", "clip_conf": 0.535},
+        {"venue": "ICML", "platform_id": "V2bw5SmpF6", "figure_number": "1", "clip_type": "plot", "clip_conf": 0.579},
+        {"venue": "ICML", "platform_id": "fM9xTkpAdu", "figure_number": "8", "clip_type": "plot", "clip_conf": 0.587},
+        {"venue": "NeurIPS", "platform_id": "P6uZ7agiyCT", "figure_number": "4", "clip_type": "plot", "clip_conf": 0.504},
+        {"venue": "NeurIPS", "platform_id": "iooQFm2qHf", "figure_number": "3", "clip_type": "photo", "clip_conf": 0.628},
+        {"venue": "NeurIPS", "platform_id": "qE3knKF1rz", "figure_number": "2", "clip_type": "plot", "clip_conf": 0.617},
+        {"venue": "NeurIPS", "platform_id": "zVrQeoPIoQ", "figure_number": "7", "clip_type": "plot", "clip_conf": 0.671}
+      ]
+    },
+    "clip_plus_either_vlm": {
+      "description": "CLIP=diagram AND (GPT=diagram OR Haiku=diagram)",
+      "tp": 78, "fp": 16, "fn": 12, "tn": 394,
+      "precision": 0.8298, "recall": 0.8667, "f1": 0.8478,
+      "included": 94
+    },
+    "clip_plus_both_vlms": {
+      "description": "CLIP=diagram AND GPT=diagram AND Haiku=diagram",
+      "tp": 75, "fp": 8, "fn": 15, "tn": 402,
+      "precision": 0.9036, "recall": 0.8333, "f1": 0.8671,
+      "included": 83
+    },
+    "majority_vote": {
+      "description": ">=2 of 3 judges (CLIP, GPT, Haiku) say diagram",
+      "tp": 88, "fp": 34, "fn": 2, "tn": 376,
+      "precision": 0.7213, "recall": 0.9778, "f1": 0.8302,
+      "included": 122,
+      "fn_details": [
+        {"venue": "ICLR", "platform_id": "z8sxoCYgmd", "figure_number": "38", "clip_type": "diagram", "clip_conf": 0.568, "gpt": "other", "haiku": "other"},
+        {"venue": "ICML", "platform_id": "3zWSmhNSa7", "figure_number": "2", "clip_type": "diagram", "clip_conf": 0.938, "gpt": "other", "haiku": "other"}
+      ]
+    },
+    "union_vote": {
+      "description": ">=1 of 3 judges say diagram",
+      "tp": 90, "fp": 79, "fn": 0, "tn": 331,
+      "precision": 0.5325, "recall": 1.0000, "f1": 0.6950,
+      "included": 169
+    }
+  },
+  "clip_missed_diagrams_softmax": [
+    {"platform_id": "9UExQpH078", "clip_top1": "plot", "diagram": 0.664, "plot": 0.336, "photo": 0.000, "other": 0.000},
+    {"platform_id": "P6uZ7agiyCT", "clip_top1": "plot", "diagram": 0.674, "plot": 0.325, "photo": 0.000, "other": 0.001},
+    {"platform_id": "qE3knKF1rz", "clip_top1": "plot", "diagram": 0.538, "plot": 0.450, "photo": 0.003, "other": 0.008},
+    {"platform_id": "fM9xTkpAdu", "clip_top1": "plot", "diagram": 0.485, "plot": 0.514, "photo": 0.000, "other": 0.000},
+    {"platform_id": "V2bw5SmpF6", "clip_top1": "plot", "diagram": 0.475, "plot": 0.509, "photo": 0.000, "other": 0.016},
+    {"platform_id": "lEXrEcrbmV", "clip_top1": "plot", "diagram": 0.465, "plot": 0.532, "photo": 0.001, "other": 0.001},
+    {"platform_id": "1qP3lsatCR", "clip_top1": "plot", "diagram": 0.458, "plot": 0.538, "photo": 0.000, "other": 0.003},
+    {"platform_id": "2v91xhNdsz", "clip_top1": "plot", "diagram": 0.370, "plot": 0.615, "photo": 0.008, "other": 0.007},
+    {"platform_id": "zVrQeoPIoQ", "clip_top1": "plot", "diagram": 0.243, "plot": 0.717, "photo": 0.007, "other": 0.033},
+    {"platform_id": "iooQFm2qHf", "clip_top1": "photo", "diagram": 0.492, "plot": 0.038, "photo": 0.455, "other": 0.015}
+  ]
+}

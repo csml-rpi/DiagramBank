@@ -3,7 +3,7 @@ from dataclasses import dataclass
 @dataclass
 class Config:
     # model_provider: str = "bedrock"
-    # model_version: str = "arn:aws:bedrock:us-west-2:991404956194:application-inference-profile/f6tueltt82a2"
+    # model_version: str = "<Bedrock inference profile ARN from your AWS account>"
     # temperature: float = 0.6
 
     model_provider: str = "gemini"

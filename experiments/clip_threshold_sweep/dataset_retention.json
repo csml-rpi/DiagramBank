@@ -1,0 +1,51 @@
+[
+  {
+    "threshold": 0.5,
+    "estimated_diagrams_retained": 87677,
+    "total_clip_diagrams": 87677,
+    "retention_pct": 100.0,
+    "total_figures": 459278
+  },
+  {
+    "threshold": 0.6,
+    "estimated_diagrams_retained": 79249,
+    "total_clip_diagrams": 87677,
+    "retention_pct": 90.4,
+    "total_figures": 459278
+  },
+  {
+    "threshold": 0.7,
+    "estimated_diagrams_retained": 71193,
+    "total_clip_diagrams": 87677,
+    "retention_pct": 81.2,
+    "total_figures": 459278
+  },
+  {
+    "threshold": 0.8,
+    "estimated_diagrams_retained": 61861,
+    "total_clip_diagrams": 87677,
+    "retention_pct": 70.6,
+    "total_figures": 459278
+  },
+  {
+    "threshold": 0.85,
+    "estimated_diagrams_retained": 55343,
+    "total_clip_diagrams": 87677,
+    "retention_pct": 63.1,
+    "total_figures": 459278
+  },
+  {
+    "threshold": 0.9,
+    "estimated_diagrams_retained": 48825,
+    "total_clip_diagrams": 87677,
+    "retention_pct": 55.7,
+    "total_figures": 459278
+  },
+  {
+    "threshold": 0.95,
+    "estimated_diagrams_retained": 24654,
+    "total_clip_diagrams": 87677,
+    "retention_pct": 28.1,
+    "total_figures": 459278
+  }
+]

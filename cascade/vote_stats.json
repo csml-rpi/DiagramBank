@@ -1,0 +1,24 @@
+{
+  "total_candidates": 94176,
+  "tier1_candidates": 60717,
+  "tier2_candidates": 33459,
+  "vote_categories": {
+    "t1_unanimous_diagram": 46524,
+    "t1_majority_diagram": 3645,
+    "t1_minority_diagram": 10548,
+    "t2_one_vlm_diagram": 2602,
+    "t2_no_vlm_diagram": 25685,
+    "t2_vlm_consensus": 5172
+  },
+  "tier1_kept": 50169,
+  "tier2_vlm_consensus": 5172,
+  "sent_to_tiebreak": 19365,
+  "pending_labels": 0,
+  "kept_per_venue": {
+    "ICLR": 17992,
+    "ICML": 10010,
+    "NeurIPS": 17148,
+    "TMLR": 5019
+  },
+  "note": "Tier 1 (CLIP=diagram): majority vote (>=2/3). Tier 2 (non-diagram, low conf): VLM consensus (both VLMs=diagram) \u2192 sent to GPT-5.4."
+}

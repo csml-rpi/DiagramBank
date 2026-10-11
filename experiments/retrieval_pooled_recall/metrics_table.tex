@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Retrieval performance under multi-VLM consensus ground truth. Strict: score $\geq 2$; Lenient: score $\geq 1$.}
+\label{tab:recall}
+\small
+\begin{tabular}{llrr}
+\toprule
+Threshold & Metric & Hierarchical & Caption-only \\
+\midrule
+Strict ($\geq 2$) & Recall@3 & 0.143 & 0.229 \\
+ & Recall@5 & 0.165 & 0.237 \\
+ & Recall@10 & 0.278 & 0.431 \\
+ & Recall@20 & 0.390 & 0.468 \\
+\midrule
+Lenient ($\geq 1$) & Recall@3 & 0.050 & 0.052 \\
+ & Recall@5 & 0.075 & 0.089 \\
+ & Recall@10 & 0.138 & 0.159 \\
+ & Recall@20 & 0.246 & 0.278 \\
+\bottomrule
+\end{tabular}
+\end{table}

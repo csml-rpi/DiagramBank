@@ -1,0 +1,840 @@
+{
+  "schema_version": 1,
+  "repo_id": "ghzlmc/DiagramBank",
+  "requested_revision": "main",
+  "resolved_commit": "8d8d408b4ccff03d76e8cbd7b2f39a0914405c7e",
+  "generated_at_utc": "2026-07-10T18:48:33.840108Z",
+  "method": "Hugging Face repository-tree metadata only; no repository file payloads were downloaded. The sha256 field is the Git LFS object ID.",
+  "summary": {
+    "repository_files": 116,
+    "repository_bytes": 75716366286,
+    "sha256_payload_files": 112,
+    "sha256_payload_bytes": 75716353492,
+    "git_blob_only_files": 4,
+    "git_blob_only_bytes": 12794,
+    "image_archives": 104,
+    "image_archive_bytes": 72953644773,
+    "accepted_image_archives": 51,
+    "accepted_image_archive_bytes": 50527389922,
+    "other_image_archives": 53,
+    "other_image_archive_bytes": 22426254851,
+    "core_payload_files": 6,
+    "core_payload_bytes": 2515002370,
+    "reproduction_metadata_archives": 2,
+    "reproduction_metadata_archive_bytes": 247706349
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 2508,
+      "sha256": null,
+      "xet_hash": null,
+      "git_blob_oid": "7e8672d1d0d253a2d5b57c88649314b464052a6a"
+    },
+    {
+      "path": "README.md",
+      "size": 4526,
+      "sha256": null,
+      "xet_hash": null,
+      "git_blob_oid": "a996da8db37a3acd935c01a7cf6e109ccba0b0a3"
+    },
+    {
+      "path": "SHA256SUMS",
+      "size": 170,
+      "sha256": null,
+      "xet_hash": null,
+      "git_blob_oid": "67e280c612f9d43d4a74e90f87a6a258cb487c08"
+    },
+    {
+      "path": "data.jsonl",
+      "size": 260628174,
+      "sha256": "6b8eb310827342405eafc4f383054aa6357b78c2f97613675f09b55870f19708",
+      "xet_hash": "c80468f9df9c15b32dc72fb73c549afe4247c417c6f8a45eab7eb77f84b1a49e",
+      "git_blob_oid": "49ee22bd77eaaae2701401983471c56fc758042f"
+    },
+    {
+      "path": "data/ICLR_2017_accept_oral.tar.gz",
+      "size": 22168167,
+      "sha256": "ba9b82fa7965c8c203001224779102321c505a1ae657f1a713f53604b9b9d468",
+      "xet_hash": "e1a2eb3ab05c12c6ce0db9a544e7e6a9d7bc568cff3a095e8d54a7599392b5fb",
+      "git_blob_oid": "0eeb315620c5b5b52d1f8f8a4ced97c828df5664"
+    },
+    {
+      "path": "data/ICLR_2017_accept_poster.tar.gz",
+      "size": 219667684,
+      "sha256": "fe12734bc8eec5a5ddbfec956feb621740dd449eadaca23230afc8ef88e59dd8",
+      "xet_hash": "b268f6dd638b8eab027cbff9ef1681011de99ee2383ffdfd42cb09f2eca8e9b5",
+      "git_blob_oid": "23381a8235e786765739ee4406828d50652506b7"
+    },
+    {
+      "path": "data/ICLR_2017_invite_to_workshop_track.tar.gz",
+      "size": 32048254,
+      "sha256": "93dcc862509c334e19fa49d274ba338e75187689daa3c70ad69bdc5f883b03f0",
+      "xet_hash": "fe3034f996028c48bc04d693a17b90abf8ef7d21331f4d3cd7bebc9797222bdd",
+      "git_blob_oid": "36011ac193eca2667fd0265d602a02595febd70c"
+    },
+    {
+      "path": "data/ICLR_2017_reject.tar.gz",
+      "size": 16472422,
+      "sha256": "0a2bfc8a43b45c4631ef52b63c86c5122d775be19034b4dea7610001a3240807",
+      "xet_hash": "f8c25efa4713d495693e6f7427c10ceb2e7b8b1c3b34474d55c9ca5f7c8123a4",
+      "git_blob_oid": "2dceef46b800e770479adbd1a566a5d36447c907"
+    },
+    {
+      "path": "data/ICLR_2018_accept_oral.tar.gz",
+      "size": 47872079,
+      "sha256": "20da7a96c92a70df5d61654d76c652d296fe3adb31a17574d9e2767a31dc45d1",
+      "xet_hash": "5f7413fe46f74803bc97b8ab3bd8f286b47806ab2eae44e06a02cfbf2e05f10c",
+      "git_blob_oid": "70bb8d2a5fd9aae0d292f81c1b4c8a728ddbd81a"
+    },
+    {
+      "path": "data/ICLR_2018_accept_poster.tar.gz",
+      "size": 411653544,
+      "sha256": "b09cf2c4b84679fd72d683681c0f6c8aaf54524ed3b37a082729719a246dc632",
+      "xet_hash": "c97de79f7c354870bcebac883647a506707b93a065a49e156620c48d8a6f5621",
+      "git_blob_oid": "6b0de1dfb958076a432bf28e0a3b6ede3538bed7"
+    },
+    {
+      "path": "data/ICLR_2018_invite_to_workshop_track.tar.gz",
+      "size": 65841399,
+      "sha256": "eeedf40d7125296c62981648a27d8d309858b7f0461dc8e598d48e24027139d4",
+      "xet_hash": "3d2477a5b757415a5d024a1b1accb569e888c1ad151ae09414fd9927d74b2f99",
+      "git_blob_oid": "9922af962ef1fe3ec0bec47dee2d4c388b688fe6"
+    },
+    {
+      "path": "data/ICLR_2018_reject.tar.gz",
+      "size": 74613569,
+      "sha256": "b8b297e393b59bf2dcb0d18ca47ee02a4ae9bb718299834a0f5efd293813834f",
+      "xet_hash": "961a6fb1257e3a74999538edfae5a86f6e193924279d23a2ec642d6f55df0c58",
+      "git_blob_oid": "002f297c5566e63e0b93ea16524541e43104c6c1"
+    },
+    {
+      "path": "data/ICLR_2018_withdrawn.tar.gz",
+      "size": 50005938,
+      "sha256": "96a9616b09acc498c6a70c5d1e2286b138899f62559b4b4b95b88241dc40784a",
+      "xet_hash": "6a3e897e03b59617344ae0557f2ada9fad9b97781578c17778f8e88109254446",
+      "git_blob_oid": "fa7393837087ba64f1fdab666e703c8ef68c01c1"
+    },
+    {
+      "path": "data/ICLR_2019_accept_oral.tar.gz",
+      "size": 43584391,
+      "sha256": "6e5fd16dde0929f79219b5f3d727a46f1fc47126078edc6450fa0764dfdd0599",
+      "xet_hash": "b22018b33a045bde8b009b260c55f4c8bff77806196006fb0afdc57deb67d83d",
+      "git_blob_oid": "cf141877b7f285ae83fbb8cb57a4214a2b4d1d87"
+    },
+    {
+      "path": "data/ICLR_2019_accept_poster.tar.gz",
+      "size": 611393484,
+      "sha256": "484fd1e6290f702cadafa570580e74bfa1c329683788c623053e7e85667bf475",
+      "xet_hash": "b2a19416cdb6a0fc6594786095e73d6014b3cee5bbd203e8770574e9d962f1d3",
+      "git_blob_oid": "03cb2a4d4f15fafd94db9417ec5526782a775a9f"
+    },
+    {
+      "path": "data/ICLR_2019_reject.tar.gz",
+      "size": 755716100,
+      "sha256": "0575c7dda605c74e8ef7a6fa4e957a1eccd9538347322c491cb9e0b97435c3ae",
+      "xet_hash": "5b258d11e7aaf04ada3be64a82b775dcf8e0243f7a495b00a6b94b79699708f6",
+      "git_blob_oid": "7dd4e381750ecd18ec285664cfd2239f917f71b0"
+    },
+    {
+      "path": "data/ICLR_2019_withdrawn.tar.gz",
+      "size": 141253134,
+      "sha256": "97ef3c59fda248bd9c4d573c2a46d2fc50315f13624825efa753717a1c416208",
+      "xet_hash": "ef4465b5ee59c78ea3e974a47945709cc34539505f1d60b4f92c704cd827def1",
+      "git_blob_oid": "14c934d22c28c9ff105850f84eda8d666375b021"
+    },
+    {
+      "path": "data/ICLR_2020_accept_poster.tar.gz",
+      "size": 575451071,
+      "sha256": "262a4fb154259a5e7962a2d52bc39ecc7e06b0062ad801ee1cdce2c21644bf5a",
+      "xet_hash": "af6fc320ae23fb3c82271e4ed61ac0791284f31bf23aeef64f8c33697a402add",
+      "git_blob_oid": "6a08ec221f5b3236049b19daff136e8517aee423"
+    },
+    {
+      "path": "data/ICLR_2020_accept_spotlight.tar.gz",
+      "size": 117755376,
+      "sha256": "82e3560a8d326453312f723289bcc5e641440ef710eb25d856ab7c4e9e0b0598",
+      "xet_hash": "5d373a970e93b5ce74040ee352729a15e662c176eada8696bfe9849984405532",
+      "git_blob_oid": "d539cfe70068ceebaed4be470c73b21a76e24b31"
+    },
+    {
+      "path": "data/ICLR_2020_accept_talk.tar.gz",
+      "size": 52764056,
+      "sha256": "79663430935d6e5ead25722b940c540f41d28ccf23057a80fffd6ded9e8dd372",
+      "xet_hash": "dce7c6d3bf6e72c16c32c11a97f8731fdcbc4b965469e4848e1a017934d0e264",
+      "git_blob_oid": "046ce9697f0b0a83020914523f704b94a0a8ee70"
+    },
+    {
+      "path": "data/ICLR_2020_desk_reject.tar.gz",
+      "size": 7361121,
+      "sha256": "518569e576c63f223bbc867733e859381629bda5e57945b6d36c1ae95545c0ca",
+      "xet_hash": "bafd62b89965108acdb0fc6c0092064e564cfe0025520dee5907fa813a95750e",
+      "git_blob_oid": "2fb3a1c3e1c7c1051bfb550b8c32fe704b9beefc"
+    },
+    {
+      "path": "data/ICLR_2020_reject.tar.gz",
+      "size": 1444724836,
+      "sha256": "be0f7f7013e67f668155395051bbb3b5b3c818cc33e084364366a6acb0cba83b",
+      "xet_hash": "5f83d4c1a9ea7227eff55b7cc662af2830e0d32891e1de67237c726d7ddfbafd",
+      "git_blob_oid": "7bb18f4bb90e18d984ed905eec44e140445ce0bc"
+    },
+    {
+      "path": "data/ICLR_2020_withdrawn.tar.gz",
+      "size": 337522571,
+      "sha256": "6cb5f0e61602ad0709d9f96b5d81f07418bb7eca87828ecf199be0f65899b5a5",
+      "xet_hash": "b0b3fe814a0b22cb5455d96dd96ce9bd358cf007ac567c0c958efca13058a931",
+      "git_blob_oid": "19f13250e284c41b76009b9abd5736b0c3ee5803"
+    },
+    {
+      "path": "data/ICLR_2021_accept_oral.tar.gz",
+      "size": 104065087,
+      "sha256": "b5fc0df8f715eb4541672fc988b005772b88eb3aa95108667e9c442aa79ca10c",
+      "xet_hash": "a787d2234f64850d1f08291e233c6db42b038c4a5fc250dbfaf103f037025879",
+      "git_blob_oid": "c9f6be6ea3867537ab2dccd2ccf528caea4909da"
+    },
+    {
+      "path": "data/ICLR_2021_accept_poster.tar.gz",
+      "size": 907041867,
+      "sha256": "8c7ecb8238a567d91829263eeb5347b04d53323cc8c7b592c1c95ad221fc5750",
+      "xet_hash": "c4c7579a99dd3e0cb8bbf0cc2131c095719e5cf9b63e4ed7f4afe97c4649fa47",
+      "git_blob_oid": "6f7d280ba3bf7c56f897890818b8585baf64febd"
+    },
+    {
+      "path": "data/ICLR_2021_accept_spotlight.tar.gz",
+      "size": 195789296,
+      "sha256": "a0030889c09dd85f122dcfd59c177e70fce87a3e04f04237e73cdb50afb80e9c",
+      "xet_hash": "1f0c238669e8dd8f3f95318ddfe81c6d12465538dad18984f8a6b9d90341acaa",
+      "git_blob_oid": "73632304947df0eaaf30bc2be661f5fedb0b38cc"
+    },
+    {
+      "path": "data/ICLR_2021_concerns_raised_can_publish_with_adjustment.tar.gz",
+      "size": 1491963,
+      "sha256": "f2efae3f6afce2a30ed77ff531fec5d5e918fe559693063d7cf14ca27c65d911",
+      "xet_hash": "5491d5e70eae86f33a257ac7d33f2527ff3a3f10dfd27a40c42044473cb9c546",
+      "git_blob_oid": "4865af4d142590b272dbc8d80a3dd796c9ce265d"
+    },
+    {
+      "path": "data/ICLR_2021_desk_reject.tar.gz",
+      "size": 5600961,
+      "sha256": "bcff7d8ebb7e3dbde7d7170e05e38daaf1e5718009e0494e5a761a8785aa2062",
+      "xet_hash": "dc7b51e165c550d12f175fb78875b37c066ff000007f85964bea04fb4add0054",
+      "git_blob_oid": "1cc520311c16341001a361e6ccab861cbfe91ca1"
+    },
+    {
+      "path": "data/ICLR_2021_no_judgement_proceed_with_normal_process.tar.gz",
+      "size": 219829,
+      "sha256": "58b0e90524a331630db621505d44f3c0ea5b6925fc4e26a54fe49373bb82b8e9",
+      "xet_hash": "5921ba7312648ef5d68df11b77c8a37f29ebcd250bf8a39819bf1da6e52c6a9f",
+      "git_blob_oid": "77664eba82314d826311af26243a29b023dbd77d"
+    },
+    {
+      "path": "data/ICLR_2021_reject.tar.gz",
+      "size": 1550015789,
+      "sha256": "24a7b00c4399371981c02aa894e8bd4cafdf9127946303945171ace4d4856de7",
+      "xet_hash": "fb522d359ba83cec019ff5e53a251f1ba4ff89f8ae57e1fa6c16d0d35db98f29",
+      "git_blob_oid": "cb99b0e03c7cb3ca44e4a90306da9b75df8ee51c"
+    },
+    {
+      "path": "data/ICLR_2021_significant_concerns_do_not_publish.tar.gz",
+      "size": 1152854,
+      "sha256": "8a3b4298e63f07297a2f9b0c326c529b749d605b60c23e9ef7360376fd08e52f",
+      "xet_hash": "69d24bea5bbe32d7c33f0ceb5acde64487565bd16d8d5894e82ed57de891a9fc",
+      "git_blob_oid": "daa296308f64577a1699c93409ea8defb9bc08d3"
+    },
+    {
+      "path": "data/ICLR_2021_withdrawn.tar.gz",
+      "size": 471293978,
+      "sha256": "7a7f400448ad9565a3de28f0e7aac05e4a98f0c928814fefe180e40d01e5a752",
+      "xet_hash": "7f0b026cdc9aa50e0d4966c0bc1c2ff133afd761e29bba515e637791ce9e6146",
+      "git_blob_oid": "a9d9c8d94059cd9e883d5efdb62542c10dc36fd4"
+    },
+    {
+      "path": "data/ICLR_2022_accept_oral.tar.gz",
+      "size": 100486247,
+      "sha256": "6176dec0ce847d7e520adc85114860eb96d9f485bfbbab51f29106ba594127d0",
+      "xet_hash": "18357c89a6e4929898aacffba025e79ca0687cbcb812c5647180343569815695",
+      "git_blob_oid": "f85a0a4f8b8c30375ae803bb13f845faf480abb2"
+    },
+    {
+      "path": "data/ICLR_2022_accept_poster.tar.gz",
+      "size": 1313261457,
+      "sha256": "8fcd72aa5d40258bebd29fcc6e720175a941c5e990ee268cbadc128bce1e7834",
+      "xet_hash": "8fc5c3c64cac99245be3f4d196941ba5b225846cc080601888c34799cf67b4c8",
+      "git_blob_oid": "b13d9025dfe11e2c3d973b6697a43a60f5bb9888"
+    },
+    {
+      "path": "data/ICLR_2022_accept_spotlight.tar.gz",
+      "size": 191674568,
+      "sha256": "6524f5018840d60127d286c9e62a8ad66772caff000def2cd272b30ef9827ab9",
+      "xet_hash": "25833c3706207dd04d7f14a8be408089e1bfe4f7abee70a3e1a236bcce15ad1f",
+      "git_blob_oid": "84a04806bede31695c09278e5db81235d9d6449e"
+    },
+    {
+      "path": "data/ICLR_2022_desk_reject.tar.gz",
+      "size": 11284640,
+      "sha256": "af178802ab98856c2049d901cb06e3efdf6dd13be0ab5aff6965321500dd2ae1",
+      "xet_hash": "5b46d325c118c8fc57ae563130b510bab9edd715cdffed120280316bd2e5c55c",
+      "git_blob_oid": "ab1a6ffdbefba0da451590765ced33c40041d478"
+    },
+    {
+      "path": "data/ICLR_2022_reject.tar.gz",
+      "size": 1459366048,
+      "sha256": "9929d153da62d671c741a208b4ce4b49b02c02be154f1e2b0139f011a162a881",
+      "xet_hash": "cafd41ffe2dc51256e806f528034f6f7811f33946295974dd35040a9dba6aac6",
+      "git_blob_oid": "e1882baaec2effd51b8a43efffd1f3d293b9db1e"
+    },
+    {
+      "path": "data/ICLR_2022_withdrawn.tar.gz",
+      "size": 739475301,
+      "sha256": "3b204be45b41990e2fd2e34ea3fdc3713a35343e41725dc783521edb6db8767e",
+      "xet_hash": "5ba143b1437f30f6001ae12b3bef72537374e5efaf2fec9097917fd03ba3afec",
+      "git_blob_oid": "f6542fd5c9352d17c5bce549b2cd6e7f9aee7e87"
+    },
+    {
+      "path": "data/ICLR_2023_accept_notable_top_25.tar.gz",
+      "size": 534472482,
+      "sha256": "9fea08656f5838cba905343ac0291ba44a7556f0c89b39c202c05f6ea01303af",
+      "xet_hash": "481ed0633afb505ec79b3615ed8b62712126e4a04dfed8c2e6685a32ed0324de",
+      "git_blob_oid": "0b238356289d2a2460416433aff63f2c1c2def55"
+    },
+    {
+      "path": "data/ICLR_2023_accept_notable_top_5.tar.gz",
+      "size": 113320499,
+      "sha256": "339a30b7ca1f58497c4b5d1d47a0b2a4661ef1f6a8171e551c6d8b78ecfa267c",
+      "xet_hash": "6815e2ada9ad3bef4e5e6c07e75214dc2753ff35b0fc4b00a7f72c8a6de3d07e",
+      "git_blob_oid": "ee633966c886130edf90a9235f37aff8cb22aed6"
+    },
+    {
+      "path": "data/ICLR_2023_accept_poster.tar.gz",
+      "size": 1399944022,
+      "sha256": "30450837cdba5348cff6064182c861027ae511ad12043f00041fe5d749e9ae6a",
+      "xet_hash": "60cc30d903b23cbbd16e3a0b3098a05335d278eddfc7bf31cc0aa06f426f7fbd",
+      "git_blob_oid": "0f3959a05232bbae61edcfd24d03d3b93a10b700"
+    },
+    {
+      "path": "data/ICLR_2023_desk_reject.tar.gz",
+      "size": 18104944,
+      "sha256": "48191bfc03b35f5a0488cf3a4e89fb1bd44f9c907738e948a4a1181eb49f1195",
+      "xet_hash": "3d79e7c2d90ced1c5324bfc6e640ec54117d49471274dadbd6f42349378e9545",
+      "git_blob_oid": "0b74d8176160dceb186c0c60f0f423166717839f"
+    },
+    {
+      "path": "data/ICLR_2023_reject.tar.gz",
+      "size": 2148935660,
+      "sha256": "a56b420cb6d6f8359b65190cb44549b21b0c24d87e6da5dc1126501693efca09",
+      "xet_hash": "8ca0905f5d944a754a35d18e3d287b521d5fbc12e8a46e1e64f3b66f4219d9c1",
+      "git_blob_oid": "c2561c335b9d05af2cf2f306126f2ec2020cebfb"
+    },
+    {
+      "path": "data/ICLR_2023_withdrawn.tar.gz",
+      "size": 1180943789,
+      "sha256": "151fe93620766fa8a10150687124f49fa54686b13949999d43d10ffa5b3f163b",
+      "xet_hash": "4b98f646d90b01a9c451c13020f35aafefe30064cfa9d6883fb61e5f624f1292",
+      "git_blob_oid": "bbcaf0018b62986bc2e882d6ca00b925e5369519"
+    },
+    {
+      "path": "data/ICLR_2024_accept_oral.tar.gz",
+      "size": 194247249,
+      "sha256": "12c0922238b0c9a4d6e5f0c735bff494c529e12514175720509445e02b290300",
+      "xet_hash": "c81f428fc477a4cc3e4d58c22ea5e28e8f4dae415dd5a4b689091557fe3c1255",
+      "git_blob_oid": "862185c9a9a3f4d0e62e9036d187254a471ef7a0"
+    },
+    {
+      "path": "data/ICLR_2024_accept_poster.tar.gz",
+      "size": 2906085140,
+      "sha256": "e0742551635e3f4a0dd98477f51c8c861c2b210d795c5cbbf888031658b2df8f",
+      "xet_hash": "43b121351eaaf7101d4438360b26733f5e8565504314ce487bbb37beed0edabe",
+      "git_blob_oid": "4f44ceee7c8b55b487cc032c671f34e5e2e81c60"
+    },
+    {
+      "path": "data/ICLR_2024_accept_spotlight.tar.gz",
+      "size": 526845533,
+      "sha256": "5cdc0466aae86e79901bae6cca1664c01831f4a79360b66b117e54331bb062b3",
+      "xet_hash": "d2ed3db3a460e87bbcf60c0358807075ff074bea52030bfd6e2c0cc65765f12f",
+      "git_blob_oid": "4d8a2f2f31f7f3581e0c247832668a9f85d12429"
+    },
+    {
+      "path": "data/ICLR_2024_reject.tar.gz",
+      "size": 3529608946,
+      "sha256": "a292914ea57a701fe82adc73ce47c5bd51aea1d5b4e9af5e380ec147c0bf11b2",
+      "xet_hash": "3c83e3a05cfb98a8ea4ccd0fa2f15a9f1f4f3f8d5bea33254b44518aa2688f94",
+      "git_blob_oid": "7cea7d7921ee8cbd5fa8ff80c775481b22171824"
+    },
+    {
+      "path": "data/ICLR_2025_accept_oral.tar.gz",
+      "size": 471404331,
+      "sha256": "bba313ed45053750e3953675e9b9cd2900744fc29a5be601229a5141d9497a10",
+      "xet_hash": "fc9b30ea16971ebc2205147339298b99fbae595fac67ecf19104f3b2ee352ee3",
+      "git_blob_oid": "9773f82986f2a9819e11b1633e35fed4ad27d428"
+    },
+    {
+      "path": "data/ICLR_2025_accept_poster.tar.gz",
+      "size": 5460396858,
+      "sha256": "23c2e5b39aaa6622266a0f5618408fc8ea2d0df8dc223adbacf5e75299ea21b6",
+      "xet_hash": "01e42652eebf3bacc4a1707042895d16643d7c7c0ce15d1b5a8ba2775f13bc8e",
+      "git_blob_oid": "4775c6fb3abf30decc16efe9482460e496acaf3a"
+    },
+    {
+      "path": "data/ICLR_2025_accept_spotlight.tar.gz",
+      "size": 749391375,
+      "sha256": "1344f747ddac6fc7d5a836be5412fd440ddc3006ada981486b3f1b7e6c0c8cbd",
+      "xet_hash": "0d4b2ea7746b5da83c42822f70dc235c274ee9d905829e336efd1f4ff635a795",
+      "git_blob_oid": "e2067a1cda07e2f77a238aed84765116638ae8d6"
+    },
+    {
+      "path": "data/ICLR_2025_reject.tar.gz",
+      "size": 1053508962,
+      "sha256": "13d5bd60f2b7a99360a4611b17894608d29876f3839b600d08800603ede68eba",
+      "xet_hash": "ce0a2a364979dad75ab8e3ecf02b265ccd372d8f076493c6e2b8ceca68c582b3",
+      "git_blob_oid": "32f8cab7b25a9b63f0289b98fdd7c378a439ef69"
+    },
+    {
+      "path": "data/ICLR_2026_accept_oral.tar.gz",
+      "size": 119456146,
+      "sha256": "7e960e8ce5e21515d27566552bef0af5d124b668aa30b64ec07908124dbaf846",
+      "xet_hash": "0b89e1e6e53e71e00489999bc2ddce793a81b947055b200f6968265b5c9ce976",
+      "git_blob_oid": "4b810dba01f9c46a16a3a65651970c7513208dce"
+    },
+    {
+      "path": "data/ICLR_2026_accept_poster.tar.gz",
+      "size": 2685336181,
+      "sha256": "4e60bf702411b5d05f1ae6016fe43d1fc704e8cc1aed9a376a6bdea18cdf4aac",
+      "xet_hash": "f524406a870f0868318fbcdde9a4155e9e785524b05a10d46e76dc089e612658",
+      "git_blob_oid": "23e9e83014a3184189eec235d89d1723f611560b"
+    },
+    {
+      "path": "data/ICLR_2026_conditional_accept_oral.tar.gz",
+      "size": 38787,
+      "sha256": "8e6221304befd6f05aa9115a727fec9e2797d02d2f1bf0455dc361e46dca7aee",
+      "xet_hash": "f7ab28a26eb6ac6e54d8d6019f7496b65160050f063293b07a85d273383afd8e",
+      "git_blob_oid": "c05f2565229dcdc7e8d2eda6779f6994b9b7aae9"
+    },
+    {
+      "path": "data/ICLR_2026_conditional_accept_poster.tar.gz",
+      "size": 13025021,
+      "sha256": "9b3ff35e91584a067a49f0e0642bccea3f15d3f9b6c642154af87e91accc0390",
+      "xet_hash": "5198c1056b64e92b509a48ff132298700841fe9e4b0ace36c3a0667cf5b66ecb",
+      "git_blob_oid": "9d49b55eddb1706ecc24d958296ed9c2a520231b"
+    },
+    {
+      "path": "data/ICLR_2026_desk_reject.tar.gz",
+      "size": 5877359,
+      "sha256": "e792d80ffb622ddbab697e654c4cab45cb6340651bc90e293a667621acbe834f",
+      "xet_hash": "b208e1a9dab201456dee9dae28b15f7db93feb3a3210ddafb8b9bbf723a00719",
+      "git_blob_oid": "a6221935e48d3e4dccfd4ca28b58dc7d47fe3f2b"
+    },
+    {
+      "path": "data/ICLR_2026_pending_unknown.tar.gz",
+      "size": 162526003,
+      "sha256": "9c9584f9a578cbe8193acde797d2e86d6fb332f65cfa89c03e6936b141ee36fd",
+      "xet_hash": "58c42357b27cdc6c1416e187744c2e2d47b46cbb07d533aa23ac259aa17e70a1",
+      "git_blob_oid": "9e72f2ffcaea449e31c4532f798c02135f598732"
+    },
+    {
+      "path": "data/ICLR_2026_reject.tar.gz",
+      "size": 1778763829,
+      "sha256": "57a65a3dc9dce7fcacc8260df6bf7cf6706db446101a1314a20164d1c6c163dd",
+      "xet_hash": "560cfb60adec358ad830ba92b7cd6537643f8a9991325b70fa0825c2033e7e1c",
+      "git_blob_oid": "2e5bcb06cceab6d5a038730b71b57242dd58c41b"
+    },
+    {
+      "path": "data/ICLR_2026_withdrawn.tar.gz",
+      "size": 1313342708,
+      "sha256": "3a98cdf376ce5e27d4f844247c65235d32e8aa10335782e13dd0dcef3f130e16",
+      "xet_hash": "a7e0aa80fd26ae4c3cc525f1a97544816a26dcc1819b0aeee4e409241d08db3e",
+      "git_blob_oid": "7efc11f6ca4d4b50845cf21742cf739d7bdbc262"
+    },
+    {
+      "path": "data/ICLR_research_db.tar.gz",
+      "size": 196089423,
+      "sha256": "ff9d6dea9762c11e60402270c95c59db4f6257fdaf7ad11bc5f2b3abffa2ee49",
+      "xet_hash": "6462d2957a4e1c4b721c6c619c4b465a5d3a0e44cc74caab29e7b08883152c14",
+      "git_blob_oid": "de976d398f7f3808d8144309cacce69c23dd9b20"
+    },
+    {
+      "path": "data/ICML_2023_icml_2023_oralposter.tar.gz",
+      "size": 213626448,
+      "sha256": "0e36293da16c3609a3c50ec1bc30b044c6da8434477f28ffae997189708ddcb7",
+      "xet_hash": "3492954ac376ca990ddf582d0d7a6d15c4a8ca8098f1576e51cd275a1da73b9c",
+      "git_blob_oid": "c2486027191932910bedc87f095c59a6ba882701"
+    },
+    {
+      "path": "data/ICML_2023_icml_2023_poster.tar.gz",
+      "size": 1773962455,
+      "sha256": "db45b60eb44a0fde98116ad11f05d72c7b6e8e3b79206141dc26d5206d4a1e13",
+      "xet_hash": "0427c49b668ef501c8b7c477f8f559449e4b2b30f90779e873c0abe45deddb3d",
+      "git_blob_oid": "764fdc4a8fef65fa509f350e740d471912a31fae"
+    },
+    {
+      "path": "data/ICML_2024_icml_2024_oral.tar.gz",
+      "size": 145608284,
+      "sha256": "81e51210b4127a605e65ab52a20059df38fd6402d976a90cc9acdb8902d58130",
+      "xet_hash": "f4c5fc8873c14f67a287ee025b171233750bcd9906bdb0252e73aef3c9ae57a2",
+      "git_blob_oid": "9ecc5a245c775f6453213793c69bfab303a3ff4c"
+    },
+    {
+      "path": "data/ICML_2024_icml_2024_poster.tar.gz",
+      "size": 2955416680,
+      "sha256": "8cbd71cef3100c709a626e586f905285203d6a65d72365b9d407aabcd0edc69f",
+      "xet_hash": "c0c2b709eb2db14b26968c782e5be4ecacd2fdc9e08664bb34227bf72f6bd810",
+      "git_blob_oid": "cb9861985051ea02c6ebf25b86ef349b60b37db9"
+    },
+    {
+      "path": "data/ICML_2024_icml_2024_spotlight.tar.gz",
+      "size": 225184870,
+      "sha256": "f60a51ab144002bfca957011ef128bceaf126a0d499132994793c2323b2d262b",
+      "xet_hash": "a76e5c31390e08f3299eb64dd730987d5bab5d98e3a28e9c06ede43b22949ddf",
+      "git_blob_oid": "c96a749875f6b6879a16669faea3edcd6522d837"
+    },
+    {
+      "path": "data/ICML_2024_withdrawn.tar.gz",
+      "size": 85424,
+      "sha256": "6e6c2bdfc06105baa07306ed548fb4e7a8642206a67d418ba8b632fc063d001d",
+      "xet_hash": "0a90c760ec78e39fa8085371d1c7c25e7bd0b9128d8305221a0c3cccc691658f",
+      "git_blob_oid": "4e58db9a8a3a9c14b56b54cc0928b096c1ac989b"
+    },
+    {
+      "path": "data/ICML_2025_desk_reject.tar.gz",
+      "size": 12018816,
+      "sha256": "3b668c21ac60b67ea3020bfd758c7e0146c9b9e355f58f9bed3c4e98268b9421",
+      "xet_hash": "61acca6d9517aaba56dbaf86767cdbea61b199d6d12a1e7e7edf7d5286e1a534",
+      "git_blob_oid": "3f04860c0d3752b93732f70673bc70539634507a"
+    },
+    {
+      "path": "data/ICML_2025_icml_2025_oral.tar.gz",
+      "size": 173208609,
+      "sha256": "8ba6bd36c25b02715cf21f1e8f494ff8d6201ae9938e0db7cfc25fede844c399",
+      "xet_hash": "020cfa3bbf58cbea6b36508912e66dccac06851a19d2bafbed24abb67456ba75",
+      "git_blob_oid": "01811a9a885e4d9ecd1bb97e2fa02abc818365cd"
+    },
+    {
+      "path": "data/ICML_2025_icml_2025_poster.tar.gz",
+      "size": 4345459145,
+      "sha256": "8484c66e1dd4e4705efc7f1a27ab93a7519938034ee155cc60271ad05833a690",
+      "xet_hash": "952bb210792cfe71f1b278cc78e41b5a84432829a127b519b21974f63a85c307",
+      "git_blob_oid": "4f06bc962aaca9a71b7b5b15323d42cb7458a9a3"
+    },
+    {
+      "path": "data/ICML_2025_icml_2025_retracted_by_authors.tar.gz",
+      "size": 3094266,
+      "sha256": "d5c0e1edfb65be17591626b4cce10813563715def8d47fc4ccdaec0eef2db4f5",
+      "xet_hash": "28e4030d67311f77618c588554c898fc6e305cf5a63a1b1782ba2106e6e0395a",
+      "git_blob_oid": "f7fc9647e7f2d0edd538a8858446ac3dddeae666"
+    },
+    {
+      "path": "data/ICML_2025_icml_2025_spotlightposter.tar.gz",
+      "size": 306418156,
+      "sha256": "3f523b00fc45a2d7dc77037c760d44f204a37efe8fefaca2a34cafd6c46b68a6",
+      "xet_hash": "c48f81deb470c4b1afef9941182e81e2a20102a69b380d2034d346cf76468ad3",
+      "git_blob_oid": "0e69634e271e05599aaa641a0b34242bf50409dd"
+    },
+    {
+      "path": "data/ICML_2025_submitted_to_icml_2025.tar.gz",
+      "size": 23667405,
+      "sha256": "dbaa2cf76ef751fa49933675fd1234968edf5645f99151e5d4795b5f0e75c7fe",
+      "xet_hash": "6c208f27e04b6ecb06bc822d40ed5fbcdbe8d59060a3667367266d040c31ea0e",
+      "git_blob_oid": "67f2d97580fc50abafb1c167c7d3bf56ae81667b"
+    },
+    {
+      "path": "data/ICML_research_db.tar.gz",
+      "size": 40205015,
+      "sha256": "166cc182bfa270ae555e507e6219e016c28c55720c7ba903036534009dfd777f",
+      "xet_hash": "4bcf1eed3ab4bc042970f437c5c219bc0c3c2b924b2f0207a3707aa7848c8b90",
+      "git_blob_oid": "1b13c2e3515733eca3b85c7978915b75c85b255a"
+    },
+    {
+      "path": "data/NeurIPS_2021_accept_oral.tar.gz",
+      "size": 18730918,
+      "sha256": "767725e336c2fc0d0202ceada69e7399e39184d2bb77473cf810b9f61f9c3820",
+      "xet_hash": "2a9dff9adf15661bcaf2964a15a3df8696f9a1c66a5377521bf96179f2924165",
+      "git_blob_oid": "26842e02f9b25b5884ccbc19f5030d9877e6fe26"
+    },
+    {
+      "path": "data/NeurIPS_2021_accept_poster.tar.gz",
+      "size": 756150213,
+      "sha256": "a19c846bd96f20dd10933a1363a549ea7f8ee45926d4016d4fa8a6f1ffab558f",
+      "xet_hash": "b2779fc384c047efbfa1c7673a54be03ad2f0fabaf80f00b9a6a770714636a63",
+      "git_blob_oid": "ca4e9358d627f77166748100b87001e6d6815508"
+    },
+    {
+      "path": "data/NeurIPS_2021_accept_spotlight.tar.gz",
+      "size": 88489225,
+      "sha256": "1376a58298f694388a39e3f82b5c8f856a7a61918f1aeb4f36d262aadc9ed181",
+      "xet_hash": "27f224f61313eedf69112c5b4d2b9c4c41d10a6eebbba8a3f7e0897e7289c40e",
+      "git_blob_oid": "ef46791b53fa405c95747935d4b9ed815694a9c2"
+    },
+    {
+      "path": "data/NeurIPS_2021_reject.tar.gz",
+      "size": 35426081,
+      "sha256": "cbbd1d7e3559c76523694e9178565d9ff6e7e35622d2d9b455ea2fad28ba681d",
+      "xet_hash": "cc17cc1f632782597fa10dc8d3cc2cecde5d1973385d98caae6065949258a1ec",
+      "git_blob_oid": "b1f22b12f456fa75c18c33dd909bbe248317f82d"
+    },
+    {
+      "path": "data/NeurIPS_2022_accept.tar.gz",
+      "size": 915229016,
+      "sha256": "0b893c24d07296895288851a6483084181f69d912aae61174b658cc681cfcb78",
+      "xet_hash": "331f049dc2bd167cf5b509bcd2a090689e9c4b83cfc1eaf3fc701a5dd9d1d74f",
+      "git_blob_oid": "5cbba8a45e2f03469e14610e3c0707de982c3adc"
+    },
+    {
+      "path": "data/NeurIPS_2022_reject.tar.gz",
+      "size": 77057287,
+      "sha256": "ffa74cc7145b18fc02cfd8d8080699cbc667799aa1b2d7a749a8517a4042f185",
+      "xet_hash": "1e4d9d90e6aff8d63d4c61f590dc8a7e31b1322c34bbe937f5df31ef669b16ba",
+      "git_blob_oid": "212396433043a0cd8e6f288a45ad1241a00f4208"
+    },
+    {
+      "path": "data/NeurIPS_2024_accept_oral.tar.gz",
+      "size": 101150071,
+      "sha256": "3ce197922612bf908140fb6d4ac9885d432f573bbbd2cc6e6837c233fbaa1e9e",
+      "xet_hash": "0683cb3a785f234a7c85ef7bf6cffb39fbaebf81506defca66ea6f76d93eef57",
+      "git_blob_oid": "0ea5919c1444674a6ed35b1e8e7f3d2eeebc9fcc"
+    },
+    {
+      "path": "data/NeurIPS_2024_accept_poster.tar.gz",
+      "size": 5283682146,
+      "sha256": "882cf9d12ed5de7cca8141e25d2d15b671b92e62abfa0755d92722939ef4b2b5",
+      "xet_hash": "15f7dd9db2a754706e9fb54de663d46fac2bec97192a02c48edc81e2355d1201",
+      "git_blob_oid": "43ecd2c3e1adcde4d2afd732dbe091c380f1d496"
+    },
+    {
+      "path": "data/NeurIPS_2024_accept_spotlight.tar.gz",
+      "size": 490835840,
+      "sha256": "4edd0631f05ca720d1be64539f87c550e0aa9bd7a1faeb3156eeddc729a1b7a8",
+      "xet_hash": "ff49f29b171a67b6803dfeb205d49b08db1bb289bf37e81045465c4ff40cfc34",
+      "git_blob_oid": "b58be280a1f8199c588eef2254ffd9cfb2663939"
+    },
+    {
+      "path": "data/NeurIPS_2024_desk_reject.tar.gz",
+      "size": 12552765,
+      "sha256": "dc102d91032f41933bfb520dd12afc86b293e728150025cef851b879c19e9ac4",
+      "xet_hash": "f4cb74eb7b71d510ae702b3539b90a4922e28b110a6ca1bfcfbcce34816577f3",
+      "git_blob_oid": "28d610dde23981024bc0402a14b94355bffae8fd"
+    },
+    {
+      "path": "data/NeurIPS_2024_reject.tar.gz",
+      "size": 218559257,
+      "sha256": "f9eb077723ab877f6d8d12a653cd69da33e47cc5fda1ced4e92d8d665620a646",
+      "xet_hash": "709a1c303e8828ba60cd33ad11196813e522ae6484661e80aa27dc4386f2543e",
+      "git_blob_oid": "b1a2ee5e42ebacde5a4d5c5c41627b1b1f4266c5"
+    },
+    {
+      "path": "data/NeurIPS_2024_withdrawn.tar.gz",
+      "size": 991196,
+      "sha256": "163ff57cd98be682b1f9a61d7070d7951ec39828091bc9f1bc3abf06888e24e1",
+      "xet_hash": "9a38dad2bd316d0c64d46c5207ff2bb32fd554b26ec98a7f73168d1a47875c93",
+      "git_blob_oid": "9800f0272ea9f5c2943e8c8eb5ee2a1c61bfdf8c"
+    },
+    {
+      "path": "data/NeurIPS_2025_accept_oral.tar.gz",
+      "size": 79397140,
+      "sha256": "91e3a62e564547e61bdfaffd0fa8e6e7c91bb529aed2d424f5089e7e5ba36e9f",
+      "xet_hash": "2fccd8477fea645685b02d0cfcb11b87ffd4fdb1fcf557251d7280c449fa145d",
+      "git_blob_oid": "4f03cecb62db3487376f32c1611bbff73c422f13"
+    },
+    {
+      "path": "data/NeurIPS_2025_accept_poster.tar.gz",
+      "size": 6584791252,
+      "sha256": "e424b8f6ded64ebc0c6a34a7e5b75f4ce81a56906d0fc277f307b91006ddef2f",
+      "xet_hash": "7be8e483ec6b99c4afc8bc4cb0dcc0de63dcfc963e88401c0cc8ea76a72086e3",
+      "git_blob_oid": "1c03c37e7767629454114296656ede6098ba1c2d"
+    },
+    {
+      "path": "data/NeurIPS_2025_accept_spotlight.tar.gz",
+      "size": 998632332,
+      "sha256": "9970c4121ea82f116f61ca4570a9f4d19f9e1be9256b84cb78887d94687fe091",
+      "xet_hash": "8c81287936815f20c2c7a04e1a3ec1ba128d4e493777f745115fcc5f351b710d",
+      "git_blob_oid": "b54f93f8973b1623ae85ee826d1bab06adfa345f"
+    },
+    {
+      "path": "data/NeurIPS_2025_desk_reject.tar.gz",
+      "size": 25002450,
+      "sha256": "301845742e9b48c6bb9b97f92db781459a03ee93469181e447ed3e1ed0ab5b56",
+      "xet_hash": "569ae2eb69ee6df75eae11a6ff4e4432eabfd3b52aa283347843d58dd50c53d4",
+      "git_blob_oid": "dab841545c8fca2fb532fdbaa0cb814db06b486b"
+    },
+    {
+      "path": "data/NeurIPS_2025_reject.tar.gz",
+      "size": 274879857,
+      "sha256": "4d9404595933d113aa0cb2fe1cb35414d06a7b4dad1eddb46cea736c408a7312",
+      "xet_hash": "6823783663203978615b37e6293d3e1f3827e244fbb5ad8d5859b593419669d4",
+      "git_blob_oid": "038f7c5612383f383a4332046ed64b50341aefa3"
+    },
+    {
+      "path": "data/NeurIPS_2025_withdrawn.tar.gz",
+      "size": 1606116,
+      "sha256": "3e2a90622a4e0453c06765ee38c06b6313025a8f4b695e9d234aee8395e2f9ad",
+      "xet_hash": "83d2a616f451b08a4fbe1eb3910b2a1f3af98cf15ae82721ec566a2b06840bc0",
+      "git_blob_oid": "facba17738c09d3585196a377904f82cecae5a9e"
+    },
+    {
+      "path": "data/NeurIPS_research_db.tar.gz",
+      "size": 77966068,
+      "sha256": "d541efbdd37abacbde7af03fd371326f8d3fe04668996d59e4f699492e59ccee",
+      "xet_hash": "ad4f649e73288184fd54da28235a7e35208fcbc2ed43569d1af768e0343f7d71",
+      "git_blob_oid": "f6dd76ca9b3d5e81c314b95ba460c743082456a6"
+    },
+    {
+      "path": "data/TMLR_2022_accepted_by_tmlr.tar.gz",
+      "size": 425570363,
+      "sha256": "fef3dbfb43e4edcb0004c68fc78049f7224f665e336f940f8fbb83d21760a876",
+      "xet_hash": "bc1db145836edcf0a8df2321e82cbf6aa2786cd489d79225a547af27aa60d610",
+      "git_blob_oid": "6df52f1c7fe92528c301ab47b894d3df264fcaa9"
+    },
+    {
+      "path": "data/TMLR_2022_rejected_by_tmlr.tar.gz",
+      "size": 220268934,
+      "sha256": "91112d518eaa242485f558d29ff5980f54e7a935304958cf4da49812164c84e2",
+      "xet_hash": "5ed3221be4903e700ba449eba87f45b740f90c3081ef81cbd69f23d6315ef82a",
+      "git_blob_oid": "b78ec1c4166eec54d6bae3a9d0172b54dde91a75"
+    },
+    {
+      "path": "data/TMLR_2022_withdrawn_by_authors.tar.gz",
+      "size": 12807694,
+      "sha256": "b06ff2e267ecda2d21c114ec71eefa12c88ef28349c283a83059f22c8fce2554",
+      "xet_hash": "47767cdbe6f67ad2ec9d4b10167497a0f0cbd9bcf6aa680e31221abc9a651367",
+      "git_blob_oid": "c6e9cb5e86eaf355fa39cf8e075d1cd503291275"
+    },
+    {
+      "path": "data/TMLR_2023_accepted_by_tmlr.tar.gz",
+      "size": 776462320,
+      "sha256": "37a95463ab2b150360511bd6ec40fd128a683020b1f5fdfdaeda609c1f45aa7d",
+      "xet_hash": "af4034e202de74bea04c309927a939cab10d16fcc9ada9a74cd53890174a3ad6",
+      "git_blob_oid": "c32880ea43acdf89d65084b2ae243dbbe6a605ce"
+    },
+    {
+      "path": "data/TMLR_2023_rejected_by_tmlr.tar.gz",
+      "size": 313295084,
+      "sha256": "51788f4f662381f6a5ffa06906b3c427fb2182e41627a3f7f08b5d16eabe88f1",
+      "xet_hash": "c789d8c29fbe6fc1b40a26207829b4a51ee5aed2f1b021b932322b54660eaa73",
+      "git_blob_oid": "9f771f37b569d1b39108e91ef954104a1eccce59"
+    },
+    {
+      "path": "data/TMLR_2023_withdrawn_by_authors.tar.gz",
+      "size": 29839879,
+      "sha256": "7a19a082872f2002cc8b9347c710a240f00831d40aedc6d492ef53c805be8eb7",
+      "xet_hash": "e28271897437441cf2add9de5a6189cff8c7cbf04b4b26c58e8bd8e2c26d5758",
+      "git_blob_oid": "f6116ee33f11f752e609595f6fc54c7cb9da568c"
+    },
+    {
+      "path": "data/TMLR_2024_accepted_by_tmlr.tar.gz",
+      "size": 1404747653,
+      "sha256": "3e5fce8151dcaa1e015f47e5c7b848e15e330ed3d4468a0c548ed1e7ed737ccc",
+      "xet_hash": "37df2b41448e3fdac0f8322805ab32951746a2f1de1f2806b74baa4a86ccfdc8",
+      "git_blob_oid": "33f88071b320bb653a9eacbe01b36c13e654f310"
+    },
+    {
+      "path": "data/TMLR_2024_rejected_by_tmlr.tar.gz",
+      "size": 585199394,
+      "sha256": "d710d500b29b29aadc83ca6e9ad91c2b428c709dd2dae2c009c2c2541436bebb",
+      "xet_hash": "8bfc0501f7aedbc42afa1daaf5e7c41fd5bbf875dc2e664ad565cfb2d2b74d42",
+      "git_blob_oid": "e7f62599622c7a032589de5db7206d7103e4677d"
+    },
+    {
+      "path": "data/TMLR_2024_withdrawn_by_authors.tar.gz",
+      "size": 73956608,
+      "sha256": "5abf2c9e7bb7fa3d06b11a749824131a7660adac30c8d74a1e588445f98df684",
+      "xet_hash": "74933bd36849b03d6c94ed35f709b9eb9c80bc7b55dfeb4cf866efd8850ce7e7",
+      "git_blob_oid": "470a80e813a6a7cc2b4fc3fb461e5a1e9e322c7e"
+    },
+    {
+      "path": "data/TMLR_2025_accepted_by_tmlr.tar.gz",
+      "size": 2124426914,
+      "sha256": "698f05440ea85ca773ea68634942567d0d41239795e493e312f1eb4981939f7d",
+      "xet_hash": "452e29f50f7ea2db52ad62910c6f374cf63c5d288571b1ba070ebb4bc3860b7a",
+      "git_blob_oid": "69b2b16288e985cb64eeb696f8c9840ddffa4353"
+    },
+    {
+      "path": "data/TMLR_2025_decision_pending_for_tmlr.tar.gz",
+      "size": 293770056,
+      "sha256": "f2ae53651eb1e5a471fe6dbff1770b20adfc77e656d020ef965fd9c921040828",
+      "xet_hash": "1d58e540dec3d8dc16a61ff37e8900eb7e8b9e5b2b852b1bb9f3854b3aa83bd0",
+      "git_blob_oid": "55f2c18f27dc7b374d43e07539d24aa12c2dad2d"
+    },
+    {
+      "path": "data/TMLR_2025_rejected_by_tmlr.tar.gz",
+      "size": 722128715,
+      "sha256": "4b19429640838b26197cfe46173717238b76aeb5dc72299fc2e2f45ca5464e8d",
+      "xet_hash": "f856bc580a7014b36e29f1c16ab9d8a2935e87abeb254651f75290d9aa0fc943",
+      "git_blob_oid": "8aa3ca558f8c6988c563d7c0452b1e6021e8c88c"
+    },
+    {
+      "path": "data/TMLR_2025_under_review_for_tmlr.tar.gz",
+      "size": 718953685,
+      "sha256": "97cf8a6996a399926cbdac6667aff6cf1f13027cdf6c6ae371878092ff6e5ba2",
+      "xet_hash": "2935e505743c7a25d1ae18b2715a47ed317375627027dc24734f2a26f04847a5",
+      "git_blob_oid": "127c23a987701a34955899ce06014f1b92438109"
+    },
+    {
+      "path": "data/TMLR_2025_withdrawn_by_authors.tar.gz",
+      "size": 101893990,
+      "sha256": "ddfbab812911c1242e621b177bb6b14f98166f31d5ef9f4f494b120834f6ebb4",
+      "xet_hash": "fe2048b7f4e4e3da0bf4ddb93f9942f61fc3a68654c3bbeeff45ca4e2861f0d3",
+      "git_blob_oid": "41d79b6b8c95281fa6ce4a3db4855cc299b98bca"
+    },
+    {
+      "path": "data/TMLR_2026_accepted_by_tmlr.tar.gz",
+      "size": 251617874,
+      "sha256": "82ecfe33bfb3d4fb02ce6ee912f647631c0332c46a6349a2cb7ec794b8fef37d",
+      "xet_hash": "6a624e8c66d74b0246eecf824851ad3655eebf265be053618ecaf3a3a68ce73b",
+      "git_blob_oid": "e3e18222b205874856b05186125e6d90275e5167"
+    },
+    {
+      "path": "data/TMLR_2026_rejected_by_tmlr.tar.gz",
+      "size": 72937347,
+      "sha256": "c27048b02a6d03aa3ed103c942983c6a1b6c4ca3e2440c1a4a15ea95ad493e2f",
+      "xet_hash": "86b8bb8d0d04a8ba1fa4d18c8d1fecfc7a5e0a522c96e6a6c6cf595ec7b3835c",
+      "git_blob_oid": "1c821a6d2a2387acdb0ba16d16dd5263d8d54759"
+    },
+    {
+      "path": "data/TMLR_2026_under_review_for_tmlr.tar.gz",
+      "size": 237056973,
+      "sha256": "942c6e2dfb839b6d4d20dac080105afb746e8d874a155d7f58d8dadc801d4588",
+      "xet_hash": "72b4d3b1c201ea3c73488f80ec129b8c3be785819a047d0b7b014e2a764a4026",
+      "git_blob_oid": "9e61af49d9426c999ed02d6179b0780009dd038f"
+    },
+    {
+      "path": "data/TMLR_2026_withdrawn_by_authors.tar.gz",
+      "size": 2132665,
+      "sha256": "0567e69fceb15170f75a004ed4a632f7012f3c658e4fdee3359ec47dfaec7730",
+      "xet_hash": "cc31dffd38fac8be29c1f0121b15ebeafd80027e363595f59cc0bd3891323ccc",
+      "git_blob_oid": "750986aad3984f1df0abaeabc17421742c921082"
+    },
+    {
+      "path": "data/TMLR_research_db.tar.gz",
+      "size": 30405922,
+      "sha256": "30df904d36fd44c2ea191c3f9c7c001f7dce3ffd451c664a47f816e1eed52844",
+      "xet_hash": "2f883cd570f5b5daca0fe35774015ee9d7e07b611db4aa82f275366c9a87113e",
+      "git_blob_oid": "6144b2a57855a4f6b39a5c4f466f4ab358832b2e"
+    },
+    {
+      "path": "data/faiss_complete.tar.gz",
+      "size": 1909707768,
+      "sha256": "b90aedfd566686110cfeaf4e28851f3413ba10cefa7c634adea72b1b0394e54e",
+      "xet_hash": "826b61481759c574e9d6ee9d351f6b3e926d871d02de4d55a9c395d42b4ee8bf",
+      "git_blob_oid": "a7d7cf04807daf17202c7de485fea64602e1ce90"
+    },
+    {
+      "path": "download_diagrambank.py",
+      "size": 5590,
+      "sha256": null,
+      "xet_hash": null,
+      "git_blob_oid": "e35a742e799b6b83c41fbfd20c7ba892f80a5d1e"
+    },
+    {
+      "path": "reproduce/ICLR_metadata.tar.gz",
+      "size": 223461518,
+      "sha256": "f7f1bc2cee3a9bf20d446c577d0a30ff7654175f383b1975d2305ed203fc164a",
+      "xet_hash": "8e90dac2e784e9fe78f8c02acf70e642be25975d58c1582b63405793b15c410c",
+      "git_blob_oid": "0826f35c0bc2af7e32d76da2a74d7d559148277d"
+    },
+    {
+      "path": "reproduce/ICML_metadata.tar.gz",
+      "size": 24244831,
+      "sha256": "c7b0b88d6d124ab5f28ec48259dfa3ec0583c26a18bbe6853f77b3f5efa15c26",
+      "xet_hash": "8f40f6ad987f99e704f4292771fdc941864bfef7bfb2c3c77c1e23a2eb863ade",
+      "git_blob_oid": "1716a0e0ca624ddff3a20e3641cf36d3fe3e9436"
+    }
+  ]
+}

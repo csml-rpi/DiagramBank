@@ -39,7 +39,7 @@ The Hugging Face release provides the core retrieval artifacts (e.g., `data.json
 - Cascade paths: `t1_unanimous` 46,524; `t1_majority` 3,645; `t1_minority_gpt_tiebreak` 1,865; `t2_vlm_consensus_gpt_confirmed` 5,066
 - Quality estimate: 93.67% precision with 95% CI [90.11%, 97.22%]
 
-See [relations.md](relations.md) for the full `data.jsonl` schema, including `clip_type`, `clip_confidence`, `label_cascade`, and `cascade_path`.
+See [docs/schema.md](docs/schema.md) for the full `data.jsonl` schema, including `clip_type`, `clip_confidence`, `label_cascade`, and `cascade_path`.
 
 ---
 
@@ -226,6 +226,28 @@ The dataset and model card is hosted at:
 If you want to reproduce this work, see [reproduce/README.md](reproduce/README.md). Might take a few days up to a week.
 
 The scripts under `reproduce/` cover raw OpenReview collection, PDF figure extraction, context extraction, and first-stage CLIP classification. The primary release is the cascade-filtered 57,100-record dataset hosted on Hugging Face as `data.jsonl`; [faiss/join_data.py](faiss/join_data.py) validates the downloaded release artifacts.
+
+### How the release was built
+
+1. `reproduce/<venue>/` collects OpenReview metadata and PDFs, extracts figures and citing paragraphs, and runs the first-stage CLIP classifier, one folder per venue.
+2. [`cascade/`](cascade/README.md) selects the released diagrams. Two VLM judges label every candidate, `vote.py` combines their votes, GPT-5.4 checks the cases the vote leaves open, and `finalize.py` writes the 57,100-record keep set. `run_cascade.sh` runs the steps in order.
+3. `faiss/` builds and validates the search indices, and `huggingface/` downloads the release with SHA-256 checks.
+4. `tools/build_release_supplement.py` exports per-record cascade labels and metadata-match groups; `tools/export_release.py` writes frozen release copies with generated citations.
+5. [`experiments/`](experiments/README.md) holds the audits behind the reported quality numbers.
+
+`demo/` has the retrieval and generation example, [docs/schema.md](docs/schema.md) the field reference, and `tests/` the regression tests.
+
+The code on `main` is the code that built release v1.0. Changes that would alter regenerated data (the context parser, CLIP weight loading, and the index builder) are kept on the `pipeline-v1.1` branch for a future data release.
+
+### Credentials and settings
+
+| Setting | Used by | Default |
+|---|---|---|
+| `FIG_RAG_DIR` | download, pipeline, cascade, experiments | `~/fig-rag-dir` in `cascade/` and `experiments/`; required by the downloader and `reproduce/` |
+| `OPENAI_API_KEY` | retrieval demo (query embeddings) | none |
+| Codex login (`codex auth login`) | GPT judges in `cascade/` and `experiments/` | none |
+| AWS credentials and `BEDROCK_HAIKU_MODEL` | Claude Haiku judges | `us.anthropic.claude-haiku-4-5-20251001-v1:0` |
+| `BEDROCK_PROFILE_CLAUDE_3_5_HAIKU`, `..._3_5_SONNET`, `..._4_SONNET` | usage tracking in `demo/tracking_aws.py` | none |
 
 ---
 

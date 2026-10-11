@@ -1,0 +1,37 @@
+============================================================
+[A1] CLIP Filter Validation — Results
+============================================================
+Evaluated on 500 figures
+Judges: Human, GPT-5.4-mini, Haiku 4.5, CLIP
+
+--- Diagram Filter (type=diagram, conf>=0.85) ---
+  Precision:  0.944
+  Recall:     0.378
+  F1:         0.540
+  TP=34, FP=2, FN=56
+  Filtering rate:     0.928
+  False positive rate: 0.005
+  False negative rate: 0.622
+
+--- Per-Category (CLIP label vs. human, no threshold) ---
+    Category    Prec     Rec      F1    TP    FP    FN
+     diagram   0.640   0.889   0.744    80    45    10
+        plot   0.632   0.718   0.672    79    46    31
+       photo   0.952   0.680   0.793   119     6    56
+       other   0.792   0.792   0.792    99    26    26
+       MACRO   0.754   0.770   0.750
+
+--- Confusion Matrix (rows=human, cols=CLIP) ---
+               diagram      plot     photo     other
+     diagram        80         9         1         0
+        plot        23        79         5         3
+       photo        18        15       119        23
+       other         4        22         0        99
+
+--- Inter-Annotator Agreement (Cohen's kappa) ---
+          Human vs. GPT-5.4-mini: κ = 0.7523  (n=500)
+             Human vs. Haiku 4.5: κ = 0.7252  (n=500)
+                  Human vs. CLIP: κ = 0.6720  (n=500)
+      GPT-5.4-mini vs. Haiku 4.5: κ = 0.7729  (n=500)
+           GPT-5.4-mini vs. CLIP: κ = 0.6000  (n=500)
+              Haiku 4.5 vs. CLIP: κ = 0.6107  (n=500)

@@ -227,3 +227,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Local checkpoint housekeeping; scientific inputs remain tracked via existing Git LFS rules.
+.claude/
+.DS_Store
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz

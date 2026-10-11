@@ -1,0 +1,13 @@
+GPT-5.4 annotations: 173
+  relevant: 115, not_relevant: 58
+
+GPT-5.4 Precision@3:
+  caption_only        : 0.750 +/- 0.072
+  hier_default        : 0.750 +/- 0.076
+  hier_narrow         : 0.700 +/- 0.072
+  hier_vwide          : 0.767 +/- 0.077
+  hier_wide           : 0.800 +/- 0.070
+
+McNemar (GPT): hier_default vs caption_only
+  hier_only=12, caption_only_only=12
+  chi2=0.042, p=0.8383

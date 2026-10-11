@@ -30,6 +30,7 @@ dependencies:
       - transformers==4.55.0
       - requests==2.32.4
       - duckdb==1.4.1
+      - bibtexparser==1.4.4
       - datasets==4.4.1
       - PyMuPDF==1.26.7
       - dill==0.4.0

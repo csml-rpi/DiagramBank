@@ -31,9 +31,11 @@ import boto3
 Usage =  Dict[str, Union[int, float]]   # TODO: could have used Counter class
 default_usage_file = pathlib.Path("usage_nrel_aws.json")
 
-CLAUDE_3_5_HAIKU = 'arn:aws:bedrock:us-west-2:991404956194:application-inference-profile/g47vfd2xvs5w'
-CLAUDE_3_5_SONNET = 'arn:aws:bedrock:us-west-2:991404956194:application-inference-profile/56i8iq1vib3e'
-CLAUDE_4_SONNET = 'arn:aws:bedrock:us-west-2:991404956194:application-inference-profile/f6tueltt82a2'
+# Bedrock application inference profiles used for usage tracking. Set these to
+# profiles in your own AWS account.
+CLAUDE_3_5_HAIKU = os.environ.get('BEDROCK_PROFILE_CLAUDE_3_5_HAIKU')
+CLAUDE_3_5_SONNET = os.environ.get('BEDROCK_PROFILE_CLAUDE_3_5_SONNET')
+CLAUDE_4_SONNET = os.environ.get('BEDROCK_PROFILE_CLAUDE_4_SONNET')
 
 # prices match https://aws.amazon.com/bedrock/pricing/ as of January 2025.
 # but they don't consider discounts for caching or batching.
@@ -52,10 +54,10 @@ default_eval_model = CLAUDE_3_5_HAIKU
 
 # A context manager that lets you temporarily change the default models
 # during a block of code.  You can write things like
-#     with use_model('arn:aws:bedrock:us-west-2:991404956194:application-inference-profile/g47vfd2xvs5w'):
+#     with use_model(CLAUDE_3_5_HAIKU):
 #        ...
 # 
-#     with use_model(eval_model='arn:aws:bedrock:us-west-2:991404956194:application-inference-profile/g47vfd2xvs5w'):
+#     with use_model(eval_model=CLAUDE_3_5_HAIKU):
 #        ...
 @contextmanager
 def use_model(model: str = default_model, eval_model: str = default_eval_model):

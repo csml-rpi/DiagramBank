@@ -1,0 +1,32 @@
+{
+  "gpt": {
+    "caption_only": {
+      "precision_at_3": 0.75,
+      "se": 0.072
+    },
+    "hier_default": {
+      "precision_at_3": 0.75,
+      "se": 0.076
+    },
+    "hier_narrow": {
+      "precision_at_3": 0.7,
+      "se": 0.0721
+    },
+    "hier_vwide": {
+      "precision_at_3": 0.7667,
+      "se": 0.0769
+    },
+    "hier_wide": {
+      "precision_at_3": 0.8,
+      "se": 0.0701
+    },
+    "mcnemar_hier_vs_caption": {
+      "concordant_both": 33,
+      "concordant_neither": 3,
+      "hier_only": 12,
+      "caption_only_only": 12,
+      "chi2": 0.041666666666666664,
+      "p_value": 0.8382565357339611
+    }
+  }
+}
