@@ -1,0 +1,510 @@
+{
+  "schema_version": 2,
+  "build_id": "576550190ca0eb23b8bb330e54d40663e81ec1c632eea7de9427531598a29d39",
+  "evaluators": [
+    {
+      "evaluator": 1,
+      "seed": 41021,
+      "items": [
+        {
+          "review_id": "R1-01",
+          "case_id": "E4-GEN-10",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R1-02",
+          "case_id": "E4-GEN-13",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R1-03",
+          "case_id": "E4-GEN-20",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R1-04",
+          "case_id": "E4-GEN-09",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R1-05",
+          "case_id": "E4-GEN-18",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R1-06",
+          "case_id": "E4-GEN-19",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R1-07",
+          "case_id": "E4-GEN-05",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R1-08",
+          "case_id": "E4-GEN-02",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R1-09",
+          "case_id": "E4-GEN-16",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R1-10",
+          "case_id": "E4-GEN-17",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R1-11",
+          "case_id": "E4-GEN-07",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R1-12",
+          "case_id": "E4-GEN-11",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R1-13",
+          "case_id": "E4-GEN-15",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R1-14",
+          "case_id": "E4-GEN-08",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R1-15",
+          "case_id": "E4-GEN-03",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R1-16",
+          "case_id": "E4-GEN-14",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R1-17",
+          "case_id": "E4-GEN-01",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R1-18",
+          "case_id": "E4-GEN-12",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R1-19",
+          "case_id": "E4-GEN-04",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R1-20",
+          "case_id": "E4-GEN-06",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        }
+      ]
+    },
+    {
+      "evaluator": 2,
+      "seed": 41039,
+      "items": [
+        {
+          "review_id": "R2-01",
+          "case_id": "E4-GEN-11",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R2-02",
+          "case_id": "E4-GEN-15",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R2-03",
+          "case_id": "E4-GEN-13",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R2-04",
+          "case_id": "E4-GEN-02",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R2-05",
+          "case_id": "E4-GEN-16",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R2-06",
+          "case_id": "E4-GEN-01",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R2-07",
+          "case_id": "E4-GEN-14",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R2-08",
+          "case_id": "E4-GEN-18",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R2-09",
+          "case_id": "E4-GEN-06",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R2-10",
+          "case_id": "E4-GEN-10",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R2-11",
+          "case_id": "E4-GEN-19",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R2-12",
+          "case_id": "E4-GEN-05",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R2-13",
+          "case_id": "E4-GEN-12",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R2-14",
+          "case_id": "E4-GEN-09",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R2-15",
+          "case_id": "E4-GEN-08",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R2-16",
+          "case_id": "E4-GEN-07",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R2-17",
+          "case_id": "E4-GEN-03",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R2-18",
+          "case_id": "E4-GEN-17",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R2-19",
+          "case_id": "E4-GEN-20",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R2-20",
+          "case_id": "E4-GEN-04",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        }
+      ]
+    },
+    {
+      "evaluator": 3,
+      "seed": 41047,
+      "items": [
+        {
+          "review_id": "R3-01",
+          "case_id": "E4-GEN-01",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R3-02",
+          "case_id": "E4-GEN-18",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R3-03",
+          "case_id": "E4-GEN-04",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R3-04",
+          "case_id": "E4-GEN-16",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R3-05",
+          "case_id": "E4-GEN-14",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R3-06",
+          "case_id": "E4-GEN-02",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R3-07",
+          "case_id": "E4-GEN-08",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R3-08",
+          "case_id": "E4-GEN-10",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R3-09",
+          "case_id": "E4-GEN-11",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R3-10",
+          "case_id": "E4-GEN-12",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R3-11",
+          "case_id": "E4-GEN-07",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R3-12",
+          "case_id": "E4-GEN-09",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R3-13",
+          "case_id": "E4-GEN-15",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R3-14",
+          "case_id": "E4-GEN-05",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R3-15",
+          "case_id": "E4-GEN-03",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R3-16",
+          "case_id": "E4-GEN-20",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R3-17",
+          "case_id": "E4-GEN-17",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R3-18",
+          "case_id": "E4-GEN-06",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R3-19",
+          "case_id": "E4-GEN-13",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R3-20",
+          "case_id": "E4-GEN-19",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        }
+      ]
+    },
+    {
+      "evaluator": 4,
+      "seed": 41057,
+      "items": [
+        {
+          "review_id": "R4-01",
+          "case_id": "E4-GEN-06",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R4-02",
+          "case_id": "E4-GEN-01",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R4-03",
+          "case_id": "E4-GEN-15",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R4-04",
+          "case_id": "E4-GEN-04",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R4-05",
+          "case_id": "E4-GEN-13",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R4-06",
+          "case_id": "E4-GEN-16",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R4-07",
+          "case_id": "E4-GEN-08",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R4-08",
+          "case_id": "E4-GEN-20",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R4-09",
+          "case_id": "E4-GEN-05",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R4-10",
+          "case_id": "E4-GEN-09",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R4-11",
+          "case_id": "E4-GEN-02",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R4-12",
+          "case_id": "E4-GEN-18",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R4-13",
+          "case_id": "E4-GEN-07",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R4-14",
+          "case_id": "E4-GEN-17",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R4-15",
+          "case_id": "E4-GEN-03",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R4-16",
+          "case_id": "E4-GEN-11",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R4-17",
+          "case_id": "E4-GEN-14",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R4-18",
+          "case_id": "E4-GEN-19",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        },
+        {
+          "review_id": "R4-19",
+          "case_id": "E4-GEN-10",
+          "A": "no_retrieval",
+          "B": "full_field_retrieval"
+        },
+        {
+          "review_id": "R4-20",
+          "case_id": "E4-GEN-12",
+          "A": "full_field_retrieval",
+          "B": "no_retrieval"
+        }
+      ]
+    }
+  ]
+}

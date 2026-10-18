@@ -1,252 +1,60 @@
 # DiagramBank
 
-**DiagramBank: A Quality-Audited Dataset of Scientific Schematic Diagrams with Multi-Level Document Context.**
+Code and evaluation artifacts for **DiagramBank: Draw from the Great, Draw Your Best** ([arXiv:2604.20857](https://arxiv.org/abs/2604.20857)).
 
-DiagramBank is a large-scale, retrieval-ready collection of scientific schematic diagrams mined from top-tier AI/ML publications, paired with rich paper metadata and figure-local context. The primary release contains **57,100 cascade-filtered diagrams** and is designed to support diagram retrieval, exemplar-driven scientific figure authoring, and broader multimodal research beyond generation.
+DiagramBank contains 57,100 schematic diagrams from 26,751 accepted papers at ICLR, NeurIPS, ICML, and TMLR. Each record pairs a diagram with its caption, the body paragraphs that cite it (91.16% of records), and the paper's title and abstract, together with provenance and per-record filtering labels.
 
----
+- **Dataset:** https://huggingface.co/datasets/ghzlmc/DiagramBank
+- **Dataset card:** [DATASET_CARD.md](DATASET_CARD.md)
+- **Record fields:** [docs/schema.md](docs/schema.md)
 
-## Overview
+## Setup
 
-![DiagramBank Overview](DiagramBank.png)
-
----
-
-## Motivation
-
-Autonomous “AI scientist” pipelines can draft text and code, but producing a publication-grade teaser/overview diagram is still a major bottleneck. Unlike routine data plots, a good scientific diagram requires conceptual synthesis, layout planning, consistent topology (arrows/relations), and readable annotations.
-
-DiagramBank addresses this gap by providing a large bank of real, high-quality diagram exemplars with multiple levels of grounding text (paper title/abstract, figure caption, and in-text reference spans) so you can retrieve relevant designs at different granularities and use them for retrieval-augmented authoring.
-
----
-
-## What’s in DiagramBank
-
-Each diagram record is enriched with both **figure-level** and **paper-level** information. Depending on availability, metadata can include:
-
-- Diagram image + caption
-- Figure context: paragraphs that cite the figure in the paper body (how authors explain the figure)
-- Paper title + abstract (paper intent / domain)
-- Additional OpenReview metadata such as decision status, reviewer scores, keywords/subject areas, URLs, BibTeX, etc.
-- CLIP label/confidence fields and cascade verification fields (to support controllable filtering)
-
-The Hugging Face release provides the core retrieval artifacts (e.g., `data.jsonl`, FAISS indices, and DuckDB) so you can get started quickly without storing large files in this GitHub repo.
-
-### Release snapshot
-
-- Primary release: **57,100** cascade-filtered schematic diagrams
-- Venue counts: ICLR 20,516; ICML 11,267; NeurIPS 19,655; TMLR 5,662
-- Cascade paths: `t1_unanimous` 46,524; `t1_majority` 3,645; `t1_minority_gpt_tiebreak` 1,865; `t2_vlm_consensus_gpt_confirmed` 5,066
-- Quality estimate: 93.67% precision with 95% CI [90.11%, 97.22%]
-
-See [relations.md](relations.md) for the full `data.jsonl` schema, including `clip_type`, `clip_confidence`, `label_cascade`, and `cascade_path`.
-
----
-
-## Example use cases
-
-DiagramBank is intentionally broader than “diagram generation”:
-
-### Retrieval-augmented diagram authoring (RAG)
-- Retrieve exemplar diagrams similar to your paper’s **title/abstract/caption**
-- Use retrieved exemplars to guide layout, style, grouping, iconography, and composition for teaser-style figures
-
-### Multimodal retrieval and benchmarking
-- Build and evaluate retrieval systems that operate on diagram-centric scientific content
-- Explore coarse-to-fine retrieval (paper-level → figure-level)
-
-### Diagram understanding / classification / clustering
-- Train or evaluate figure-type classifiers, diagram style classifiers, topic/style clustering, etc.
-- Study diagram conventions across venues/years
-
-### Paper-level analytics & scientometrics with visual signals
-Because records are linked to paper metadata, you can explore questions like:
-- How do diagram properties correlate with acceptance decisions, review scores, or venue/year?
-- How does diagram density or caption verbosity evolve over time?
-- What diagram styles dominate specific subject areas?
-
-### Context-aware tasks
-Figure context spans enable tasks that require more than captions:
-- Context-aware diagram retrieval
-- Diagram-to-text alignment and grounding
-- Studying how authors narrate and operationalize diagrams in scientific writing
-
----
-
-## Prerequisites
-
-### conda
 ```bash
 conda env create --file environment.yml
-````
-
----
-
-## Download the DiagramBank dataset
-
-### 1) Set the target folder
-
-The default download is large. Make sure you have enough disk space.
-
-```bash
-# Run it (downloads accepted-paper image archives plus core files)
-# Set the target folder using the FIG_RAG_DIR environment variable
-export FIG_RAG_DIR=<a scratch folder with enough disk space>
+conda activate DiagramBank
+export FIG_RAG_DIR=/path/to/scratch   # where the release is downloaded and extracted
 ```
 
-### 2) Download options
+## Download and verification
 
 ```bash
-# 1. Default: Download accepted-paper images + core files (data.jsonl/FAISS/DBs)
-python huggingface/download_diagrambank.py
-
-# 2. Download Everything: All papers (Accept + Reject) + Core files
-# python huggingface/download_diagrambank.py --subset all
-
-# 3. Download Rejected papers only + Core files
-# python huggingface/download_diagrambank.py --subset reject
-
-# 4. Skip Core Files: Download only images (no DBs or FAISS)
-# python huggingface/download_diagrambank.py --no-core
-
-# 5. Combine Flags: Download all images but skip core files
-# python huggingface/download_diagrambank.py --subset all --no-core
-
-# 6. Download only raw reproduction metadata archives for ICLR/ICML
-# python huggingface/download_diagrambank.py --metadata-only
-
-# 7. Include raw reproduction metadata archives with the selected image subset
-# python huggingface/download_diagrambank.py --metadata
+python huggingface/download_diagrambank.py                 # accepted-paper images + core files (default)
+python huggingface/download_diagrambank.py --subset all    # images of accepted and rejected papers + core files
+python huggingface/download_diagrambank.py --no-core       # images only
 ```
 
-The script will download `data.jsonl` and automatically extract the diagram folder, FAISS index, and DuckDB database to `$FIG_RAG_DIR`. Add `--metadata` to also download raw ICLR/ICML reproduction metadata archives. The process can take 15–30 minutes depending on network speed.
+Core files are `data.jsonl`, the DuckDB databases, and the FAISS indices. The downloader computes the SHA-256 of every downloaded payload, compares it with the commit-pinned manifest `huggingface/DiagramBank_remote_manifest.json` (112 payloads with sizes and SHA-256 values; also `huggingface/SHA256SUMS`), and extracts only verified payloads.
 
----
+## Repository map
 
-## Check installation
-
-```bash
-du -sh $FIG_RAG_DIR
-51G 
-```
-
-```bash
-tree -L 4 $FIG_RAG_DIR
-
-├── data.jsonl
-├── faiss
-│   ├── abstract_index
-│   │   ├── index.faiss
-│   │   └── index.pkl
-│   ├── caption_index
-│   │   ├── index.faiss
-│   │   └── index.pkl
-│   ├── research.db
-│   └── title_index
-│       ├── index.faiss
-│       └── index.pkl
-└── OpenReview
-    ├── ICLR
-    │   ├── figures
-    │   │   ├── 2017
-    │   │   ├── 2018
-    │   │   ├── 2019
-    │   │   ├── 2020
-    │   │   ├── 2021
-    │   │   ├── 2022
-    │   │   ├── 2023
-    │   │   ├── 2024
-    │   │   ├── 2025
-    │   │   └── 2026
-    │   └── research.db
-    ├── ICML
-    │   ├── figures
-    │   │   ├── 2023
-    │   │   ├── 2024
-    │   │   └── 2025
-    │   └── research.db
-    ├── NeurIPS
-    │   ├── figures
-    │   │   ├── 2021
-    │   │   ├── 2022
-    │   │   ├── 2024
-    │   │   └── 2025
-    │   └── research.db
-    └── TMLR
-        ├── figures
-        │   ├── 2022
-        │   ├── 2023
-        │   ├── 2024
-        │   ├── 2025
-        │   └── 2026
-        └── research.db
-```
-
-### What are these indices?
-
-* `title_index`: coarse paper-level filtering (topic/domain alignment)
-* `abstract_index`: paper-level refinement (problem/method alignment)
-* `caption_index`: figure-level matching (diagram content alignment)
-
----
-
-## Usage
-
-### Set your OpenAI API key
-
-```bash
-export OPENAI_API_KEY=<your openai api key>
-```
-
-This is only used for embedding the *query text* at runtime, so the cost is very low ($0.13/1M tokens with Text Embedding 3 Large) ([https://costgoat.com/pricing/openai-embeddings](https://costgoat.com/pricing/openai-embeddings)) A paper title is 5-25 words, an abstract is 150-250 words, and a caption is 10-100 words. Take an upper bound of 500 words, and 1.33 tokens per word, yielding an upper bound of 1000 token per query. Then, for 1000 queries, the cost will be $0.13.
-
-> Note: pricing can change; treat the above as a back-of-the-envelope estimate.
-
-### Retrieve similar diagrams for your figure
-
-To retrieve the similar diagrams for your figures, go to [demo/query-diagram.ipynb](demo/query-diagrams.ipynb). Set `title`, `abstract`, and `caption` for your paper, and then keep running the fourth cell to get the similar diagrams.
-
-- `t1`: number of diagrams with similar title
-- `t2`: number of diagrams with similar abstract
-- `k`: number of diagrams with similar caption
-
-`hierarchical_retrieval()` will retrieve the top-`k` similar diagrams based on your title, abstract, and caption.
-
----
-
-## Hugging Face
-
-The dataset and model card is hosted at:
-[https://huggingface.co/datasets/ghzlmc/DiagramBank](https://huggingface.co/datasets/ghzlmc/DiagramBank)
-
----
-
-## Reproduce this work
-
-If you want to reproduce this work, see [reproduce/README.md](reproduce/README.md). Might take a few days up to a week.
-
-The scripts under `reproduce/` cover raw OpenReview collection, PDF figure extraction, context extraction, and first-stage CLIP classification. The primary release is the cascade-filtered 57,100-record dataset hosted on Hugging Face as `data.jsonl`; [faiss/join_data.py](faiss/join_data.py) validates the downloaded release artifacts.
-
----
-
-## Notes on responsible use
-
-* DiagramBank is mined from publicly accessible scientific PDFs and includes metadata for attribution and traceability.
-* Figures may be subject to the original authors’/publishers’ licenses and terms. Please use responsibly and cite the relevant sources.
-* If you use DiagramBank for generative authoring, we recommend provenance tracking and disclosure for AI-generated figures where appropriate.
-
----
+| Path | Paper |
+|---|---|
+| `reproduce/` | Data collection: OpenReview metadata and PDFs, PDFFigures 2.0 figure and caption extraction, PyMuPDF context extraction, and CLIP classification. `figure_context.py` and `clip_provenance.py` are the revised context parser and CLIP run records; the release keeps its original contexts and labels. |
+| `cascade/` | Filtering: Tier 1/Tier 2 routing, Claude Haiku 4.5 and GPT-5.4-mini judges, voting, GPT-5.4 confirmation, and the saved votes for all 94,176 candidates. `python cascade/finalize.py --output-dir <dir> --verify-release-db $FIG_RAG_DIR/faiss/research.db` replays them and checks that the 57,100 released keys are reproduced exactly. |
+| `release_supplement/` | `cascade_labels.jsonl`, `paper_groups.jsonl`, and the 55 out-of-label Haiku outputs. |
+| `tools/` | Release export and supplement builder. |
+| `experiments/final_release_audit/` | Final-release audit estimates for the full release, DiagramBank-Core, and the remaining records. |
+| `experiments/context_review_50/` | 50-record diagram–text alignment review and release-wide context checks. |
+| `experiments/retrieval_ablation/` | Retrieval field ablation: 2,000 frozen targets and queries, metrics, and retrieval logs. |
+| `experiments/same_paper_context_swap/` | Same-paper context swap control. |
+| `experiments/human_study/` | 20-case blind human study: briefs, references, outputs, frozen manifest, and votes. |
+| `experiments/paperbananabench/generation_reference_protocol.json` | Reference-pool settings of the PaperBananaBench study (pool filters, exclusions, retrieval, reference inputs, generation). |
+| `huggingface/` | Downloader, manifest, and SHA-256 list. |
 
 ## Citation
 
-If you use DiagramBank in your research, please cite our paper (and consider citing the original papers for any retrieved exemplars you use directly).
-
 ```bibtex
 @article{yue2026diagrambank,
-  title={DiagramBank: A Quality-Audited Dataset of Scientific Schematic Diagrams with Multi-Level Document Context},
-  author={Yue, Ling and Zhang, Tingwen and Jiaying Wang and Xu, Zhen and Pan, Shaowu},
+  title={DiagramBank: Draw from the Great, Draw Your Best},
+  author={Yue, Ling and Wang, Jiaying and Lu, Zhexi and Zhu, Mingzhi and Zhang, Tingwen and Xu, Zhen and Pan, Shaowu},
   journal={arXiv preprint arXiv:2604.20857},
   year={2026}
 }
 ```
 
+When you use specific diagrams, please also cite their source papers; every record carries a source URL, and all but the ICML 2023 records carry a BibTeX entry.
+
+## License
+
+The code is released under the MIT License. Figure rights remain with the source papers; see the dataset card for attribution and use.

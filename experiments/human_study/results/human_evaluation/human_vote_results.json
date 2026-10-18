@@ -1,0 +1,160 @@
+{
+  "build_id": "576550190ca0eb23b8bb330e54d40663e81ec1c632eea7de9427531598a29d39",
+  "evaluators": 4,
+  "cases": 20,
+  "aggregation_rule": "condition wins with at least 3 of 4 votes; all other patterns are ties",
+  "item_results": {
+    "retrieval_win": 14,
+    "no_retrieval_win": 1,
+    "tie": 5
+  },
+  "retrieval_win_proportion": 0.7,
+  "retrieval_win_wilson_ci95": [
+    0.4810271816464765,
+    0.8545227551323956
+  ],
+  "fleiss_kappa_three_category_votes": 0.2221391174270755,
+  "interpretation_note": "The 20 cases are deliberately balanced; counts and interval are descriptive and are not a release-wide estimate.",
+  "case_results": [
+    {
+      "case_id": "E4-GEN-01",
+      "retrieval_votes": 4,
+      "no_retrieval_votes": 0,
+      "tie_votes": 0,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-02",
+      "retrieval_votes": 4,
+      "no_retrieval_votes": 0,
+      "tie_votes": 0,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-03",
+      "retrieval_votes": 2,
+      "no_retrieval_votes": 1,
+      "tie_votes": 1,
+      "item_result": "tie"
+    },
+    {
+      "case_id": "E4-GEN-04",
+      "retrieval_votes": 4,
+      "no_retrieval_votes": 0,
+      "tie_votes": 0,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-05",
+      "retrieval_votes": 2,
+      "no_retrieval_votes": 1,
+      "tie_votes": 1,
+      "item_result": "tie"
+    },
+    {
+      "case_id": "E4-GEN-06",
+      "retrieval_votes": 1,
+      "no_retrieval_votes": 2,
+      "tie_votes": 1,
+      "item_result": "tie"
+    },
+    {
+      "case_id": "E4-GEN-07",
+      "retrieval_votes": 3,
+      "no_retrieval_votes": 1,
+      "tie_votes": 0,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-08",
+      "retrieval_votes": 1,
+      "no_retrieval_votes": 2,
+      "tie_votes": 1,
+      "item_result": "tie"
+    },
+    {
+      "case_id": "E4-GEN-09",
+      "retrieval_votes": 0,
+      "no_retrieval_votes": 4,
+      "tie_votes": 0,
+      "item_result": "no_retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-10",
+      "retrieval_votes": 4,
+      "no_retrieval_votes": 0,
+      "tie_votes": 0,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-11",
+      "retrieval_votes": 3,
+      "no_retrieval_votes": 1,
+      "tie_votes": 0,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-12",
+      "retrieval_votes": 3,
+      "no_retrieval_votes": 0,
+      "tie_votes": 1,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-13",
+      "retrieval_votes": 4,
+      "no_retrieval_votes": 0,
+      "tie_votes": 0,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-14",
+      "retrieval_votes": 4,
+      "no_retrieval_votes": 0,
+      "tie_votes": 0,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-15",
+      "retrieval_votes": 4,
+      "no_retrieval_votes": 0,
+      "tie_votes": 0,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-16",
+      "retrieval_votes": 4,
+      "no_retrieval_votes": 0,
+      "tie_votes": 0,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-17",
+      "retrieval_votes": 3,
+      "no_retrieval_votes": 0,
+      "tie_votes": 1,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-18",
+      "retrieval_votes": 2,
+      "no_retrieval_votes": 2,
+      "tie_votes": 0,
+      "item_result": "tie"
+    },
+    {
+      "case_id": "E4-GEN-19",
+      "retrieval_votes": 3,
+      "no_retrieval_votes": 0,
+      "tie_votes": 1,
+      "item_result": "retrieval_win"
+    },
+    {
+      "case_id": "E4-GEN-20",
+      "retrieval_votes": 4,
+      "no_retrieval_votes": 0,
+      "tie_votes": 0,
+      "item_result": "retrieval_win"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+Create a polished landscape scientific schematic for the content below.
+
+Represent the scientific components and relationships faithfully. Use a clear left-to-right or top-to-bottom information flow when appropriate, concise readable labels, consistent arrows and grouping, a white background, and a restrained publication-ready visual style. Do not add unsupported modules, relationships, results, numerical claims, a paper title, authors, venue information, or a figure number. If reference diagrams are provided, use them only as relevant examples of scientific visual organization and abstraction; do not copy their scientific content or identifying labels.
+
+Title:
+Domain Invariant Adversarial Learning
+
+Abstract:
+The phenomenon of adversarial examples illustrates one of the most basic vulnerabilities of deep neural networks. Among the variety of techniques introduced to surmount this inherent weakness, adversarial training has emerged as the most effective strategy for learning robust models. Typically, this is achieved by balancing robust and natural objectives. In this work, we aim to further optimize the trade-off between robust and standard accuracy by enforcing a domain-invariant feature representation. We present a new adversarial training method, Domain Invariant Adversarial Learning (DIAL), which learns a feature representation that is both robust and domain invariant. DIAL uses a variant of Domain Adversarial Neural Network (DANN) on the natural domain and its corresponding adversarial domain. In the case where the source domain consists of natural examples and the target domain is the adversarially perturbed examples, our method learns a feature representation constrained not to discriminate between the natural and adversarial examples, and can therefore achieve a more robust representation. DIAL is a generic and modular technique that can be easily incorporated into any adversarial training method. Our experiments indicate that incorporating DIAL in the adversarial training process improves both robustness and standard accuracy.
+
+Intended figure caption:
+Figure 1: Illustration of the proposed architecture to enforce domain invariant representation. The feature extractor and label classifier form the a regular DNN architecture that can be used for the main natural task. The domain classifier is incorporated alongside the label classifier. The reversal gradient layer multiplies the gradient by a negative number during the back-propagation.
+
+Figure-reference context:
+<paragraph_1>Let us define the notation for our domain invariant robust architecture and loss. Let Gf(·; θf) be the feature extractor neural network with parameters θf. Let Gy(·; θy) be the label classifier with parameters θy, and let Gd(·; θd) be the domain classifier with parameters θd. That is, Gy(Gf(·; θf); θy) is essentially the standard model (e.g., wide residual network (Zagoruyko & Komodakis, 2016)), while in addition, we have a domain classification layer to enforce a domain invariant on the feature representation. An illustration of the architecture is presented in Figure 1.</paragraph_1>

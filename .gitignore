@@ -8,16 +8,18 @@ reproduce/ICML/icml-replies.json
 reproduce/ICML/icml-urls.json
 
 # DiagramBank release artifacts downloaded from Hugging Face
-data.jsonl
-SHA256SUMS
-data/
-OpenReview/
+/data.jsonl
+/SHA256SUMS
+/data/
+/OpenReview/
 faiss/data.jsonl
 faiss/research.db
 faiss/*_index/
 
-huggingface/upload.py
-faiss/upload.py
+# Large retrieval-ablation arrays hosted with the dataset
+experiments/retrieval_ablation/embeddings/*.npy
+experiments/retrieval_ablation/embeddings/candidate_manifest.jsonl
+
 *.out
 
 # Byte-compiled / optimized / DLL files
@@ -227,3 +229,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Local checkpoint housekeeping; scientific inputs remain tracked via existing Git LFS rules.
+.claude/
+.DS_Store
+*.aux
+*.fls
+*.fdb_latexmk
+*.synctex.gz

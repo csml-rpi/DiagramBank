@@ -1,0 +1,475 @@
+{
+  "database": "onserver/faiss/research.db",
+  "database_sha256": "94b8f44d7ccefd586db4e6feb6442762a081277710cd64e4e4b6b645af34d894",
+  "complete_record_count": 52052,
+  "complete_paper_count": 25616,
+  "sample_size": 2000,
+  "unique_sampled_papers": 2000,
+  "seed": 20260712,
+  "target_manifest": "rebuttal/2026-07-rebuttal-work/E4_context_ablation/objective_known_item_retrieval/data/target_manifest.jsonl",
+  "target_manifest_sha256": "501b717a5abcef21c4ef320d771ba5f15e3ac8da2c0c09d8d0b951f01459f4f2",
+  "strata": [
+    {
+      "venue": "ICLR",
+      "year": 2017,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 63,
+      "sampled_queries": 5
+    },
+    {
+      "venue": "ICLR",
+      "year": 2017,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 44,
+      "sampled_queries": 3
+    },
+    {
+      "venue": "ICLR",
+      "year": 2017,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 19,
+      "sampled_queries": 1
+    },
+    {
+      "venue": "ICLR",
+      "year": 2018,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 121,
+      "sampled_queries": 9
+    },
+    {
+      "venue": "ICLR",
+      "year": 2018,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 61,
+      "sampled_queries": 5
+    },
+    {
+      "venue": "ICLR",
+      "year": 2018,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 44,
+      "sampled_queries": 3
+    },
+    {
+      "venue": "ICLR",
+      "year": 2019,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 163,
+      "sampled_queries": 13
+    },
+    {
+      "venue": "ICLR",
+      "year": 2019,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 102,
+      "sampled_queries": 8
+    },
+    {
+      "venue": "ICLR",
+      "year": 2019,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 46,
+      "sampled_queries": 4
+    },
+    {
+      "venue": "ICLR",
+      "year": 2020,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 220,
+      "sampled_queries": 17
+    },
+    {
+      "venue": "ICLR",
+      "year": 2020,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 136,
+      "sampled_queries": 11
+    },
+    {
+      "venue": "ICLR",
+      "year": 2020,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 74,
+      "sampled_queries": 6
+    },
+    {
+      "venue": "ICLR",
+      "year": 2021,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 272,
+      "sampled_queries": 21
+    },
+    {
+      "venue": "ICLR",
+      "year": 2021,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 179,
+      "sampled_queries": 14
+    },
+    {
+      "venue": "ICLR",
+      "year": 2021,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 88,
+      "sampled_queries": 7
+    },
+    {
+      "venue": "ICLR",
+      "year": 2022,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 413,
+      "sampled_queries": 32
+    },
+    {
+      "venue": "ICLR",
+      "year": 2022,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 202,
+      "sampled_queries": 16
+    },
+    {
+      "venue": "ICLR",
+      "year": 2022,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 109,
+      "sampled_queries": 8
+    },
+    {
+      "venue": "ICLR",
+      "year": 2023,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 604,
+      "sampled_queries": 47
+    },
+    {
+      "venue": "ICLR",
+      "year": 2023,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 312,
+      "sampled_queries": 24
+    },
+    {
+      "venue": "ICLR",
+      "year": 2023,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 175,
+      "sampled_queries": 14
+    },
+    {
+      "venue": "ICLR",
+      "year": 2024,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 884,
+      "sampled_queries": 69
+    },
+    {
+      "venue": "ICLR",
+      "year": 2024,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 463,
+      "sampled_queries": 36
+    },
+    {
+      "venue": "ICLR",
+      "year": 2024,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 263,
+      "sampled_queries": 21
+    },
+    {
+      "venue": "ICLR",
+      "year": 2025,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 1540,
+      "sampled_queries": 120
+    },
+    {
+      "venue": "ICLR",
+      "year": 2025,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 791,
+      "sampled_queries": 62
+    },
+    {
+      "venue": "ICLR",
+      "year": 2025,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 431,
+      "sampled_queries": 34
+    },
+    {
+      "venue": "ICLR",
+      "year": 2026,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 421,
+      "sampled_queries": 33
+    },
+    {
+      "venue": "ICLR",
+      "year": 2026,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 472,
+      "sampled_queries": 37
+    },
+    {
+      "venue": "ICLR",
+      "year": 2026,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 327,
+      "sampled_queries": 26
+    },
+    {
+      "venue": "ICML",
+      "year": 2023,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 571,
+      "sampled_queries": 45
+    },
+    {
+      "venue": "ICML",
+      "year": 2023,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 302,
+      "sampled_queries": 24
+    },
+    {
+      "venue": "ICML",
+      "year": 2023,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 164,
+      "sampled_queries": 13
+    },
+    {
+      "venue": "ICML",
+      "year": 2024,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 936,
+      "sampled_queries": 73
+    },
+    {
+      "venue": "ICML",
+      "year": 2024,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 466,
+      "sampled_queries": 36
+    },
+    {
+      "venue": "ICML",
+      "year": 2024,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 254,
+      "sampled_queries": 20
+    },
+    {
+      "venue": "ICML",
+      "year": 2025,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 1244,
+      "sampled_queries": 97
+    },
+    {
+      "venue": "ICML",
+      "year": 2025,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 663,
+      "sampled_queries": 52
+    },
+    {
+      "venue": "ICML",
+      "year": 2025,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 327,
+      "sampled_queries": 26
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2021,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 786,
+      "sampled_queries": 61
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2021,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 400,
+      "sampled_queries": 31
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2021,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 183,
+      "sampled_queries": 14
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2022,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 928,
+      "sampled_queries": 72
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2022,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 380,
+      "sampled_queries": 30
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2022,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 224,
+      "sampled_queries": 17
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2024,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 1591,
+      "sampled_queries": 124
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2024,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 741,
+      "sampled_queries": 58
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2024,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 459,
+      "sampled_queries": 36
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2025,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 2141,
+      "sampled_queries": 167
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2025,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 1008,
+      "sampled_queries": 79
+    },
+    {
+      "venue": "NeurIPS",
+      "year": 2025,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 553,
+      "sampled_queries": 43
+    },
+    {
+      "venue": "TMLR",
+      "year": 2022,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 91,
+      "sampled_queries": 7
+    },
+    {
+      "venue": "TMLR",
+      "year": 2022,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 37,
+      "sampled_queries": 3
+    },
+    {
+      "venue": "TMLR",
+      "year": 2022,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 11,
+      "sampled_queries": 1
+    },
+    {
+      "venue": "TMLR",
+      "year": 2023,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 237,
+      "sampled_queries": 18
+    },
+    {
+      "venue": "TMLR",
+      "year": 2023,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 93,
+      "sampled_queries": 7
+    },
+    {
+      "venue": "TMLR",
+      "year": 2023,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 45,
+      "sampled_queries": 4
+    },
+    {
+      "venue": "TMLR",
+      "year": 2024,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 393,
+      "sampled_queries": 31
+    },
+    {
+      "venue": "TMLR",
+      "year": 2024,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 155,
+      "sampled_queries": 12
+    },
+    {
+      "venue": "TMLR",
+      "year": 2024,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 92,
+      "sampled_queries": 7
+    },
+    {
+      "venue": "TMLR",
+      "year": 2025,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 579,
+      "sampled_queries": 45
+    },
+    {
+      "venue": "TMLR",
+      "year": 2025,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 276,
+      "sampled_queries": 22
+    },
+    {
+      "venue": "TMLR",
+      "year": 2025,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 123,
+      "sampled_queries": 10
+    },
+    {
+      "venue": "TMLR",
+      "year": 2026,
+      "caption_length_bin": "long_41_plus",
+      "eligible_papers": 69,
+      "sampled_queries": 5
+    },
+    {
+      "venue": "TMLR",
+      "year": 2026,
+      "caption_length_bin": "medium_13_40",
+      "eligible_papers": 36,
+      "sampled_queries": 3
+    },
+    {
+      "venue": "TMLR",
+      "year": 2026,
+      "caption_length_bin": "short_1_12",
+      "eligible_papers": 19,
+      "sampled_queries": 1
+    }
+  ]
+}

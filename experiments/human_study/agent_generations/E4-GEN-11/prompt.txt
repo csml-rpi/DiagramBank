@@ -1,0 +1,15 @@
+Create a polished landscape scientific schematic for the content below.
+
+Represent the scientific components and relationships faithfully. Use a clear left-to-right or top-to-bottom information flow when appropriate, concise readable labels, consistent arrows and grouping, a white background, and a restrained publication-ready visual style. Do not add unsupported modules, relationships, results, numerical claims, a paper title, authors, venue information, or a figure number. If reference diagrams are provided, use them only as relevant examples of scientific visual organization and abstraction; do not copy their scientific content or identifying labels.
+
+Title:
+FANS: A Flatness-Aware Network Structure for Generalization in Offline Reinforcement Learning
+
+Abstract:
+Offline reinforcement learning (RL) aims to learn optimal policies from static datasets while enhancing generalization to out-of-distribution (OOD) data. To mitigate overfitting to suboptimal behaviors in offline datasets, existing methods often relax constraints on policy and data or extract informative patterns through data-driven techniques. However, there has been limited exploration into structurally guiding the optimization process toward flatter regions of the solution space that offer better generalization. Motivated by this observation, we present \textit{FANS}, a generalization-oriented structured network framework that promotes flatter and robust policy learning by guiding the optimization trajectory through modular architectural design. FANS comprises four key components: (1) Residual Blocks, which facilitate compact and expressive representations; (2) Gaussian Activation, which promotes smoother gradients; (3) Layer Normalization, which mitigates overfitting; and (4) Ensemble Modeling, which reduces estimation variance. By integrating FANS into a standard actor-critic framework, we highlight that this remarkably simple architecture achieves superior performance across various tasks compared to many existing advanced methods. Moreover, we validate the effectiveness of FANS in mitigating overestimation and promoting generalization, demonstrating the promising potential of architectural design in advancing offline RL.
+
+Intended figure caption:
+Figure 1: FANS architecture.
+
+Figure-reference context:
+<paragraph_1>Specifically, we employ residual connections, layer normalization, a smooth Gaussian activation function, and model ensembling. An overview of the FANS architecture is illustrated in Figure 1.</paragraph_1>

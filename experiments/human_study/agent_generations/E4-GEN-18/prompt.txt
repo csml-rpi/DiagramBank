@@ -1,0 +1,15 @@
+Create a polished landscape scientific schematic for the content below.
+
+Represent the scientific components and relationships faithfully. Use a clear left-to-right or top-to-bottom information flow when appropriate, concise readable labels, consistent arrows and grouping, a white background, and a restrained publication-ready visual style. Do not add unsupported modules, relationships, results, numerical claims, a paper title, authors, venue information, or a figure number. If reference diagrams are provided, use them only as relevant examples of scientific visual organization and abstraction; do not copy their scientific content or identifying labels.
+
+Title:
+FlexEControl: Flexible and Efficient Multimodal Control for Text-to-Image Generation
+
+Abstract:
+Controllable text-to-image (T2I) diffusion models generate images conditioned on both text prompts and semantic inputs of other modalities like edge maps. Nevertheless, current controllable T2I methods commonly face challenges related to efficiency and faithfulness, especially when conditioning on multiple inputs from either the same or diverse modalities. In this paper, we propose a novel Flexible and Efficient method, FlexEControl, for controllable T2I generation. At the core of FlexEControl is a unique weight decomposition strategy, which allows for streamlined integration of various input types. This approach not only enhances the faithfulness of the generated image to the control, but also significantly reduces the computational overhead typically associated with multimodal conditioning. Our approach achieves a reduction of 41% in trainable parameters and 30% in memory usage compared with Uni-ControlNet. Moreover, it doubles data efficiency and can flexibly generate images under the guidance of multiple input conditions of various modalities.
+
+Intended figure caption:
+Figure 11: Detailed model architecture in FlexEControl. The Stable Diffusion part is fixed and others are trainable.
+
+Figure-reference context:
+<paragraph_1>where Z denotes noise features, c denotes the input conditional features, Φ denotes learnable convolutional layers, and zero denotes zero convolutional layer. The zero convolutional layer contains weights initialized to zero. This ensures that during the initial stages of training, the model relies more on the knowledge from the backbone part, gradually adjusting these weights as training progresses. The use of such layers aids in preserving the architecture’s original behavior while introducing structure-conditioned inputs. We use the similar model architecture while we perform efficient training proposed in the main paper. We show the model architecture in Figure 11.</paragraph_1>

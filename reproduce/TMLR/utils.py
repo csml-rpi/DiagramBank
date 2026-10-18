@@ -4,11 +4,19 @@ import subprocess
 from datetime import datetime
 import json
 from pathlib import Path
+import sys
+
+# Allow direct invocation of each venue script and package imports.
+_REPRODUCE_ROOT = str(Path(__file__).resolve().parents[2])
+if _REPRODUCE_ROOT not in sys.path:
+    sys.path.insert(0, _REPRODUCE_ROOT)
+from reproduce.figure_context import (extract_figure_contexts as _extract_figure_contexts,
+                                      normalize_key as _normalize_key, is_caption as _is_caption)
+from reproduce.clip_provenance import (load_clip_model as _load_clip_model,
+                                       get_ensemble_features as _get_ensemble_features)
 from typing import List, Dict
 import re
 import fitz #PyMuPDF
-import torch
-import open_clip
 
 FIG_RAG_DIR = os.environ.get("FIG_RAG_DIR") # scratch folder to store all data for this project
 TMLR_DIR = os.path.join(FIG_RAG_DIR, "OpenReview", "TMLR") # scratch folder for data from TMLR
@@ -200,124 +208,26 @@ def get_clean_paper_text(pdf_path):
         return ""
 
 def normalize_key(k):
-    """
-    Normalizes 'Figure 1', 'Fig 1', '1' -> '1' for dictionary matching.
-    """
-    return re.sub(r'\D', '', str(k))
+    return _normalize_key(k)
+
 
 def is_caption(paragraph):
-    """
-    Detects if a paragraph is likely a caption.
-    
-    Rules 
-    - Start with 'Figure' or 'Fig'.
-    - Followed by a number.
-    - CRITICAL: followed immediately by a separator like ':' or '.' 
-      (e.g., "Figure 4:" or "Fig. 4.")
-      
-    This prevents false positives like "Fig. 4 supports this hypothesis..." 
-    from being deleted.
-    """
-    # Regex Breakdown:
-    # ^       : Start of line
-    # \s* : Optional whitespace
-    # (?:...): Non-capturing group for Figure/Fig
-    # \.?     : Optional dot (for Fig.)
-    # \s* : Optional space
-    # \d+     : The number
-    # \s* : Optional space before separator
-    # [:.]    : Must have a colon or dot separator
-    
-    pattern = r'^\s*(?:Figure|Fig)s?\.?\s*\d+\s*[:.]'
-    
-    return bool(re.match(pattern, paragraph, re.IGNORECASE))
+    return _is_caption(paragraph)
+
 
 def extract_figure_contexts(paper_text, target_fig_numbers):
-    """
-    Regex-based context extractor.
-    Returns a dict { '1': [para1, para2], '2': [para1] ... }
-    """
-    paragraphs = paper_text.split('\n\n')
-    
-    # Normalize targets to handle cases where input might be "1" and "1b" -> both become "1"
-    unique_targets = set(normalize_key(n) for n in target_fig_numbers)
-    results = {k: [] for k in unique_targets}
-    
-    # Pre-compile regexes for efficiency
-    patterns = {}
-    for n_key in unique_targets:
-        # REGEX EXPLANATION for case "Fig. (5b and c)":
-        # 1. (?i)                 -> Case insensitive
-        # 2. \b(?:Figure|Fig)s?\.?-> Matches "Figure", "Fig", "Figs."
-        # 3. .{0,50}?             -> Lookahead window (0-50 chars, non-greedy). 
-        #                            Allows finding "Figure" then skipping " (" to find "5".
-        # 4. \b                   -> Word boundary (start of the number)
-        # 5. KEY                  -> The target number (e.g., "5")
-        # 6. (?!\d)               -> Negative lookahead: Next char must NOT be a digit.
-        #                            - Matches "5" in "5b" (b is not digit)
-        #                            - Matches "5" in "5)" () is not digit)
-        #                            - REJECTS "5" in "50" (0 is digit)
-        
-        escaped_key = re.escape(n_key)
-        patterns[n_key] = re.compile(
-            r'(?i)\b(?:Figure|Fig)s?\.?.{0,50}?\b' + escaped_key + r'(?!\d)'
-        )
-
-    for para in paragraphs:
-        # Skip empty or very short paragraphs
-        if len(para) < 20:
-            continue
-            
-        # 1. EXCLUDE CAPTIONS
-        # If the paragraph *starts* with a Figure definition, discard it.
-        if is_caption(para):
-            continue
-
-        # 2. CHECK REFERENCES
-        for n_key in unique_targets:
-            if patterns[n_key].search(para):
-                results[n_key].append(para)
-
-    return results
+    """Use the shared explicit-reference parser, retaining original figure keys."""
+    return _extract_figure_contexts(paper_text, target_fig_numbers)
 # =========================================================
 
 
 # =========================================================
 # classify figures
 # =========================================================
-def load_model_and_tokenizer():
-    print(f"Loading ViT-B-32 on CPU...")
-    # DataComp is generally better for distinguishing charts from renders
-    try:
-        print("Attempting to load DataComp weights...")
-        model, _, preprocess = open_clip.create_model_and_transforms(
-            'ViT-B-32', 
-            pretrained='datacomp_xl_s13b_b90k'
-        )
-        print("Success: Using DataComp weights.")
-    except:
-        print("DataComp not found. Falling back to LAION-2B...")
-        model, _, preprocess = open_clip.create_model_and_transforms(
-            'ViT-B-32', 
-            pretrained='laion2b_s34b_b79k'
-        )
-        
-    tokenizer = open_clip.get_tokenizer('ViT-B-32')
-    return model, tokenizer, preprocess
+def load_model_and_tokenizer(pretrained="datacomp_xl_s13b_b90k"):
+    return _load_clip_model(pretrained=pretrained)
+
 
 def get_ensemble_features(model, tokenizer, class_prompts):
-    class_features = []
-    ordered_keys = ["diagram", "plot", "photo", "other"]
-    
-    with torch.no_grad():
-        for label in ordered_keys:
-            prompts = class_prompts[label]
-            tokens = tokenizer(prompts)
-            features = model.encode_text(tokens)
-            features /= features.norm(dim=-1, keepdim=True)
-            class_embedding = features.mean(dim=0)
-            class_embedding /= class_embedding.norm()
-            class_features.append(class_embedding)
-    
-    return torch.stack(class_features)
+    return _get_ensemble_features(model, tokenizer, class_prompts)
 # =========================================================

@@ -1,0 +1,7 @@
+{
+  "model": "text-embedding-3-large",
+  "dimension": 3072,
+  "records": 2000,
+  "input_texts_sha256": "95d5eeb75880dec1401e4518f3db5e12dd805972f8d36158dcc33ac15470de60",
+  "embedding_sha256": "dfe24305ccf10a0e83d29f2415f856dd26bacef60ceeaf6b6f9dd44bea26ef03"
+}

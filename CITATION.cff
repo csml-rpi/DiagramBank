@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use DiagramBank, please cite the paper below."
+title: "DiagramBank"
+type: software
+repository-code: "https://github.com/csml-rpi/DiagramBank"
+repository-artifact: "https://huggingface.co/datasets/ghzlmc/DiagramBank"
+license: MIT
+authors:
+  - family-names: Yue
+    given-names: Ling
+  - family-names: Wang
+    given-names: Jiaying
+  - family-names: Lu
+    given-names: Zhexi
+  - family-names: Zhu
+    given-names: Mingzhi
+  - family-names: Zhang
+    given-names: Tingwen
+  - family-names: Xu
+    given-names: Zhen
+  - family-names: Pan
+    given-names: Shaowu
+preferred-citation:
+  type: article
+  title: "DiagramBank: Draw from the Great, Draw Your Best"
+  authors:
+    - family-names: Yue
+      given-names: Ling
+    - family-names: Wang
+      given-names: Jiaying
+    - family-names: Lu
+      given-names: Zhexi
+    - family-names: Zhu
+      given-names: Mingzhi
+    - family-names: Zhang
+      given-names: Tingwen
+    - family-names: Xu
+      given-names: Zhen
+    - family-names: Pan
+      given-names: Shaowu
+  journal: "arXiv preprint arXiv:2604.20857"
+  year: 2026

@@ -1,0 +1,5 @@
+cascade_path,population,sample_n,tp
+t1_unanimous_diagram,46524,100,95
+t1_majority_diagram,3645,75,62
+t1_minority_diagram_gpt_confirmed,1865,125,91
+t2_vlm_consensus_gpt_confirmed,5066,200,194

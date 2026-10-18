@@ -1,0 +1,15 @@
+Create a polished landscape scientific schematic for the content below.
+
+Represent the scientific components and relationships faithfully. Use a clear left-to-right or top-to-bottom information flow when appropriate, concise readable labels, consistent arrows and grouping, a white background, and a restrained publication-ready visual style. Do not add unsupported modules, relationships, results, numerical claims, a paper title, authors, venue information, or a figure number. If reference diagrams are provided, use them only as relevant examples of scientific visual organization and abstraction; do not copy their scientific content or identifying labels.
+
+Title:
+Diffusion-based Time Series Imputation and Forecasting with Structured State Space Models
+
+Abstract:
+The imputation of missing values represents a significant obstacle for many real-world data analysis pipelines. Here, we focus on time series data and put forward SSSD, an imputation model that relies on two emerging technologies, (conditional) diffusion models as state-ofthe-art generative models and structured state space models as internal model architecture, which are particularly suited to capture long-term dependencies in time series data. We demonstrate that SSSD matches or even exceeds state-of-the-art probabilistic imputation and forecasting performance on a broad range of data sets and different missingness scenarios, including the challenging blackout-missing scenarios, where prior approaches failed to provide meaningful results.
+
+Intended figure caption:
+Figure 2: Proposed SSSDS4 model architecture.
+
+Figure-reference context:
+<paragraph_1>for (Tashiro et al., 2021), which is based on DiffWave, which was proposed in the context of speech synthesis. Thus, we propose a direct adaptation of the DiffWave-architecture (Kong et al., 2021) as a baseline for time series imputation, see Appendix C for details. In particular, we use the proposed setup where the diffusion process is only applied to the parts of the sequence that are supposed to imputed. Based on this model, we put forward SSSDS4, the main architectural contribution of this work, where instead of bidirectional dilated convolutions, we used S4 layer as a diffusion layer within each of its residual blocks after adding the diffusion embedding. As a second modification, we include a second S4 layer after the addition assignment with the conditional information, which gives the model additional flexibility after joining processed inputs and the conditional information. The effectiveness of this modification is demonstrated in an ablation study in Appendix B.1. The architecture is depicted schematically in Figure 2. Second, under the name SSSDSA</paragraph_1>

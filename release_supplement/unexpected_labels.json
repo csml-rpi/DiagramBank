@@ -1,0 +1,497 @@
+[
+  {
+    "platform_id": "0xbP4W7rdJW",
+    "figure_number": "5",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "2D36otXvBE",
+    "figure_number": "4",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": "t1_minority_diagram_gpt_confirmed",
+    "retained": true
+  },
+  {
+    "platform_id": "3FsVtsISHW",
+    "figure_number": "2",
+    "field": "label_haiku",
+    "saved_label": "heatmap",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "3VdSuh3sie",
+    "figure_number": "12",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "3uj_8G7fxgs",
+    "figure_number": "5",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_one_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "4KLwep6mA1",
+    "figure_number": "2",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "4T7gFdhsPJ",
+    "figure_number": "6",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "4T7gFdhsPJ",
+    "figure_number": "7",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "5o9G4XF1LI",
+    "figure_number": "11",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "5yDS32hKJc",
+    "figure_number": "4",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "8PHOPPH35D",
+    "figure_number": "3",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "8WS5nDWIWE",
+    "figure_number": "6",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "8WawVDdKqlL",
+    "figure_number": "2",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "94Sj1CcC_Jl",
+    "figure_number": "6",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "AxqgpcL90a",
+    "figure_number": "1",
+    "field": "label_haiku",
+    "saved_label": "table\n\nwait, let me reconsider based on the definitions provided. this",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "ByloJ20qtm",
+    "figure_number": "3",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "CJbhtpcyGL",
+    "figure_number": "7",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_majority_diagram",
+    "cascade_path": "t1_majority_diagram",
+    "retained": true
+  },
+  {
+    "platform_id": "IVYVDN6pJ6",
+    "figure_number": "3",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "Im2neAMlre",
+    "figure_number": "4",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "JLF6XDnscF",
+    "figure_number": "12",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "JmOCquEAqW",
+    "figure_number": "7",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": "t1_minority_diagram_gpt_confirmed",
+    "retained": true
+  },
+  {
+    "platform_id": "JyTT03dqCFD",
+    "figure_number": "1",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "NFEJQn7vX0",
+    "figure_number": "7",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "NRHajbzg8y0P",
+    "figure_number": "10",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": "t1_minority_diagram_gpt_confirmed",
+    "retained": true
+  },
+  {
+    "platform_id": "Oh8MuCacJW",
+    "figure_number": "8",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "QPuxjsjKCP",
+    "figure_number": "7",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "R8TU3pfzFr",
+    "figure_number": "8",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "Trf0R8eoGF",
+    "figure_number": "5",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "UZm2IQhgIyB",
+    "figure_number": "1",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "VFqzxhINFU",
+    "figure_number": "4",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "Vs5NK44aP9P",
+    "figure_number": "4",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "XoSF46Pc2e",
+    "figure_number": "1",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "Y0yXuQtPn8",
+    "figure_number": "4",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "YoUb2vW9WP",
+    "figure_number": "5",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "a7PVyayyfp",
+    "figure_number": "5",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "bcheYCitFy",
+    "figure_number": "5",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "dC5TWysDsZ",
+    "figure_number": "3",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_majority_diagram",
+    "cascade_path": "t1_majority_diagram",
+    "retained": true
+  },
+  {
+    "platform_id": "f2wN4v_2__W",
+    "figure_number": "4",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "g0QM7IBuCh",
+    "figure_number": "8",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "jcvX8XFNqX",
+    "figure_number": "20",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_one_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "k3Cyx3Uets",
+    "figure_number": "5",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "kJ0qp9Xdsh",
+    "figure_number": "C.4",
+    "field": "label_haiku",
+    "saved_label": "heatmap",
+    "vote_category": "t1_majority_diagram",
+    "cascade_path": "t1_majority_diagram",
+    "retained": true
+  },
+  {
+    "platform_id": "noyKGZYvHH",
+    "figure_number": "2",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "pMvBiSLGTeU",
+    "figure_number": "2",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "pZiyCaVuti",
+    "figure_number": "3",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "qjNdGpgpV8",
+    "figure_number": "11",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "tTnFH7D1h4",
+    "figure_number": "2",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "ue9igTDLN2",
+    "figure_number": "12",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "uocLJOnKBv",
+    "figure_number": "7",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_one_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "v31jzDdDts",
+    "figure_number": "10",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "wDDprThYeT",
+    "figure_number": "4",
+    "field": "label_haiku",
+    "saved_label": "heatmap",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "yL15ys5swq",
+    "figure_number": "4",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "yawWz4qWkF",
+    "figure_number": "9",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t2_no_vlm_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "yj8h567Ia7",
+    "figure_number": "2",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": null,
+    "retained": false
+  },
+  {
+    "platform_id": "znLlSgN-4S0",
+    "figure_number": "2",
+    "field": "label_haiku",
+    "saved_label": "table",
+    "vote_category": "t1_minority_diagram",
+    "cascade_path": "t1_minority_diagram_gpt_confirmed",
+    "retained": true
+  }
+]

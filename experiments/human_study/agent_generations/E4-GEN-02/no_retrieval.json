@@ -1,0 +1,11 @@
+{
+  "case_id": "E4-GEN-02",
+  "condition": "no_retrieval",
+  "interface": "Codex built-in image_gen",
+  "prompt_sha256": "e0d22497832bc0346c4b3b81a5f2fcab120f5c222e7196f50ef9bdda8323a9e7",
+  "output_path": "agent_generations/E4-GEN-02/no_retrieval.png",
+  "output_sha256": "81b438579b9ab4b815f25eefaf647e40c82612c44af20ef78e05dbb936f3cc56",
+  "width": 1693,
+  "height": 929,
+  "reference_paths": []
+}

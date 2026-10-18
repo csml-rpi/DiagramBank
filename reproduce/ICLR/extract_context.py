@@ -72,12 +72,12 @@ def main():
         # Format for DB
         for fnum in target_figs:
             paragraphs = context_map.get(fnum, [])
-            if paragraphs:
-                formatted_context = ""
-                for i, para in enumerate(paragraphs, 1):
-                    formatted_context += f"<paragraph_{i}>{para}</paragraph_{i}>\n"
-                
-                updates.append((formatted_context.strip(), pid, fnum))
+            # A successfully re-read PDF must also clear obsolete matches.
+            formatted_context = "\n".join(
+                f"<paragraph_{i}>{para}</paragraph_{i}>"
+                for i, para in enumerate(paragraphs, 1)
+            )
+            updates.append((formatted_context, pid, fnum))
 
     # 4. Batch Update DuckDB
     if updates:

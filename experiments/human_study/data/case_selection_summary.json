@@ -1,0 +1,30 @@
+{
+  "seed": 20260712,
+  "selection_rule": {
+    "caption_must_match": "\\b(?:architecture|framework|pipeline|workflow|overview|schematic|diagram|process|system|module|mechanism|procedure|network|policy|model)\\b",
+    "caption_must_not_match": "\\b(?:qualitative|visualization|comparison|results?|samples?|screenshots?|histogram|heatmap|plot|curves?|accuracy|performance)\\b"
+  },
+  "source_targets": 2000,
+  "generation_eligible_targets": 935,
+  "cases": 20,
+  "unique_papers": 20,
+  "venue_counts": {
+    "ICLR": 5,
+    "ICML": 5,
+    "NeurIPS": 5,
+    "TMLR": 5
+  },
+  "caption_length_counts": {
+    "long_41_plus": 8,
+    "medium_13_40": 8,
+    "short_1_12": 4
+  },
+  "year_counts": {
+    "2021": 2,
+    "2022": 2,
+    "2023": 3,
+    "2024": 6,
+    "2025": 5,
+    "2026": 2
+  }
+}

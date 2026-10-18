@@ -1,0 +1,582 @@
+{
+  "schema_version": 2,
+  "resolved_commit": "8d8d408b4ccff03d76e8cbd7b2f39a0914405c7e",
+  "generated_at_utc": "2026-10-18T21:50:29Z",
+  "method": "Hugging Face repository-tree metadata; sha256 is the Git LFS object ID of each payload.",
+  "summary": {
+    "sha256_payload_files": 112,
+    "sha256_payload_bytes": 75716353492,
+    "image_archives": 104,
+    "image_archive_bytes": 72953644773,
+    "accepted_image_archives": 51,
+    "accepted_image_archive_bytes": 50527389922,
+    "other_image_archives": 53,
+    "other_image_archive_bytes": 22426254851,
+    "core_payload_files": 6,
+    "core_payload_bytes": 2515002370,
+    "reproduction_metadata_archives": 2,
+    "reproduction_metadata_archive_bytes": 247706349
+  },
+  "files": [
+    {
+      "path": "data.jsonl",
+      "size": 260628174,
+      "sha256": "6b8eb310827342405eafc4f383054aa6357b78c2f97613675f09b55870f19708"
+    },
+    {
+      "path": "data/ICLR_2017_accept_oral.tar.gz",
+      "size": 22168167,
+      "sha256": "ba9b82fa7965c8c203001224779102321c505a1ae657f1a713f53604b9b9d468"
+    },
+    {
+      "path": "data/ICLR_2017_accept_poster.tar.gz",
+      "size": 219667684,
+      "sha256": "fe12734bc8eec5a5ddbfec956feb621740dd449eadaca23230afc8ef88e59dd8"
+    },
+    {
+      "path": "data/ICLR_2017_invite_to_workshop_track.tar.gz",
+      "size": 32048254,
+      "sha256": "93dcc862509c334e19fa49d274ba338e75187689daa3c70ad69bdc5f883b03f0"
+    },
+    {
+      "path": "data/ICLR_2017_reject.tar.gz",
+      "size": 16472422,
+      "sha256": "0a2bfc8a43b45c4631ef52b63c86c5122d775be19034b4dea7610001a3240807"
+    },
+    {
+      "path": "data/ICLR_2018_accept_oral.tar.gz",
+      "size": 47872079,
+      "sha256": "20da7a96c92a70df5d61654d76c652d296fe3adb31a17574d9e2767a31dc45d1"
+    },
+    {
+      "path": "data/ICLR_2018_accept_poster.tar.gz",
+      "size": 411653544,
+      "sha256": "b09cf2c4b84679fd72d683681c0f6c8aaf54524ed3b37a082729719a246dc632"
+    },
+    {
+      "path": "data/ICLR_2018_invite_to_workshop_track.tar.gz",
+      "size": 65841399,
+      "sha256": "eeedf40d7125296c62981648a27d8d309858b7f0461dc8e598d48e24027139d4"
+    },
+    {
+      "path": "data/ICLR_2018_reject.tar.gz",
+      "size": 74613569,
+      "sha256": "b8b297e393b59bf2dcb0d18ca47ee02a4ae9bb718299834a0f5efd293813834f"
+    },
+    {
+      "path": "data/ICLR_2018_withdrawn.tar.gz",
+      "size": 50005938,
+      "sha256": "96a9616b09acc498c6a70c5d1e2286b138899f62559b4b4b95b88241dc40784a"
+    },
+    {
+      "path": "data/ICLR_2019_accept_oral.tar.gz",
+      "size": 43584391,
+      "sha256": "6e5fd16dde0929f79219b5f3d727a46f1fc47126078edc6450fa0764dfdd0599"
+    },
+    {
+      "path": "data/ICLR_2019_accept_poster.tar.gz",
+      "size": 611393484,
+      "sha256": "484fd1e6290f702cadafa570580e74bfa1c329683788c623053e7e85667bf475"
+    },
+    {
+      "path": "data/ICLR_2019_reject.tar.gz",
+      "size": 755716100,
+      "sha256": "0575c7dda605c74e8ef7a6fa4e957a1eccd9538347322c491cb9e0b97435c3ae"
+    },
+    {
+      "path": "data/ICLR_2019_withdrawn.tar.gz",
+      "size": 141253134,
+      "sha256": "97ef3c59fda248bd9c4d573c2a46d2fc50315f13624825efa753717a1c416208"
+    },
+    {
+      "path": "data/ICLR_2020_accept_poster.tar.gz",
+      "size": 575451071,
+      "sha256": "262a4fb154259a5e7962a2d52bc39ecc7e06b0062ad801ee1cdce2c21644bf5a"
+    },
+    {
+      "path": "data/ICLR_2020_accept_spotlight.tar.gz",
+      "size": 117755376,
+      "sha256": "82e3560a8d326453312f723289bcc5e641440ef710eb25d856ab7c4e9e0b0598"
+    },
+    {
+      "path": "data/ICLR_2020_accept_talk.tar.gz",
+      "size": 52764056,
+      "sha256": "79663430935d6e5ead25722b940c540f41d28ccf23057a80fffd6ded9e8dd372"
+    },
+    {
+      "path": "data/ICLR_2020_desk_reject.tar.gz",
+      "size": 7361121,
+      "sha256": "518569e576c63f223bbc867733e859381629bda5e57945b6d36c1ae95545c0ca"
+    },
+    {
+      "path": "data/ICLR_2020_reject.tar.gz",
+      "size": 1444724836,
+      "sha256": "be0f7f7013e67f668155395051bbb3b5b3c818cc33e084364366a6acb0cba83b"
+    },
+    {
+      "path": "data/ICLR_2020_withdrawn.tar.gz",
+      "size": 337522571,
+      "sha256": "6cb5f0e61602ad0709d9f96b5d81f07418bb7eca87828ecf199be0f65899b5a5"
+    },
+    {
+      "path": "data/ICLR_2021_accept_oral.tar.gz",
+      "size": 104065087,
+      "sha256": "b5fc0df8f715eb4541672fc988b005772b88eb3aa95108667e9c442aa79ca10c"
+    },
+    {
+      "path": "data/ICLR_2021_accept_poster.tar.gz",
+      "size": 907041867,
+      "sha256": "8c7ecb8238a567d91829263eeb5347b04d53323cc8c7b592c1c95ad221fc5750"
+    },
+    {
+      "path": "data/ICLR_2021_accept_spotlight.tar.gz",
+      "size": 195789296,
+      "sha256": "a0030889c09dd85f122dcfd59c177e70fce87a3e04f04237e73cdb50afb80e9c"
+    },
+    {
+      "path": "data/ICLR_2021_concerns_raised_can_publish_with_adjustment.tar.gz",
+      "size": 1491963,
+      "sha256": "f2efae3f6afce2a30ed77ff531fec5d5e918fe559693063d7cf14ca27c65d911"
+    },
+    {
+      "path": "data/ICLR_2021_desk_reject.tar.gz",
+      "size": 5600961,
+      "sha256": "bcff7d8ebb7e3dbde7d7170e05e38daaf1e5718009e0494e5a761a8785aa2062"
+    },
+    {
+      "path": "data/ICLR_2021_no_judgement_proceed_with_normal_process.tar.gz",
+      "size": 219829,
+      "sha256": "58b0e90524a331630db621505d44f3c0ea5b6925fc4e26a54fe49373bb82b8e9"
+    },
+    {
+      "path": "data/ICLR_2021_reject.tar.gz",
+      "size": 1550015789,
+      "sha256": "24a7b00c4399371981c02aa894e8bd4cafdf9127946303945171ace4d4856de7"
+    },
+    {
+      "path": "data/ICLR_2021_significant_concerns_do_not_publish.tar.gz",
+      "size": 1152854,
+      "sha256": "8a3b4298e63f07297a2f9b0c326c529b749d605b60c23e9ef7360376fd08e52f"
+    },
+    {
+      "path": "data/ICLR_2021_withdrawn.tar.gz",
+      "size": 471293978,
+      "sha256": "7a7f400448ad9565a3de28f0e7aac05e4a98f0c928814fefe180e40d01e5a752"
+    },
+    {
+      "path": "data/ICLR_2022_accept_oral.tar.gz",
+      "size": 100486247,
+      "sha256": "6176dec0ce847d7e520adc85114860eb96d9f485bfbbab51f29106ba594127d0"
+    },
+    {
+      "path": "data/ICLR_2022_accept_poster.tar.gz",
+      "size": 1313261457,
+      "sha256": "8fcd72aa5d40258bebd29fcc6e720175a941c5e990ee268cbadc128bce1e7834"
+    },
+    {
+      "path": "data/ICLR_2022_accept_spotlight.tar.gz",
+      "size": 191674568,
+      "sha256": "6524f5018840d60127d286c9e62a8ad66772caff000def2cd272b30ef9827ab9"
+    },
+    {
+      "path": "data/ICLR_2022_desk_reject.tar.gz",
+      "size": 11284640,
+      "sha256": "af178802ab98856c2049d901cb06e3efdf6dd13be0ab5aff6965321500dd2ae1"
+    },
+    {
+      "path": "data/ICLR_2022_reject.tar.gz",
+      "size": 1459366048,
+      "sha256": "9929d153da62d671c741a208b4ce4b49b02c02be154f1e2b0139f011a162a881"
+    },
+    {
+      "path": "data/ICLR_2022_withdrawn.tar.gz",
+      "size": 739475301,
+      "sha256": "3b204be45b41990e2fd2e34ea3fdc3713a35343e41725dc783521edb6db8767e"
+    },
+    {
+      "path": "data/ICLR_2023_accept_notable_top_25.tar.gz",
+      "size": 534472482,
+      "sha256": "9fea08656f5838cba905343ac0291ba44a7556f0c89b39c202c05f6ea01303af"
+    },
+    {
+      "path": "data/ICLR_2023_accept_notable_top_5.tar.gz",
+      "size": 113320499,
+      "sha256": "339a30b7ca1f58497c4b5d1d47a0b2a4661ef1f6a8171e551c6d8b78ecfa267c"
+    },
+    {
+      "path": "data/ICLR_2023_accept_poster.tar.gz",
+      "size": 1399944022,
+      "sha256": "30450837cdba5348cff6064182c861027ae511ad12043f00041fe5d749e9ae6a"
+    },
+    {
+      "path": "data/ICLR_2023_desk_reject.tar.gz",
+      "size": 18104944,
+      "sha256": "48191bfc03b35f5a0488cf3a4e89fb1bd44f9c907738e948a4a1181eb49f1195"
+    },
+    {
+      "path": "data/ICLR_2023_reject.tar.gz",
+      "size": 2148935660,
+      "sha256": "a56b420cb6d6f8359b65190cb44549b21b0c24d87e6da5dc1126501693efca09"
+    },
+    {
+      "path": "data/ICLR_2023_withdrawn.tar.gz",
+      "size": 1180943789,
+      "sha256": "151fe93620766fa8a10150687124f49fa54686b13949999d43d10ffa5b3f163b"
+    },
+    {
+      "path": "data/ICLR_2024_accept_oral.tar.gz",
+      "size": 194247249,
+      "sha256": "12c0922238b0c9a4d6e5f0c735bff494c529e12514175720509445e02b290300"
+    },
+    {
+      "path": "data/ICLR_2024_accept_poster.tar.gz",
+      "size": 2906085140,
+      "sha256": "e0742551635e3f4a0dd98477f51c8c861c2b210d795c5cbbf888031658b2df8f"
+    },
+    {
+      "path": "data/ICLR_2024_accept_spotlight.tar.gz",
+      "size": 526845533,
+      "sha256": "5cdc0466aae86e79901bae6cca1664c01831f4a79360b66b117e54331bb062b3"
+    },
+    {
+      "path": "data/ICLR_2024_reject.tar.gz",
+      "size": 3529608946,
+      "sha256": "a292914ea57a701fe82adc73ce47c5bd51aea1d5b4e9af5e380ec147c0bf11b2"
+    },
+    {
+      "path": "data/ICLR_2025_accept_oral.tar.gz",
+      "size": 471404331,
+      "sha256": "bba313ed45053750e3953675e9b9cd2900744fc29a5be601229a5141d9497a10"
+    },
+    {
+      "path": "data/ICLR_2025_accept_poster.tar.gz",
+      "size": 5460396858,
+      "sha256": "23c2e5b39aaa6622266a0f5618408fc8ea2d0df8dc223adbacf5e75299ea21b6"
+    },
+    {
+      "path": "data/ICLR_2025_accept_spotlight.tar.gz",
+      "size": 749391375,
+      "sha256": "1344f747ddac6fc7d5a836be5412fd440ddc3006ada981486b3f1b7e6c0c8cbd"
+    },
+    {
+      "path": "data/ICLR_2025_reject.tar.gz",
+      "size": 1053508962,
+      "sha256": "13d5bd60f2b7a99360a4611b17894608d29876f3839b600d08800603ede68eba"
+    },
+    {
+      "path": "data/ICLR_2026_accept_oral.tar.gz",
+      "size": 119456146,
+      "sha256": "7e960e8ce5e21515d27566552bef0af5d124b668aa30b64ec07908124dbaf846"
+    },
+    {
+      "path": "data/ICLR_2026_accept_poster.tar.gz",
+      "size": 2685336181,
+      "sha256": "4e60bf702411b5d05f1ae6016fe43d1fc704e8cc1aed9a376a6bdea18cdf4aac"
+    },
+    {
+      "path": "data/ICLR_2026_conditional_accept_oral.tar.gz",
+      "size": 38787,
+      "sha256": "8e6221304befd6f05aa9115a727fec9e2797d02d2f1bf0455dc361e46dca7aee"
+    },
+    {
+      "path": "data/ICLR_2026_conditional_accept_poster.tar.gz",
+      "size": 13025021,
+      "sha256": "9b3ff35e91584a067a49f0e0642bccea3f15d3f9b6c642154af87e91accc0390"
+    },
+    {
+      "path": "data/ICLR_2026_desk_reject.tar.gz",
+      "size": 5877359,
+      "sha256": "e792d80ffb622ddbab697e654c4cab45cb6340651bc90e293a667621acbe834f"
+    },
+    {
+      "path": "data/ICLR_2026_pending_unknown.tar.gz",
+      "size": 162526003,
+      "sha256": "9c9584f9a578cbe8193acde797d2e86d6fb332f65cfa89c03e6936b141ee36fd"
+    },
+    {
+      "path": "data/ICLR_2026_reject.tar.gz",
+      "size": 1778763829,
+      "sha256": "57a65a3dc9dce7fcacc8260df6bf7cf6706db446101a1314a20164d1c6c163dd"
+    },
+    {
+      "path": "data/ICLR_2026_withdrawn.tar.gz",
+      "size": 1313342708,
+      "sha256": "3a98cdf376ce5e27d4f844247c65235d32e8aa10335782e13dd0dcef3f130e16"
+    },
+    {
+      "path": "data/ICLR_research_db.tar.gz",
+      "size": 196089423,
+      "sha256": "ff9d6dea9762c11e60402270c95c59db4f6257fdaf7ad11bc5f2b3abffa2ee49"
+    },
+    {
+      "path": "data/ICML_2023_icml_2023_oralposter.tar.gz",
+      "size": 213626448,
+      "sha256": "0e36293da16c3609a3c50ec1bc30b044c6da8434477f28ffae997189708ddcb7"
+    },
+    {
+      "path": "data/ICML_2023_icml_2023_poster.tar.gz",
+      "size": 1773962455,
+      "sha256": "db45b60eb44a0fde98116ad11f05d72c7b6e8e3b79206141dc26d5206d4a1e13"
+    },
+    {
+      "path": "data/ICML_2024_icml_2024_oral.tar.gz",
+      "size": 145608284,
+      "sha256": "81e51210b4127a605e65ab52a20059df38fd6402d976a90cc9acdb8902d58130"
+    },
+    {
+      "path": "data/ICML_2024_icml_2024_poster.tar.gz",
+      "size": 2955416680,
+      "sha256": "8cbd71cef3100c709a626e586f905285203d6a65d72365b9d407aabcd0edc69f"
+    },
+    {
+      "path": "data/ICML_2024_icml_2024_spotlight.tar.gz",
+      "size": 225184870,
+      "sha256": "f60a51ab144002bfca957011ef128bceaf126a0d499132994793c2323b2d262b"
+    },
+    {
+      "path": "data/ICML_2024_withdrawn.tar.gz",
+      "size": 85424,
+      "sha256": "6e6c2bdfc06105baa07306ed548fb4e7a8642206a67d418ba8b632fc063d001d"
+    },
+    {
+      "path": "data/ICML_2025_desk_reject.tar.gz",
+      "size": 12018816,
+      "sha256": "3b668c21ac60b67ea3020bfd758c7e0146c9b9e355f58f9bed3c4e98268b9421"
+    },
+    {
+      "path": "data/ICML_2025_icml_2025_oral.tar.gz",
+      "size": 173208609,
+      "sha256": "8ba6bd36c25b02715cf21f1e8f494ff8d6201ae9938e0db7cfc25fede844c399"
+    },
+    {
+      "path": "data/ICML_2025_icml_2025_poster.tar.gz",
+      "size": 4345459145,
+      "sha256": "8484c66e1dd4e4705efc7f1a27ab93a7519938034ee155cc60271ad05833a690"
+    },
+    {
+      "path": "data/ICML_2025_icml_2025_retracted_by_authors.tar.gz",
+      "size": 3094266,
+      "sha256": "d5c0e1edfb65be17591626b4cce10813563715def8d47fc4ccdaec0eef2db4f5"
+    },
+    {
+      "path": "data/ICML_2025_icml_2025_spotlightposter.tar.gz",
+      "size": 306418156,
+      "sha256": "3f523b00fc45a2d7dc77037c760d44f204a37efe8fefaca2a34cafd6c46b68a6"
+    },
+    {
+      "path": "data/ICML_2025_submitted_to_icml_2025.tar.gz",
+      "size": 23667405,
+      "sha256": "dbaa2cf76ef751fa49933675fd1234968edf5645f99151e5d4795b5f0e75c7fe"
+    },
+    {
+      "path": "data/ICML_research_db.tar.gz",
+      "size": 40205015,
+      "sha256": "166cc182bfa270ae555e507e6219e016c28c55720c7ba903036534009dfd777f"
+    },
+    {
+      "path": "data/NeurIPS_2021_accept_oral.tar.gz",
+      "size": 18730918,
+      "sha256": "767725e336c2fc0d0202ceada69e7399e39184d2bb77473cf810b9f61f9c3820"
+    },
+    {
+      "path": "data/NeurIPS_2021_accept_poster.tar.gz",
+      "size": 756150213,
+      "sha256": "a19c846bd96f20dd10933a1363a549ea7f8ee45926d4016d4fa8a6f1ffab558f"
+    },
+    {
+      "path": "data/NeurIPS_2021_accept_spotlight.tar.gz",
+      "size": 88489225,
+      "sha256": "1376a58298f694388a39e3f82b5c8f856a7a61918f1aeb4f36d262aadc9ed181"
+    },
+    {
+      "path": "data/NeurIPS_2021_reject.tar.gz",
+      "size": 35426081,
+      "sha256": "cbbd1d7e3559c76523694e9178565d9ff6e7e35622d2d9b455ea2fad28ba681d"
+    },
+    {
+      "path": "data/NeurIPS_2022_accept.tar.gz",
+      "size": 915229016,
+      "sha256": "0b893c24d07296895288851a6483084181f69d912aae61174b658cc681cfcb78"
+    },
+    {
+      "path": "data/NeurIPS_2022_reject.tar.gz",
+      "size": 77057287,
+      "sha256": "ffa74cc7145b18fc02cfd8d8080699cbc667799aa1b2d7a749a8517a4042f185"
+    },
+    {
+      "path": "data/NeurIPS_2024_accept_oral.tar.gz",
+      "size": 101150071,
+      "sha256": "3ce197922612bf908140fb6d4ac9885d432f573bbbd2cc6e6837c233fbaa1e9e"
+    },
+    {
+      "path": "data/NeurIPS_2024_accept_poster.tar.gz",
+      "size": 5283682146,
+      "sha256": "882cf9d12ed5de7cca8141e25d2d15b671b92e62abfa0755d92722939ef4b2b5"
+    },
+    {
+      "path": "data/NeurIPS_2024_accept_spotlight.tar.gz",
+      "size": 490835840,
+      "sha256": "4edd0631f05ca720d1be64539f87c550e0aa9bd7a1faeb3156eeddc729a1b7a8"
+    },
+    {
+      "path": "data/NeurIPS_2024_desk_reject.tar.gz",
+      "size": 12552765,
+      "sha256": "dc102d91032f41933bfb520dd12afc86b293e728150025cef851b879c19e9ac4"
+    },
+    {
+      "path": "data/NeurIPS_2024_reject.tar.gz",
+      "size": 218559257,
+      "sha256": "f9eb077723ab877f6d8d12a653cd69da33e47cc5fda1ced4e92d8d665620a646"
+    },
+    {
+      "path": "data/NeurIPS_2024_withdrawn.tar.gz",
+      "size": 991196,
+      "sha256": "163ff57cd98be682b1f9a61d7070d7951ec39828091bc9f1bc3abf06888e24e1"
+    },
+    {
+      "path": "data/NeurIPS_2025_accept_oral.tar.gz",
+      "size": 79397140,
+      "sha256": "91e3a62e564547e61bdfaffd0fa8e6e7c91bb529aed2d424f5089e7e5ba36e9f"
+    },
+    {
+      "path": "data/NeurIPS_2025_accept_poster.tar.gz",
+      "size": 6584791252,
+      "sha256": "e424b8f6ded64ebc0c6a34a7e5b75f4ce81a56906d0fc277f307b91006ddef2f"
+    },
+    {
+      "path": "data/NeurIPS_2025_accept_spotlight.tar.gz",
+      "size": 998632332,
+      "sha256": "9970c4121ea82f116f61ca4570a9f4d19f9e1be9256b84cb78887d94687fe091"
+    },
+    {
+      "path": "data/NeurIPS_2025_desk_reject.tar.gz",
+      "size": 25002450,
+      "sha256": "301845742e9b48c6bb9b97f92db781459a03ee93469181e447ed3e1ed0ab5b56"
+    },
+    {
+      "path": "data/NeurIPS_2025_reject.tar.gz",
+      "size": 274879857,
+      "sha256": "4d9404595933d113aa0cb2fe1cb35414d06a7b4dad1eddb46cea736c408a7312"
+    },
+    {
+      "path": "data/NeurIPS_2025_withdrawn.tar.gz",
+      "size": 1606116,
+      "sha256": "3e2a90622a4e0453c06765ee38c06b6313025a8f4b695e9d234aee8395e2f9ad"
+    },
+    {
+      "path": "data/NeurIPS_research_db.tar.gz",
+      "size": 77966068,
+      "sha256": "d541efbdd37abacbde7af03fd371326f8d3fe04668996d59e4f699492e59ccee"
+    },
+    {
+      "path": "data/TMLR_2022_accepted_by_tmlr.tar.gz",
+      "size": 425570363,
+      "sha256": "fef3dbfb43e4edcb0004c68fc78049f7224f665e336f940f8fbb83d21760a876"
+    },
+    {
+      "path": "data/TMLR_2022_rejected_by_tmlr.tar.gz",
+      "size": 220268934,
+      "sha256": "91112d518eaa242485f558d29ff5980f54e7a935304958cf4da49812164c84e2"
+    },
+    {
+      "path": "data/TMLR_2022_withdrawn_by_authors.tar.gz",
+      "size": 12807694,
+      "sha256": "b06ff2e267ecda2d21c114ec71eefa12c88ef28349c283a83059f22c8fce2554"
+    },
+    {
+      "path": "data/TMLR_2023_accepted_by_tmlr.tar.gz",
+      "size": 776462320,
+      "sha256": "37a95463ab2b150360511bd6ec40fd128a683020b1f5fdfdaeda609c1f45aa7d"
+    },
+    {
+      "path": "data/TMLR_2023_rejected_by_tmlr.tar.gz",
+      "size": 313295084,
+      "sha256": "51788f4f662381f6a5ffa06906b3c427fb2182e41627a3f7f08b5d16eabe88f1"
+    },
+    {
+      "path": "data/TMLR_2023_withdrawn_by_authors.tar.gz",
+      "size": 29839879,
+      "sha256": "7a19a082872f2002cc8b9347c710a240f00831d40aedc6d492ef53c805be8eb7"
+    },
+    {
+      "path": "data/TMLR_2024_accepted_by_tmlr.tar.gz",
+      "size": 1404747653,
+      "sha256": "3e5fce8151dcaa1e015f47e5c7b848e15e330ed3d4468a0c548ed1e7ed737ccc"
+    },
+    {
+      "path": "data/TMLR_2024_rejected_by_tmlr.tar.gz",
+      "size": 585199394,
+      "sha256": "d710d500b29b29aadc83ca6e9ad91c2b428c709dd2dae2c009c2c2541436bebb"
+    },
+    {
+      "path": "data/TMLR_2024_withdrawn_by_authors.tar.gz",
+      "size": 73956608,
+      "sha256": "5abf2c9e7bb7fa3d06b11a749824131a7660adac30c8d74a1e588445f98df684"
+    },
+    {
+      "path": "data/TMLR_2025_accepted_by_tmlr.tar.gz",
+      "size": 2124426914,
+      "sha256": "698f05440ea85ca773ea68634942567d0d41239795e493e312f1eb4981939f7d"
+    },
+    {
+      "path": "data/TMLR_2025_decision_pending_for_tmlr.tar.gz",
+      "size": 293770056,
+      "sha256": "f2ae53651eb1e5a471fe6dbff1770b20adfc77e656d020ef965fd9c921040828"
+    },
+    {
+      "path": "data/TMLR_2025_rejected_by_tmlr.tar.gz",
+      "size": 722128715,
+      "sha256": "4b19429640838b26197cfe46173717238b76aeb5dc72299fc2e2f45ca5464e8d"
+    },
+    {
+      "path": "data/TMLR_2025_under_review_for_tmlr.tar.gz",
+      "size": 718953685,
+      "sha256": "97cf8a6996a399926cbdac6667aff6cf1f13027cdf6c6ae371878092ff6e5ba2"
+    },
+    {
+      "path": "data/TMLR_2025_withdrawn_by_authors.tar.gz",
+      "size": 101893990,
+      "sha256": "ddfbab812911c1242e621b177bb6b14f98166f31d5ef9f4f494b120834f6ebb4"
+    },
+    {
+      "path": "data/TMLR_2026_accepted_by_tmlr.tar.gz",
+      "size": 251617874,
+      "sha256": "82ecfe33bfb3d4fb02ce6ee912f647631c0332c46a6349a2cb7ec794b8fef37d"
+    },
+    {
+      "path": "data/TMLR_2026_rejected_by_tmlr.tar.gz",
+      "size": 72937347,
+      "sha256": "c27048b02a6d03aa3ed103c942983c6a1b6c4ca3e2440c1a4a15ea95ad493e2f"
+    },
+    {
+      "path": "data/TMLR_2026_under_review_for_tmlr.tar.gz",
+      "size": 237056973,
+      "sha256": "942c6e2dfb839b6d4d20dac080105afb746e8d874a155d7f58d8dadc801d4588"
+    },
+    {
+      "path": "data/TMLR_2026_withdrawn_by_authors.tar.gz",
+      "size": 2132665,
+      "sha256": "0567e69fceb15170f75a004ed4a632f7012f3c658e4fdee3359ec47dfaec7730"
+    },
+    {
+      "path": "data/TMLR_research_db.tar.gz",
+      "size": 30405922,
+      "sha256": "30df904d36fd44c2ea191c3f9c7c001f7dce3ffd451c664a47f816e1eed52844"
+    },
+    {
+      "path": "data/faiss_complete.tar.gz",
+      "size": 1909707768,
+      "sha256": "b90aedfd566686110cfeaf4e28851f3413ba10cefa7c634adea72b1b0394e54e"
+    },
+    {
+      "path": "reproduce/ICLR_metadata.tar.gz",
+      "size": 223461518,
+      "sha256": "f7f1bc2cee3a9bf20d446c577d0a30ff7654175f383b1975d2305ed203fc164a"
+    },
+    {
+      "path": "reproduce/ICML_metadata.tar.gz",
+      "size": 24244831,
+      "sha256": "c7b0b88d6d124ab5f28ec48259dfa3ec0583c26a18bbe6853f77b3f5efa15c26"
+    }
+  ]
+}

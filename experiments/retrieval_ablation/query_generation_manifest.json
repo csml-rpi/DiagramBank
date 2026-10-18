@@ -1,0 +1,76 @@
+{
+  "experiment": "E4 objective known-item retrieval ablation",
+  "generated_on": "2026-07-12",
+  "query_generation_model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "generation_interface": "Codex isolated worker agents",
+  "query_policy": "One full-intent paraphrase was generated from title, abstract, caption, and figure_context, then reused unchanged in every retrieval condition.",
+  "target_records": 2000,
+  "final_accepted_records": 2000,
+  "initial_generation": {
+    "shards": 20,
+    "records_per_shard": 100,
+    "agent_ids": [
+      "019f545f-55dc-7c52-aa1e-9ce3dfc265ba",
+      "019f545f-5401-7b70-9cc2-d0aba28e8a12",
+      "019f545f-5214-7830-874f-140016f9bb64",
+      "019f545f-5493-78b0-8371-53f28d47c7f0",
+      "019f545f-5363-7c51-ab48-525427bba267",
+      "019f545f-553a-7393-ac94-d49fc5745d04",
+      "019f5463-c231-7e61-a061-d6dbfb321174",
+      "019f5463-c2f7-7933-a513-028f2c8f4e53",
+      "019f5463-c3c3-7401-b724-99c9c3c87d63",
+      "019f5463-c471-71f0-b28f-5af15873cd1d",
+      "019f5475-9786-7f00-a49a-ee67bc42dcb0",
+      "019f5464-d977-71b3-abbd-75ed0e52d256",
+      "019f5466-d6de-7de1-a260-10e706e1422b",
+      "019f5466-d7b2-7e20-81a9-28873fa887e8",
+      "019f5467-26f7-7ce3-875b-aaf06e7a878f",
+      "019f5467-492f-79e3-9b63-edce7a32c9c2",
+      "019f5468-358c-7503-92c9-597461564e25",
+      "019f5469-e5be-78e3-813a-305a79edc339",
+      "019f546a-30b3-7df1-a5a4-5fff89a52660",
+      "019f546a-55b3-74a1-a95d-d811d436adc1"
+    ]
+  },
+  "validation_and_rewrite": [
+    {
+      "round": 1,
+      "accepted": 1892,
+      "rejected_and_rewritten": 108,
+      "rewrite_shard_sizes": [60, 48],
+      "rewrite_agent_ids": [
+        "019f5479-2a15-7a51-a074-3b4d62ad1628",
+        "019f5479-2b2f-70d0-a4ee-6a2f8a423d47"
+      ]
+    },
+    {
+      "round": 2,
+      "accepted": 1993,
+      "rejected_and_rewritten": 7,
+      "rewrite_shard_sizes": [7],
+      "rewrite_agent_ids": [
+        "019f547c-9515-7c10-92d1-c422f57cbc27"
+      ]
+    },
+    {
+      "round": 3,
+      "accepted": 2000,
+      "rejected": 0
+    }
+  ],
+  "validation_rules": {
+    "word_count_range": [35, 90],
+    "reject_explicit_figure_identifier": true,
+    "reject_exact_title": true,
+    "reject_source_six_token_span": true,
+    "reject_coined_or_caption_acronym_overlap": true,
+    "required_exact_query_id_coverage": true
+  },
+  "sha256": {
+    "prompt": "e2494fcf5beb1fa475f67466fe81d50ffa209ac9b7c8ac82e204c73a3e5aa813",
+    "target_manifest": "501b717a5abcef21c4ef320d771ba5f15e3ac8da2c0c09d8d0b951f01459f4f2",
+    "final_queries": "f37c9eaea0da1e044da69ddbdb8c222a15f580ecdacf04558156aa46f21f955d",
+    "validator": "c72067ccf2e244e7db1ff012a18e007249b0f781f18d7bba7b1e0fc7bd5d38b3"
+  }
+}

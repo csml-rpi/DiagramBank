@@ -1,0 +1,15 @@
+{
+  "case_id": "E4-GEN-06",
+  "condition": "full_field_retrieval",
+  "interface": "Codex built-in image_gen",
+  "prompt_sha256": "51408b05af682fd0d200e029a6dfddd26b36b9a27bbdfb74d47f8bdc27fb8d56",
+  "output_path": "agent_generations/E4-GEN-06/full_field_retrieval.png",
+  "output_sha256": "8b1b2378d69c1de5b34480028c6478ac66cd5f24581a0360ac58c781cabd29ca",
+  "width": 1774,
+  "height": 887,
+  "reference_paths": [
+    "OpenReview/ICLR/figures/2023/accept_poster/Xo2E217_M4n/Figure1.png",
+    "OpenReview/NeurIPS/figures/2025/accept_poster/3kmbucBZPA/Figure1.png",
+    "OpenReview/NeurIPS/figures/2025/accept_poster/A7WfzMiffv/Figure1.png"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "source_records": 2000,
+  "output_records": 2000,
+  "accepted": 1892,
+  "rejected": 108,
+  "malformed_lines": [],
+  "duplicate_query_ids": [],
+  "unexpected_query_ids": [],
+  "accepted_queries_sha256": "4efe2d1c713497cd660a95281bb5a81c0fc7d3974fbeebc5a6f33c435d39d9d5",
+  "rejected_queries_sha256": "e72b2cca413733b3008df2a93b8753779037d8932e1942a0c04db98ee4d2d82e"
+}

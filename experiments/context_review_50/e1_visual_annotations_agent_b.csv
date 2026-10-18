@@ -1,0 +1,18 @@
+sample_id,row_id,local_path,caption_image_match,visual_notes
+E1-018,483,OpenReview/ICLR/figures/2024/accept_poster/NY3wMJuaLf/Figure1.png,pass,FedCOG server-client overview and two client-side steps match the caption.
+E1-019,3454,OpenReview/ICLR/figures/2022/accept_poster/mwdfai8NBrJ/Figure2.png,pass,Adversarial RL framework with systems A and B matches the caption.
+E1-020,22044,OpenReview/NeurIPS/figures/2021/accept_poster/7X_sBjIwtm9/Figure2.png,pass,IA-RED2 transformer diagram shows multi-head interpreter token dropping MSA FFN and reward path.
+E1-021,18646,OpenReview/ICML/figures/2023/icml_2023_poster/EnW6Fsp1oP/Figure2.png,pass,Multi-panel LMC conditions and model ratatouille diagram match the caption.
+E1-022,20497,OpenReview/NeurIPS/figures/2021/accept_poster/LkNBNOut0oD/Figure1.png,pass,Three panels of representation clusters match the phase-transition caption.
+E1-023,20353,OpenReview/ICML/figures/2025/icml_2025_poster/R9iBZen9aY/Figure2.png,pass,Input attributed graph to STAGE-edge-graph to edge embedding flow matches the caption.
+E1-024,32598,OpenReview/NeurIPS/figures/2025/accept_spotlight/ZwBtDbuzjY/Figure1.png,pass,InfiFPO pivot and source model probability fusion pipeline matches the caption.
+E1-025,1220,OpenReview/ICLR/figures/2024/accept_poster/pAVJKp3Dvn/Figure1.png,pass,Block-sparse block-low-rank and generalized block-low-rank matrix comparison matches the caption.
+E1-026,1918,OpenReview/ICLR/figures/2023/accept_poster/x5mtJD2ovc/Figure18.png,pass,Training and inference manipulation workflow with numbered steps matches the caption.
+E1-027,3064,OpenReview/ICLR/figures/2025/accept_poster/TOiageVNru/Figure3.png,pass,Three-row comparison for methods ablations and distance metrics matches the caption.
+E1-028,8899,OpenReview/ICLR/figures/2025/accept_poster/JV8zULNh24/Figure16.png,minor_issue,Expected MedQA microtheory subgraph with orange statements but dense node text is hard to read.
+E1-029,12000,OpenReview/ICLR/figures/2024/accept_poster/qA4foxO5Gf/Figure1.png,minor_issue,Conjugate integrator diagram matches but extraction includes clipped printed caption text at bottom.
+E1-030,30139,OpenReview/NeurIPS/figures/2025/accept_poster/iQoZv77o3g/Figure1.png,pass,Spatiomolecular transformer and functional connectivity prediction workflow matches the caption.
+E1-031,25658,OpenReview/NeurIPS/figures/2025/accept_poster/RE97LT26w8/Figure3.png,pass,DynaMix four-panel state-space forecasts and quality curves match the caption.
+E1-032,34838,OpenReview/TMLR/figures/2025/accepted_by_tmlr/gOk34vUHtz/Figure7.png,pass,Reconstruction auxiliary task diagram with encoder main RL head and reconstruction head matches the caption.
+E1-033,1952,OpenReview/ICLR/figures/2023/accept_poster/UaAD-Nu86WX/Figure10.png,pass,Molecule sample grid matches implicit hydrogens on top and explicit hydrogens on bottom.
+E1-034,24446,OpenReview/NeurIPS/figures/2022/accept/RF74aWLrvBp/Figure2.png,pass,ProbTransformer training setup with predictive and posterior encoders matches the caption.

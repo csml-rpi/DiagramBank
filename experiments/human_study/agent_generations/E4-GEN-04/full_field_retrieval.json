@@ -1,0 +1,15 @@
+{
+  "case_id": "E4-GEN-04",
+  "condition": "full_field_retrieval",
+  "interface": "Codex built-in image_gen",
+  "prompt_sha256": "e394b95625fc31dd4a7139932c682f5b3f23b2f074cb86b350b61baa46641d7f",
+  "output_path": "agent_generations/E4-GEN-04/full_field_retrieval.png",
+  "output_sha256": "b8aa60e4b6a622b59da26a3c4fd9fb4ccdf209107abe39b8693d5c9511346f54",
+  "width": 1693,
+  "height": 929,
+  "reference_paths": [
+    "OpenReview/TMLR/figures/2024/accepted_by_tmlr/HduK51xNtS/Figure3.png",
+    "OpenReview/TMLR/figures/2022/accepted_by_tmlr/mbwm7NdkpO/Figure1.png",
+    "OpenReview/TMLR/figures/2024/accepted_by_tmlr/HduK51xNtS/Figure5.png"
+  ]
+}

@@ -56,10 +56,3 @@ nohup python extract_context.py >/dev/null 2>&1 &
 ```bash
 python classify.py
 ```
-
-## Occasional maintenance — Sync/move assets after decision updates
-
-```bash
-python sync_assets.py --dry_run
-python sync_assets.py
-```

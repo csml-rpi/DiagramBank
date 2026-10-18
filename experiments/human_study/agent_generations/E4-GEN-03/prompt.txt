@@ -1,0 +1,15 @@
+Create a polished landscape scientific schematic for the content below.
+
+Represent the scientific components and relationships faithfully. Use a clear left-to-right or top-to-bottom information flow when appropriate, concise readable labels, consistent arrows and grouping, a white background, and a restrained publication-ready visual style. Do not add unsupported modules, relationships, results, numerical claims, a paper title, authors, venue information, or a figure number. If reference diagrams are provided, use them only as relevant examples of scientific visual organization and abstraction; do not copy their scientific content or identifying labels.
+
+Title:
+DTP: Delta-Guided Two Stage Pruning for Mamba-based Multimodal Large Language Models
+
+Abstract:
+Multimodal large language models built on the Mamba architecture offer efficiency advantages, yet remain hampered by redundant visual tokens that inflate inference cost, with the prefill stage accounting for the majority of total inference time. We introduce Delta-guided Two stage Pruning (DTP), a method that progressively reduces token redundancy through selective pruning at early layer and complete pruning at late layer. Unlike Transformer-oriented pruning methods, our approach derives token importance directly from Mamba’s internal parameters. The statistical distribution of these importance scores, combined with implicit attention patterns, then provides the basis for determining both the pruning layers and the tokens to be removed. Extensive evaluation across diverse benchmarks shows that DTP cuts computation by nearly 50\%, maintains higher task performance than existing pruning methods, and further achieves over a 35\% reduction in prefill latency. Beyond efficiency, our analysis reveals previously underexplored behaviors of visual tokens within Mamba layers, suggesting a principled perspective for designing future pruning techniques in Mamba-based Multimodal Large Language Models.
+
+Intended figure caption:
+Figure 2: Overview of the proposed DTP(Delta-guided Two stage Pruning) method.
+
+Figure-reference context:
+<paragraph_1>In this section, we propose DTP (Delta-guided Two stage Pruning), a pruning strategy for Mambabased MLLMs. As shown in Figure 2, DTP follows a two stage pruning strategy, performing selective pruning in the early layer and complete pruning in the late layer. To determine the specific layers where pruning is applied and to conduct selective pruning in the early layer, we leverage ∆t, the key parameter that enables the selectivity of Mamba, to evaluate the importance of visual tokens in each Mamba block.</paragraph_1>

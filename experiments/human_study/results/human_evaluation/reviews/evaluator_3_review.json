@@ -1,0 +1,107 @@
+{
+  "build_id": "576550190ca0eb23b8bb330e54d40663e81ec1c632eea7de9427531598a29d39",
+  "evaluator": 3,
+  "seed": 41047,
+  "responses": [
+    {
+      "review_id": "R3-01",
+      "choice": "A wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-02",
+      "choice": "B wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-03",
+      "choice": "B wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-04",
+      "choice": "B wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-05",
+      "choice": "A wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-06",
+      "choice": "A wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-07",
+      "choice": "B wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-08",
+      "choice": "A wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-09",
+      "choice": "B wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-10",
+      "choice": "B wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-11",
+      "choice": "B wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-12",
+      "choice": "B wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-13",
+      "choice": "B wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-14",
+      "choice": "A wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-15",
+      "choice": "A wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-16",
+      "choice": "B wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-17",
+      "choice": "A wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-18",
+      "choice": "B wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-19",
+      "choice": "A wins",
+      "reason": ""
+    },
+    {
+      "review_id": "R3-20",
+      "choice": "B wins",
+      "reason": ""
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+Create a polished landscape scientific schematic for the content below.
+
+Represent the scientific components and relationships faithfully. Use a clear left-to-right or top-to-bottom information flow when appropriate, concise readable labels, consistent arrows and grouping, a white background, and a restrained publication-ready visual style. Do not add unsupported modules, relationships, results, numerical claims, a paper title, authors, venue information, or a figure number. If reference diagrams are provided, use them only as relevant examples of scientific visual organization and abstraction; do not copy their scientific content or identifying labels.
+
+Title:
+SPMC: Self-Purifying Federated Backdoor Defense via Margin Contribution
+
+Abstract:
+Federated Learning (FL) enables collaborative training with privacy preservation but is vulnerable to backdoor attacks, where malicious clients degrade model performance on targeted inputs. These attacks exploit FL decentralized nature, while existing defenses, based on isolated behaviors and fixed rules, can be bypassed by adaptive attackers. To address these limitations, we propose **SPMC**, a marginal collaboration defense mechanism that leverages intrinsic consistency across clients to estimate inter-client marginal contributions. This allows the system to dynamically reduce the influence of clients whose behavior deviates from the collaborative norm, thus maintaining robustness even as the number of attackers changes. In addition to overcoming proxy-dependent purification's weaknesses, we introduce a self-purification process that locally adjusts suspicious gradients. By aligning them with margin-based model updates, we mitigate the effect of local poisoning. Together, these two modules significantly improve the adaptability and resilience of FL systems, both at the client and server levels. Experimental results on a variety of classification benchmarks demonstrate that SPMC achieves strong defense performance against sophisticated backdoor attacks without sacrificing accuracy on benign tasks. The code is posted at: https://github.com/WenddHe0119/SPMC.
+
+Intended figure caption:
+Figure 2. Overview of Self-Purifying Margin Contribution (SPMC). See Sec. 4. On the client side, we utilize the coalition aggregation model for gradient alignment, wherein the updated local model parameters are sent to the server side. On the server side, margin differences among these parameters are assigned appropriate weights to facilitate the aggregation of the global model.
+
+Figure-reference context:
+<paragraph_1>In the rest part of this section, we investigate how to apply margin contribution on both the server-side and client-side for attacker identification and self-purification ( Fig. 2).</paragraph_1>

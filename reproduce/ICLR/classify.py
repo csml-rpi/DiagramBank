@@ -4,6 +4,7 @@ import torch
 from PIL import Image
 from tqdm import tqdm
 from utils import load_model_and_tokenizer, get_ensemble_features
+from reproduce.clip_provenance import ClassificationRun
 
 # --- CONFIGURATION ---
 FIG_RAG_DIR = os.environ.get("FIG_RAG_DIR") # scratch folder to store all data for this project
@@ -15,7 +16,12 @@ BATCH_SIZE = 16
 
 def main():
     # 1. Load Model
-    model, tokenizer, preprocess = load_model_and_tokenizer()
+    run = ClassificationRun.from_cli(DB_PATH, BATCH_SIZE, __file__)
+    try:
+        model, tokenizer, preprocess = load_model_and_tokenizer(pretrained=run.pretrained)
+    except Exception as exc:
+        run.failed(exc)
+        raise
     model.eval()
 
     # 2. Define Prompts
@@ -53,6 +59,7 @@ def main():
     
     class_map = {0: "diagram", 1: "plot", 2: "photo", 3: "other"}
 
+    run.record_model(model, preprocess, prompts_dict)
     print("Encoding and ensembling prompts...")
     text_features = get_ensemble_features(model, tokenizer, prompts_dict)
 
@@ -63,9 +70,10 @@ def main():
     query = """
         SELECT platform_id, figure_number, figure_path 
         FROM Figures 
-        WHERE figure_type = ''
+        WHERE figure_type IS NULL OR figure_type = ''
     """
     todos = con.execute(query).fetchall()
+    run.record_candidates(todos)
     print(f"Found {len(todos)} figures to classify.")
 
     updates = []
@@ -78,13 +86,16 @@ def main():
         # Figures stores relative figure path
         fig_path = os.path.join(FIG_RAG_DIR, fig_path)
         if not os.path.exists(fig_path):
-             continue
+            run.record_image(pid, fnum, fig_path, error="missing_file")
+            continue
 
         try:
             image = preprocess(Image.open(fig_path).convert('RGB')).unsqueeze(0)
+            run.record_image(pid, fnum, fig_path)
             batch_imgs.append(image)
             batch_ids.append((pid, fnum))
-        except Exception as e:
+        except Exception as exc:
+            run.record_image(pid, fnum, fig_path, error=f"{type(exc).__name__}: {exc}")
             continue
 
         # Inference Batch
@@ -118,23 +129,11 @@ def main():
                 confidence = vals[i].item()
                 updates.append((label, confidence, *batch_ids[i]))
 
-    # 5. Bulk Update DB
-    if updates:
-        print(f"Updating {len(updates)} records in DuckDB...")
-        try:
-            con.executemany(
-                """
-                UPDATE Figures 
-                SET figure_type = ?, confidence = ? 
-                WHERE platform_id = ? AND figure_number = ?
-                """, 
-                updates
-            )
-            print("Update success.")
-        except Exception as e:
-            print(f"Error during DB update: {e}")
-    
-    con.close()
+    try:
+        run.apply_updates(con, updates)
+    finally:
+        con.close()
+    run.complete()
     print("Classification complete.")
 
 if __name__ == "__main__":

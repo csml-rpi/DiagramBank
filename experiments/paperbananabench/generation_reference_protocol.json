@@ -1,0 +1,49 @@
+{
+  "description": "PaperBananaBench reference-pool settings transcribed from the manuscript protocol; this file does not contain item-level run outputs.",
+  "benchmark": "PaperBananaBench",
+  "test_cases": 292,
+  "pipeline_commit": "e088a8f",
+  "reference_conditions": {
+    "none": 0,
+    "paperbanana_original_pool": {
+      "pool_diagrams": 292,
+      "selected_references": 10
+    },
+    "diagrambank": {
+      "subset": "DiagramBank-Core",
+      "required_text": "nonempty citing paragraphs",
+      "source_date_field": "OpenReview source-note creation date (tcdate), stored as cdate",
+      "source_date_cutoff_exclusive": "2025-04-03",
+      "initial_diagrams": 37754,
+      "initial_paper_identifiers": 19558,
+      "papers_removed_by_title_overlap": 541,
+      "per_case_exclusions": [
+        "papers sharing an author with the target paper",
+        "records sharing a 13-word span with the target caption or method section"
+      ],
+      "selected_references": 10
+    },
+    "paper2fig100k": {
+      "selected_references": 10,
+      "reported_evaluation": "Qwen3.8 direct pairwise rubric versus no references on all 292 cases",
+      "protocol_source_commit": "f9f08dd4cd0fbfa68b4c07cfe8cfa766616ad740"
+    }
+  },
+  "retrieval": {
+    "embedding_model": "Qwen3-Embedding-8B",
+    "candidate_count": 50,
+    "reranker": "Qwen3.8-27B",
+    "maximum_references_per_paper": 1
+  },
+  "diagrambank_reference_inputs": {
+    "image_longer_side_max_pixels": 1024,
+    "abstract_max_words": 250,
+    "citing_paragraphs_max_words": 600
+  },
+  "generation": {
+    "planner_and_stylist": "Qwen3.8-27B",
+    "renderer": "Qwen-Image-2.1",
+    "sampling_steps": 40,
+    "target_image_usage": "evaluation only"
+  }
+}

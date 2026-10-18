@@ -1,0 +1,18 @@
+sample_id,row_id,venue,year,platform_id,figure_number,image_exists,caption_image_match,context_alignment,same_paper_provenance,usable_for_rebuttal,notes
+E1-018,483,ICLR,2024,NY3wMJuaLf,1,False,unassessable_missing_image,2_explains,pass,yes,Context explains FedCOG generation and distillation steps matching Figure 1
+E1-019,3454,ICLR,2022,mwdfai8NBrJ,2,False,unassessable_missing_image,2_explains,pass,yes,Context defines the adversarial RL systems and token flow shown in Figure 2
+E1-020,22044,NeurIPS,2021,7X_sBjIwtm9,2,False,unassessable_missing_image,NA_missing,pass,partial,No figure_context; caption and title are locally coherent
+E1-021,18646,ICML,2023,EnW6Fsp1oP,2,False,unassessable_missing_image,2_explains,pass,yes,Context explains Figure 2a LMC observations and Figure 2b ratatouille workflow
+E1-022,20497,NeurIPS,2021,LkNBNOut0oD,1,False,unassessable_missing_image,2_explains,pass,yes,Context explains lambda phase transition and the three representation cases in Figure 1
+E1-023,20353,ICML,2025,R9iBZen9aY,2,False,unassessable_missing_image,2_explains,pass,yes,Context explains STAGE pairwise attribute dependencies and edge graph construction for Figure 2
+E1-024,32598,NeurIPS,2025,ZwBtDbuzjY,1,False,unassessable_missing_image,NA_missing,pass,partial,No figure_context; caption and title are locally coherent
+E1-025,1220,ICLR,2024,pAVJKp3Dvn,1,False,unassessable_missing_image,2_explains,pass,yes,Context defines BSP BLR and generalized block low rank matrices shown in Figure 1
+E1-026,1918,ICLR,2023,x5mtJD2ovc,18,False,unassessable_missing_image,2_explains,pass,yes,Context explains the local manipulation training setup illustrated in Figure 18
+E1-027,3064,ICLR,2025,TOiageVNru,3,False,unassessable_missing_image,2_explains,pass,yes,Context explains ablations baselines metrics and contour interpretation for Figure 3
+E1-028,8899,ICLR,2025,JV8zULNh24,16,False,unassessable_missing_image,2_explains,pass,yes,Context describes the MedQA microtheory subgraph and retained inference effects in Figure 16
+E1-029,12000,ICLR,2024,qA4foxO5Gf,1,False,unassessable_missing_image,2_explains,pass,yes,Context defines conjugate integrator maps and states Figure 1 illustrates them
+E1-030,30139,NeurIPS,2025,iQoZv77o3g,1,False,unassessable_missing_image,2_explains,pass,yes,Context explains SMT gene expression tokenization spatial token use and attention in Figure 1
+E1-031,25658,NeurIPS,2025,RE97LT26w8,3,False,unassessable_missing_image,2_explains,pass,yes,Context discusses Figure 3a and Figure 3b zero shot reconstructions and related quality analyses
+E1-032,34838,TMLR,2025,gOk34vUHtz,7,False,unassessable_missing_image,NA_missing,pass,partial,No figure_context; caption and title are locally coherent
+E1-033,1952,ICLR,2023,UaAD-Nu86WX,10,False,unassessable_missing_image,NA_missing,pass,partial,No figure_context; caption and title are locally coherent
+E1-034,24446,NeurIPS,2022,RF74aWLrvBp,2,False,unassessable_missing_image,2_explains,pass,yes,Context explains posterior and predictive ProbTransformer training setup for Figure 2

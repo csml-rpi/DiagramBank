@@ -93,17 +93,3 @@ Classifies extracted figures (diagram/plot/photo/other) and writes to DuckDB.
 ```bash
 python classify.py
 ```
-
-## Occasional maintenance — Sync/move assets after decision updates
-
-Only needed if you updated decisions and want to **move** already-downloaded PDFs and figures out of `pending_unknown/` into their new decision folders (without re-downloading or re-extracting).
-
-Dry run:
-```bash
-python sync_assets.py --dry_run
-```
-
-Apply moves:
-```bash
-python sync_assets.py
-```

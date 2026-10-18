@@ -1,0 +1,616 @@
+{
+  "candidate_records": 52052,
+  "queries": 2000,
+  "top_k": 10,
+  "seed": 20260712,
+  "primary_endpoint": {
+    "comparison": "Full minus C",
+    "metric": "exact_r10"
+  },
+  "shuffled_control_matching": {
+    "context": {
+      "same_venue_year_length": 52052
+    },
+    "title_abstract": {
+      "same_venue_year_length": 52052
+    }
+  },
+  "metrics": {
+    "C": {
+      "exact_r1": 0.729,
+      "exact_r5": 0.8355,
+      "exact_r10": 0.866,
+      "exact_mrr10": 0.7769045634920635,
+      "paper_r1": 0.75,
+      "paper_r5": 0.85,
+      "paper_r10": 0.8785
+    },
+    "C+T": {
+      "exact_r1": 0.676,
+      "exact_r5": 0.822,
+      "exact_r10": 0.868,
+      "exact_mrr10": 0.7409251984126984,
+      "paper_r1": 0.706,
+      "paper_r5": 0.8325,
+      "paper_r10": 0.877
+    },
+    "C+T+A": {
+      "exact_r1": 0.6495,
+      "exact_r5": 0.814,
+      "exact_r10": 0.8575,
+      "exact_mrr10": 0.7200478174603174,
+      "paper_r1": 0.6795,
+      "paper_r5": 0.82,
+      "paper_r10": 0.862
+    },
+    "Full": {
+      "exact_r1": 0.686,
+      "exact_r5": 0.849,
+      "exact_r10": 0.8895,
+      "exact_mrr10": 0.7578771825396825,
+      "paper_r1": 0.7225,
+      "paper_r5": 0.8565,
+      "paper_r10": 0.894
+    },
+    "Full-T": {
+      "exact_r1": 0.7175,
+      "exact_r5": 0.8735,
+      "exact_r10": 0.9075,
+      "exact_mrr10": 0.7847505952380952,
+      "paper_r1": 0.751,
+      "paper_r5": 0.888,
+      "paper_r10": 0.9205
+    },
+    "Full-A": {
+      "exact_r1": 0.699,
+      "exact_r5": 0.857,
+      "exact_r10": 0.8935,
+      "exact_mrr10": 0.7669660714285713,
+      "paper_r1": 0.7325,
+      "paper_r5": 0.8695,
+      "paper_r10": 0.903
+    },
+    "Full-C": {
+      "exact_r1": 0.4885,
+      "exact_r5": 0.6995,
+      "exact_r10": 0.761,
+      "exact_mrr10": 0.5811700396825397,
+      "paper_r1": 0.571,
+      "paper_r5": 0.718,
+      "paper_r10": 0.7775
+    },
+    "Full-X": {
+      "exact_r1": 0.6495,
+      "exact_r5": 0.814,
+      "exact_r10": 0.8575,
+      "exact_mrr10": 0.7200478174603174,
+      "paper_r1": 0.6795,
+      "paper_r5": 0.82,
+      "paper_r10": 0.862
+    },
+    "Full-shuffled-X": {
+      "exact_r1": 0.566,
+      "exact_r5": 0.7515,
+      "exact_r10": 0.808,
+      "exact_mrr10": 0.6456311507936507,
+      "paper_r1": 0.6145,
+      "paper_r5": 0.7705,
+      "paper_r10": 0.823
+    },
+    "Full-shuffled-TA": {
+      "exact_r1": 0.2285,
+      "exact_r5": 0.445,
+      "exact_r10": 0.538,
+      "exact_mrr10": 0.3197763888888888,
+      "paper_r1": 0.242,
+      "paper_r5": 0.4655,
+      "paper_r10": 0.5605
+    }
+  },
+  "paired_comparisons": [
+    {
+      "condition": "C+T",
+      "baseline": "C",
+      "metric": "exact_r1",
+      "paired_difference": -0.053,
+      "ci95_lower": -0.071,
+      "ci95_upper": -0.0345
+    },
+    {
+      "condition": "C+T",
+      "baseline": "C",
+      "metric": "exact_r5",
+      "paired_difference": -0.0135,
+      "ci95_lower": -0.029,
+      "ci95_upper": 0.0025
+    },
+    {
+      "condition": "C+T",
+      "baseline": "C",
+      "metric": "exact_r10",
+      "paired_difference": 0.002,
+      "ci95_lower": -0.012,
+      "ci95_upper": 0.016
+    },
+    {
+      "condition": "C+T",
+      "baseline": "C",
+      "metric": "exact_mrr10",
+      "paired_difference": -0.03597936507936508,
+      "ci95_lower": -0.050920114087301585,
+      "ci95_upper": -0.021733249007936512
+    },
+    {
+      "condition": "C+T",
+      "baseline": "C",
+      "metric": "paper_r1",
+      "paired_difference": -0.044,
+      "ci95_lower": -0.063,
+      "ci95_upper": -0.024987500000000183
+    },
+    {
+      "condition": "C+T",
+      "baseline": "C",
+      "metric": "paper_r5",
+      "paired_difference": -0.0175,
+      "ci95_lower": -0.033,
+      "ci95_upper": -0.002
+    },
+    {
+      "condition": "C+T",
+      "baseline": "C",
+      "metric": "paper_r10",
+      "paired_difference": -0.0015,
+      "ci95_lower": -0.0155,
+      "ci95_upper": 0.0125
+    },
+    {
+      "condition": "C+T+A",
+      "baseline": "C",
+      "metric": "exact_r1",
+      "paired_difference": -0.0795,
+      "ci95_lower": -0.0995,
+      "ci95_upper": -0.0595
+    },
+    {
+      "condition": "C+T+A",
+      "baseline": "C",
+      "metric": "exact_r5",
+      "paired_difference": -0.0215,
+      "ci95_lower": -0.0405,
+      "ci95_upper": -0.0025
+    },
+    {
+      "condition": "C+T+A",
+      "baseline": "C",
+      "metric": "exact_r10",
+      "paired_difference": -0.0085,
+      "ci95_lower": -0.026,
+      "ci95_upper": 0.009
+    },
+    {
+      "condition": "C+T+A",
+      "baseline": "C",
+      "metric": "exact_mrr10",
+      "paired_difference": -0.056856746031746036,
+      "ci95_lower": -0.07407657242063492,
+      "ci95_upper": -0.04015705357142857
+    },
+    {
+      "condition": "C+T+A",
+      "baseline": "C",
+      "metric": "paper_r1",
+      "paired_difference": -0.0705,
+      "ci95_lower": -0.0915,
+      "ci95_upper": -0.0495
+    },
+    {
+      "condition": "C+T+A",
+      "baseline": "C",
+      "metric": "paper_r5",
+      "paired_difference": -0.03,
+      "ci95_lower": -0.048,
+      "ci95_upper": -0.012
+    },
+    {
+      "condition": "C+T+A",
+      "baseline": "C",
+      "metric": "paper_r10",
+      "paired_difference": -0.0165,
+      "ci95_lower": -0.033,
+      "ci95_upper": 0.0005
+    },
+    {
+      "condition": "Full",
+      "baseline": "C",
+      "metric": "exact_r1",
+      "paired_difference": -0.043,
+      "ci95_lower": -0.064,
+      "ci95_upper": -0.022
+    },
+    {
+      "condition": "Full",
+      "baseline": "C",
+      "metric": "exact_r5",
+      "paired_difference": 0.0135,
+      "ci95_lower": -0.005,
+      "ci95_upper": 0.0325
+    },
+    {
+      "condition": "Full",
+      "baseline": "C",
+      "metric": "exact_r10",
+      "paired_difference": 0.0235,
+      "ci95_lower": 0.0065,
+      "ci95_upper": 0.0405
+    },
+    {
+      "condition": "Full",
+      "baseline": "C",
+      "metric": "exact_mrr10",
+      "paired_difference": -0.019027380952380952,
+      "ci95_lower": -0.03650710317460318,
+      "ci95_upper": -0.0018689831349206364
+    },
+    {
+      "condition": "Full",
+      "baseline": "C",
+      "metric": "paper_r1",
+      "paired_difference": -0.0275,
+      "ci95_lower": -0.0485,
+      "ci95_upper": -0.0065
+    },
+    {
+      "condition": "Full",
+      "baseline": "C",
+      "metric": "paper_r5",
+      "paired_difference": 0.0065,
+      "ci95_lower": -0.0115,
+      "ci95_upper": 0.0245
+    },
+    {
+      "condition": "Full",
+      "baseline": "C",
+      "metric": "paper_r10",
+      "paired_difference": 0.0155,
+      "ci95_lower": -0.001,
+      "ci95_upper": 0.032
+    },
+    {
+      "condition": "Full-T",
+      "baseline": "Full",
+      "metric": "exact_r1",
+      "paired_difference": 0.0315,
+      "ci95_lower": 0.0175,
+      "ci95_upper": 0.046
+    },
+    {
+      "condition": "Full-T",
+      "baseline": "Full",
+      "metric": "exact_r5",
+      "paired_difference": 0.0245,
+      "ci95_lower": 0.0125,
+      "ci95_upper": 0.0365
+    },
+    {
+      "condition": "Full-T",
+      "baseline": "Full",
+      "metric": "exact_r10",
+      "paired_difference": 0.018,
+      "ci95_lower": 0.0075,
+      "ci95_upper": 0.029
+    },
+    {
+      "condition": "Full-T",
+      "baseline": "Full",
+      "metric": "exact_mrr10",
+      "paired_difference": 0.026873412698412695,
+      "ci95_lower": 0.0168106498015873,
+      "ci95_upper": 0.0368914732142857
+    },
+    {
+      "condition": "Full-T",
+      "baseline": "Full",
+      "metric": "paper_r1",
+      "paired_difference": 0.0285,
+      "ci95_lower": 0.014,
+      "ci95_upper": 0.043
+    },
+    {
+      "condition": "Full-T",
+      "baseline": "Full",
+      "metric": "paper_r5",
+      "paired_difference": 0.0315,
+      "ci95_lower": 0.0205,
+      "ci95_upper": 0.0435
+    },
+    {
+      "condition": "Full-T",
+      "baseline": "Full",
+      "metric": "paper_r10",
+      "paired_difference": 0.0265,
+      "ci95_lower": 0.0165,
+      "ci95_upper": 0.0365
+    },
+    {
+      "condition": "Full-A",
+      "baseline": "Full",
+      "metric": "exact_r1",
+      "paired_difference": 0.013,
+      "ci95_lower": 0.001,
+      "ci95_upper": 0.0255
+    },
+    {
+      "condition": "Full-A",
+      "baseline": "Full",
+      "metric": "exact_r5",
+      "paired_difference": 0.008,
+      "ci95_lower": -0.0015,
+      "ci95_upper": 0.018
+    },
+    {
+      "condition": "Full-A",
+      "baseline": "Full",
+      "metric": "exact_r10",
+      "paired_difference": 0.004,
+      "ci95_lower": -0.0055,
+      "ci95_upper": 0.0135
+    },
+    {
+      "condition": "Full-A",
+      "baseline": "Full",
+      "metric": "exact_mrr10",
+      "paired_difference": 0.00908888888888889,
+      "ci95_lower": 0.0009323313492063496,
+      "ci95_upper": 0.017350982142857137
+    },
+    {
+      "condition": "Full-A",
+      "baseline": "Full",
+      "metric": "paper_r1",
+      "paired_difference": 0.01,
+      "ci95_lower": -0.0025,
+      "ci95_upper": 0.023
+    },
+    {
+      "condition": "Full-A",
+      "baseline": "Full",
+      "metric": "paper_r5",
+      "paired_difference": 0.013,
+      "ci95_lower": 0.004,
+      "ci95_upper": 0.0225
+    },
+    {
+      "condition": "Full-A",
+      "baseline": "Full",
+      "metric": "paper_r10",
+      "paired_difference": 0.009,
+      "ci95_lower": 0.0,
+      "ci95_upper": 0.018
+    },
+    {
+      "condition": "Full-C",
+      "baseline": "Full",
+      "metric": "exact_r1",
+      "paired_difference": -0.1975,
+      "ci95_lower": -0.217,
+      "ci95_upper": -0.1775
+    },
+    {
+      "condition": "Full-C",
+      "baseline": "Full",
+      "metric": "exact_r5",
+      "paired_difference": -0.1495,
+      "ci95_lower": -0.167,
+      "ci95_upper": -0.132
+    },
+    {
+      "condition": "Full-C",
+      "baseline": "Full",
+      "metric": "exact_r10",
+      "paired_difference": -0.1285,
+      "ci95_lower": -0.145,
+      "ci95_upper": -0.1125
+    },
+    {
+      "condition": "Full-C",
+      "baseline": "Full",
+      "metric": "exact_mrr10",
+      "paired_difference": -0.17670714285714287,
+      "ci95_lower": -0.19165737103174604,
+      "ci95_upper": -0.16169229662698414
+    },
+    {
+      "condition": "Full-C",
+      "baseline": "Full",
+      "metric": "paper_r1",
+      "paired_difference": -0.1515,
+      "ci95_lower": -0.17,
+      "ci95_upper": -0.1335
+    },
+    {
+      "condition": "Full-C",
+      "baseline": "Full",
+      "metric": "paper_r5",
+      "paired_difference": -0.1385,
+      "ci95_lower": -0.155,
+      "ci95_upper": -0.122
+    },
+    {
+      "condition": "Full-C",
+      "baseline": "Full",
+      "metric": "paper_r10",
+      "paired_difference": -0.1165,
+      "ci95_lower": -0.132,
+      "ci95_upper": -0.101
+    },
+    {
+      "condition": "Full-X",
+      "baseline": "Full",
+      "metric": "exact_r1",
+      "paired_difference": -0.0365,
+      "ci95_lower": -0.051,
+      "ci95_upper": -0.022
+    },
+    {
+      "condition": "Full-X",
+      "baseline": "Full",
+      "metric": "exact_r5",
+      "paired_difference": -0.035,
+      "ci95_lower": -0.047,
+      "ci95_upper": -0.023
+    },
+    {
+      "condition": "Full-X",
+      "baseline": "Full",
+      "metric": "exact_r10",
+      "paired_difference": -0.032,
+      "ci95_lower": -0.043,
+      "ci95_upper": -0.021
+    },
+    {
+      "condition": "Full-X",
+      "baseline": "Full",
+      "metric": "exact_mrr10",
+      "paired_difference": -0.03782936507936508,
+      "ci95_lower": -0.04814913194444445,
+      "ci95_upper": -0.027582063492063498
+    },
+    {
+      "condition": "Full-X",
+      "baseline": "Full",
+      "metric": "paper_r1",
+      "paired_difference": -0.043,
+      "ci95_lower": -0.057,
+      "ci95_upper": -0.029
+    },
+    {
+      "condition": "Full-X",
+      "baseline": "Full",
+      "metric": "paper_r5",
+      "paired_difference": -0.0365,
+      "ci95_lower": -0.048,
+      "ci95_upper": -0.025
+    },
+    {
+      "condition": "Full-X",
+      "baseline": "Full",
+      "metric": "paper_r10",
+      "paired_difference": -0.032,
+      "ci95_lower": -0.043,
+      "ci95_upper": -0.0215
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-X",
+      "metric": "exact_r1",
+      "paired_difference": 0.12,
+      "ci95_lower": 0.102,
+      "ci95_upper": 0.1385
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-X",
+      "metric": "exact_r5",
+      "paired_difference": 0.0975,
+      "ci95_lower": 0.0825,
+      "ci95_upper": 0.112
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-X",
+      "metric": "exact_r10",
+      "paired_difference": 0.0815,
+      "ci95_lower": 0.0685,
+      "ci95_upper": 0.095
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-X",
+      "metric": "exact_mrr10",
+      "paired_difference": 0.11224603174603175,
+      "ci95_lower": 0.09930137896825397,
+      "ci95_upper": 0.12536269345238096
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-X",
+      "metric": "paper_r1",
+      "paired_difference": 0.108,
+      "ci95_lower": 0.091,
+      "ci95_upper": 0.125
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-X",
+      "metric": "paper_r5",
+      "paired_difference": 0.086,
+      "ci95_lower": 0.072,
+      "ci95_upper": 0.1005
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-X",
+      "metric": "paper_r10",
+      "paired_difference": 0.071,
+      "ci95_lower": 0.0585,
+      "ci95_upper": 0.084
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-TA",
+      "metric": "exact_r1",
+      "paired_difference": 0.4575,
+      "ci95_lower": 0.434,
+      "ci95_upper": 0.4815
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-TA",
+      "metric": "exact_r5",
+      "paired_difference": 0.404,
+      "ci95_lower": 0.381,
+      "ci95_upper": 0.4275
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-TA",
+      "metric": "exact_r10",
+      "paired_difference": 0.3515,
+      "ci95_lower": 0.329,
+      "ci95_upper": 0.3735
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-TA",
+      "metric": "exact_mrr10",
+      "paired_difference": 0.4381007936507937,
+      "ci95_lower": 0.417898869047619,
+      "ci95_upper": 0.4578838293650793
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-TA",
+      "metric": "paper_r1",
+      "paired_difference": 0.4805,
+      "ci95_lower": 0.4565,
+      "ci95_upper": 0.504
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-TA",
+      "metric": "paper_r5",
+      "paired_difference": 0.391,
+      "ci95_lower": 0.3679875,
+      "ci95_upper": 0.414
+    },
+    {
+      "condition": "Full",
+      "baseline": "Full-shuffled-TA",
+      "metric": "paper_r10",
+      "paired_difference": 0.3335,
+      "ci95_lower": 0.311,
+      "ci95_upper": 0.3555
+    }
+  ]
+}

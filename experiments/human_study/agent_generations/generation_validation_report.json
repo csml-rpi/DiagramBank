@@ -1,0 +1,29 @@
+{
+  "cases": 20,
+  "generated_outputs": 40,
+  "conditions": {
+    "no_retrieval": 20,
+    "full_field_retrieval": 20
+  },
+  "generation_interface": "Codex built-in image_gen",
+  "isolated_agent_calls": 40,
+  "output_dimensions": {
+    "1536x1024": 2,
+    "1670x941": 1,
+    "1672x941": 1,
+    "1691x930": 1,
+    "1692x929": 1,
+    "1692x930": 2,
+    "1693x929": 25,
+    "1716x917": 1,
+    "1718x916": 1,
+    "1720x914": 1,
+    "1774x887": 1,
+    "1784x882": 1,
+    "1787x880": 1,
+    "1836x857": 1
+  },
+  "all_pairs_share_identical_text_prompt": true,
+  "no_retrieval_reference_count": 0,
+  "retrieval_reference_count_per_case": 3
+}

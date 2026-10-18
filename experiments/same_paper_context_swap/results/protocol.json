@@ -1,0 +1,24 @@
+{
+  "seed": 20260929,
+  "candidate_records": 52052,
+  "all_frozen_queries": 2000,
+  "eligible_queries": 913,
+  "swapped_candidates": 35026,
+  "assignment": "Disjoint same-paper pairs with different context SHA-256; choose nearest log word count among unused donors, seeded tie breaking. Identity assignment for unpaired records. All 52,052 candidates remain in every condition.",
+  "eligibility": "Target record receives a different same-paper context. Eligibility and assignment are fixed before scoring.",
+  "conditions": [
+    "Full",
+    "Full-X",
+    "C",
+    "Full-within-paper-X"
+  ],
+  "bootstrap_replicates": 10000,
+  "scope": "Frozen target-derived known-item queries; multi-figure contexts may share passages. This control does not validate source-PDF extraction.",
+  "source_sha256": {
+    "script": "93931f882fe4fb5b3480ff5e652b7ecbecc85e5badf6fd97f1321c46c621082f",
+    "embedding_manifest": "19104d6327a01ac7d8185f2973d911eb48447f001d39d365ab0b3689e3e8e2cd",
+    "targets": "501b717a5abcef21c4ef320d771ba5f15e3ac8da2c0c09d8d0b951f01459f4f2",
+    "saved_per_query_results": "a03a6ab8b39131b9e7da95164716998067bddf02eaf912cc0a305dd51ce8d383",
+    "assignments": "84509c5972b325294f1c07ac26974af23a49c706f098edc8038f7e1f5972db9e"
+  }
+}
