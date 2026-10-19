@@ -12,18 +12,20 @@ Figures and captions are extracted from the PDFs with PDFFigures 2.0 (tables exc
 2. **VLM classification.** Claude Haiku 4.5 and GPT-5.4-mini classify each candidate with the same four-class prompt. Tier 1 keeps a figure when at least one judge says diagram; Tier 2 forwards only figures both judges label as diagrams.
 3. **Disagreement resolution.** GPT-5.4 decides when both judges disagree with CLIP; these candidates are kept only when GPT-5.4 says diagram.
 
-| Kept path (`cascade_path`) | Records |
+| Kept path (`cascade_path` in `data.jsonl`) | Records |
 |---|---:|
-| `t1_unanimous_diagram` | 46,524 |
-| `t1_majority_diagram` | 3,645 |
-| `t1_minority_diagram_gpt_confirmed` | 1,865 |
+| `t1_unanimous` | 46,524 |
+| `t1_majority` | 3,645 |
+| `t1_minority_gpt_tiebreak` | 1,865 |
 | `t2_vlm_consensus_gpt_confirmed` | 5,066 |
+
+`release_supplement/cascade_labels.jsonl` spells the first three paths `t1_unanimous_diagram`, `t1_majority_diagram`, and `t1_minority_diagram_gpt_confirmed`.
 
 Prompts, model identifiers, and execution settings are in `cascade/`. Field definitions are in `docs/schema.md`.
 
 ## Quality
 
-A blind human audit of 500 released records, with risk-proportional sampling across kept paths, estimates 93.67% precision (95% CI 90.11–97.22). **DiagramBank-Core**, the 51,590 records that both smaller judges label as diagrams (`t1_unanimous_diagram` and `t2_vlm_consensus_gpt_confirmed`), has an estimated precision of 95.2% (91.3–99.1); the remaining 5,510 records have 79.3% (73.1–85.5). The weakest kept path is `t1_minority_diagram_gpt_confirmed` (72.8%); screenshots and photo-like figures dominate the observed errors. We recommend DiagramBank-Core for precision-sensitive use. Users should report the subset, confidence threshold, and cascade paths they use, and apply task-specific checks (for example missing or very short captions, incomplete context spans, or very small images).
+A blind human audit of 500 released records, with risk-proportional sampling across kept paths, estimates 93.67% precision (95% CI 90.11–97.22). **DiagramBank-Core**, the 51,590 records that both smaller judges label as diagrams (`t1_unanimous` and `t2_vlm_consensus_gpt_confirmed`), has an estimated precision of 95.2% (91.3–99.1); the remaining 5,510 records have 79.3% (73.1–85.5). The weakest kept path is `t1_minority_gpt_tiebreak` (72.8%); screenshots and photo-like figures dominate the observed errors. We recommend DiagramBank-Core for precision-sensitive use. Users should report the subset, confidence threshold, and cascade paths they use, and apply task-specific checks (for example missing or very short captions, incomplete context spans, or very small images).
 
 ## Scope and annotation unit
 
