@@ -114,13 +114,17 @@ for rank, doc in enumerate(results, 1):
 
 ## Dataset
 
-| | |
-|---|---|
-| Diagrams | 57,100: ICLR 20,516, NeurIPS 19,655, ICML 11,267, TMLR 5,662 |
-| Source papers | 26,751 accepted papers: ICLR 2017–2026, NeurIPS 2021–2022 and 2024–2025, ICML 2023–2025, TMLR 2022–2026 |
-| Text per diagram | Caption, paper title, and abstract; citing paragraphs for 52,052 diagrams (91.16%) |
-| Selection | CLIP routing, two VLM judges (Claude Haiku 4.5, GPT-5.4-mini), and GPT-5.4 when both judges disagree with CLIP |
-| Precision | 93.67% [90.11, 97.22] from a blind audit of 500 records; 95.2% on DiagramBank-Core (51,590 records) |
+| Venue | Years | Accepted papers | Diagrams |
+|---|---|---:|---:|
+| ICLR | 2017–2026 | 9,466 | 20,516 |
+| NeurIPS | 2021–2022, 2024–2025 | 9,802 | 19,655 |
+| ICML | 2023–2025 | 5,148 | 11,267 |
+| TMLR | 2022–2026 | 2,335 | 5,662 |
+| **Total** | | **26,751** | **57,100** |
+
+- **Text per diagram:** caption, paper title, and abstract; citing paragraphs for 52,052 diagrams (91.16%).
+- **Selection:** CLIP routing, two VLM judges (Claude Haiku 4.5, GPT-5.4-mini), and GPT-5.4 when both judges disagree with CLIP.
+- **Precision:** 93.67% [90.11, 97.22] from a blind audit of 500 records; 95.2% on DiagramBank-Core (51,590 records).
 
 Record fields are described in [docs/schema.md](docs/schema.md); construction, filtering paths, scope, and intended use in [DATASET_CARD.md](DATASET_CARD.md).
 
