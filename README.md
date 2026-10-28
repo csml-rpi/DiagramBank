@@ -2,10 +2,6 @@
 
 # DiagramBank: Draw from the Great, Draw Your Best
 
-Ling Yue<sup>1</sup>, Jiaying Wang<sup>1</sup>, Zhexi Lu<sup>1</sup>, Mingzhi Zhu<sup>1</sup>, Tingwen Zhang<sup>1</sup>, Zhen Xu<sup>2</sup>, Shaowu Pan<sup>1</sup>
-
-<sup>1</sup>Rensselaer Polytechnic Institute &nbsp; <sup>2</sup>University of Chicago
-
 [![arXiv](https://img.shields.io/badge/arXiv-2604.20857-b31b1b.svg)](https://arxiv.org/abs/2604.20857)
 [![Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-DiagramBank-yellow)](https://huggingface.co/datasets/ghzlmc/DiagramBank)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
